@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE17424716E4C18E00BFD307 /* PicoXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = CE17424616E4C18E00BFD307 /* PicoXMLElement.m */; };
+		CE22F76316DC4C4C0073F385 /* PicoXMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE22F76216DC4C4C0073F385 /* PicoXMLWriter.m */; };
+		CE22F76616DC50D20073F385 /* PicoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CE22F76516DC50D10073F385 /* PicoConfig.m */; };
+		CEAA8F1916D9C70E0024B5D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8F1816D9C70E0024B5D7 /* Foundation.framework */; };
+		CEC8893916DB9C2D00B27F73 /* XMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC8893816DB9C2D00B27F73 /* XMLWriter.m */; };
+		CEDE398516DB0D480066467B /* PicoBindingSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE398416DB0D480066467B /* PicoBindingSchema.m */; };
+		CEDE39A216DB20E50066467B /* PicoCacheEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE39A116DB20E50066467B /* PicoCacheEntry.m */; };
+		CEDE39A716DB22770066467B /* PicoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE39A616DB22770066467B /* PicoCache.m */; };
+		CEE7FACD16DCE3C7003DC914 /* PicoXMLReadHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE7FACC16DCE3C7003DC914 /* PicoXMLReadHelper.m */; };
+		CEE7FAD216DCE847003DC914 /* PicoXMLReadDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE7FAD116DCE847003DC914 /* PicoXMLReadDelegate.m */; };
+		CEE7FAD516DCF5B2003DC914 /* PicoXMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE7FAD416DCF5B2003DC914 /* PicoXMLReader.m */; };
+		CEF3AC6516DA40AC00D36235 /* PicoConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3AC6416DA40AC00D36235 /* PicoConstants.m */; };
+		CEF3AC6A16DA461700D36235 /* PicoClassSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3AC6916DA461700D36235 /* PicoClassSchema.m */; };
+		CEF3AC6D16DA484500D36235 /* PicoPropertySchema.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3AC6C16DA484500D36235 /* PicoPropertySchema.m */; };
+		CEF3AC7F16DA4BF700D36235 /* PicoBoolConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3AC7E16DA4BF700D36235 /* PicoBoolConverter.m */; };
+		CEF3AC8516DA4EAA00D36235 /* PicoNumberConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3AC8416DA4EAA00D36235 /* PicoNumberConverter.m */; };
+		CEF3AC8816DA50D500D36235 /* PicoStringConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3AC8716DA50D500D36235 /* PicoStringConverter.m */; };
+		CEF3AC8B16DA51A900D36235 /* PicoDateConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3AC8A16DA51A900D36235 /* PicoDateConverter.m */; };
+		CEF3AC8E16DA53AE00D36235 /* PicoConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3AC8D16DA53AE00D36235 /* PicoConverter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEAA8F1316D9C70E0024B5D7 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CE17424516E4C18E00BFD307 /* PicoXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicoXMLElement.h; path = xmlsupport/PicoXMLElement.h; sourceTree = "<group>"; };
+		CE17424616E4C18E00BFD307 /* PicoXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicoXMLElement.m; path = xmlsupport/PicoXMLElement.m; sourceTree = "<group>"; };
+		CE22F75E16DC4B8B0073F385 /* PicoWritable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoWritable.h; sourceTree = "<group>"; };
+		CE22F76016DC4BD50073F385 /* PicoReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoReadable.h; sourceTree = "<group>"; };
+		CE22F76116DC4C4C0073F385 /* PicoXMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoXMLWriter.h; sourceTree = "<group>"; };
+		CE22F76216DC4C4C0073F385 /* PicoXMLWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoXMLWriter.m; sourceTree = "<group>"; };
+		CE22F76416DC50D10073F385 /* PicoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoConfig.h; sourceTree = "<group>"; };
+		CE22F76516DC50D10073F385 /* PicoConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoConfig.m; sourceTree = "<group>"; };
+		CEAA8F1516D9C70E0024B5D7 /* libpico.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpico.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEAA8F1816D9C70E0024B5D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEAA8F1C16D9C70E0024B5D7 /* pico-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pico-Prefix.pch"; sourceTree = "<group>"; };
+		CEC8893716DB9C2D00B27F73 /* XMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLWriter.h; path = xmlwriter/XMLWriter.h; sourceTree = "<group>"; };
+		CEC8893816DB9C2D00B27F73 /* XMLWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLWriter.m; path = xmlwriter/XMLWriter.m; sourceTree = "<group>"; };
+		CEDE398316DB0D480066467B /* PicoBindingSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicoBindingSchema.h; path = schema/PicoBindingSchema.h; sourceTree = "<group>"; };
+		CEDE398416DB0D480066467B /* PicoBindingSchema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicoBindingSchema.m; path = schema/PicoBindingSchema.m; sourceTree = "<group>"; };
+		CEDE39A016DB20E50066467B /* PicoCacheEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicoCacheEntry.h; path = cache/PicoCacheEntry.h; sourceTree = "<group>"; };
+		CEDE39A116DB20E50066467B /* PicoCacheEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicoCacheEntry.m; path = cache/PicoCacheEntry.m; sourceTree = "<group>"; };
+		CEDE39A516DB22770066467B /* PicoCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicoCache.h; path = cache/PicoCache.h; sourceTree = "<group>"; };
+		CEDE39A616DB22770066467B /* PicoCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicoCache.m; path = cache/PicoCache.m; sourceTree = "<group>"; };
+		CEE7FACB16DCE3C7003DC914 /* PicoXMLReadHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicoXMLReadHelper.h; path = helper/PicoXMLReadHelper.h; sourceTree = "<group>"; };
+		CEE7FACC16DCE3C7003DC914 /* PicoXMLReadHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicoXMLReadHelper.m; path = helper/PicoXMLReadHelper.m; sourceTree = "<group>"; };
+		CEE7FAD016DCE847003DC914 /* PicoXMLReadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoXMLReadDelegate.h; sourceTree = "<group>"; };
+		CEE7FAD116DCE847003DC914 /* PicoXMLReadDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoXMLReadDelegate.m; sourceTree = "<group>"; };
+		CEE7FAD316DCF5B2003DC914 /* PicoXMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoXMLReader.h; sourceTree = "<group>"; };
+		CEE7FAD416DCF5B2003DC914 /* PicoXMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoXMLReader.m; sourceTree = "<group>"; };
+		CEF3AC6316DA40AC00D36235 /* PicoConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoConstants.h; sourceTree = "<group>"; };
+		CEF3AC6416DA40AC00D36235 /* PicoConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoConstants.m; sourceTree = "<group>"; };
+		CEF3AC6616DA444C00D36235 /* PicoBindable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoBindable.h; sourceTree = "<group>"; };
+		CEF3AC6816DA461700D36235 /* PicoClassSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicoClassSchema.h; path = schema/PicoClassSchema.h; sourceTree = "<group>"; };
+		CEF3AC6916DA461700D36235 /* PicoClassSchema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicoClassSchema.m; path = schema/PicoClassSchema.m; sourceTree = "<group>"; };
+		CEF3AC6B16DA484500D36235 /* PicoPropertySchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicoPropertySchema.h; path = schema/PicoPropertySchema.h; sourceTree = "<group>"; };
+		CEF3AC6C16DA484500D36235 /* PicoPropertySchema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicoPropertySchema.m; path = schema/PicoPropertySchema.m; sourceTree = "<group>"; };
+		CEF3AC7C16DA4B9F00D36235 /* PicoConvertable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicoConvertable.h; path = converter/PicoConvertable.h; sourceTree = "<group>"; };
+		CEF3AC7D16DA4BF700D36235 /* PicoBoolConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicoBoolConverter.h; path = converter/PicoBoolConverter.h; sourceTree = "<group>"; };
+		CEF3AC7E16DA4BF700D36235 /* PicoBoolConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicoBoolConverter.m; path = converter/PicoBoolConverter.m; sourceTree = "<group>"; };
+		CEF3AC8316DA4EAA00D36235 /* PicoNumberConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicoNumberConverter.h; path = converter/PicoNumberConverter.h; sourceTree = "<group>"; };
+		CEF3AC8416DA4EAA00D36235 /* PicoNumberConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicoNumberConverter.m; path = converter/PicoNumberConverter.m; sourceTree = "<group>"; };
+		CEF3AC8616DA50D500D36235 /* PicoStringConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicoStringConverter.h; path = converter/PicoStringConverter.h; sourceTree = "<group>"; };
+		CEF3AC8716DA50D500D36235 /* PicoStringConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicoStringConverter.m; path = converter/PicoStringConverter.m; sourceTree = "<group>"; };
+		CEF3AC8916DA51A900D36235 /* PicoDateConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicoDateConverter.h; path = converter/PicoDateConverter.h; sourceTree = "<group>"; };
+		CEF3AC8A16DA51A900D36235 /* PicoDateConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicoDateConverter.m; path = converter/PicoDateConverter.m; sourceTree = "<group>"; };
+		CEF3AC8C16DA53AE00D36235 /* PicoConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicoConverter.h; path = converter/PicoConverter.h; sourceTree = "<group>"; };
+		CEF3AC8D16DA53AE00D36235 /* PicoConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicoConverter.m; path = converter/PicoConverter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEAA8F1216D9C70E0024B5D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAA8F1916D9C70E0024B5D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE17424416E4C16600BFD307 /* xmlsupport */ = {
+			isa = PBXGroup;
+			children = (
+				CE17424516E4C18E00BFD307 /* PicoXMLElement.h */,
+				CE17424616E4C18E00BFD307 /* PicoXMLElement.m */,
+			);
+			name = xmlsupport;
+			sourceTree = "<group>";
+		};
+		CEAA8F0A16D9C70E0024B5D7 = {
+			isa = PBXGroup;
+			children = (
+				CEAA8F1A16D9C70E0024B5D7 /* Pico */,
+				CEAA8F1716D9C70E0024B5D7 /* Frameworks */,
+				CEAA8F1616D9C70E0024B5D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEAA8F1616D9C70E0024B5D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEAA8F1516D9C70E0024B5D7 /* libpico.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEAA8F1716D9C70E0024B5D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEAA8F1816D9C70E0024B5D7 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEAA8F1A16D9C70E0024B5D7 /* Pico */ = {
+			isa = PBXGroup;
+			children = (
+				CEF3AC6216DA403600D36235 /* Classes */,
+				CEAA8F1B16D9C70E0024B5D7 /* Supporting Files */,
+			);
+			name = Pico;
+			path = pico;
+			sourceTree = "<group>";
+		};
+		CEAA8F1B16D9C70E0024B5D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEAA8F1C16D9C70E0024B5D7 /* pico-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEC8893516DB9BFF00B27F73 /* xmlwriter */ = {
+			isa = PBXGroup;
+			children = (
+				CEC8893716DB9C2D00B27F73 /* XMLWriter.h */,
+				CEC8893816DB9C2D00B27F73 /* XMLWriter.m */,
+			);
+			name = xmlwriter;
+			sourceTree = "<group>";
+		};
+		CEDE39A416DB225E0066467B /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE39A016DB20E50066467B /* PicoCacheEntry.h */,
+				CEDE39A116DB20E50066467B /* PicoCacheEntry.m */,
+				CEDE39A516DB22770066467B /* PicoCache.h */,
+				CEDE39A616DB22770066467B /* PicoCache.m */,
+			);
+			name = cache;
+			sourceTree = "<group>";
+		};
+		CEE7FACF16DCE3CD003DC914 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				CEE7FACB16DCE3C7003DC914 /* PicoXMLReadHelper.h */,
+				CEE7FACC16DCE3C7003DC914 /* PicoXMLReadHelper.m */,
+			);
+			name = helper;
+			sourceTree = "<group>";
+		};
+		CEF3AC6216DA403600D36235 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CE17424416E4C16600BFD307 /* xmlsupport */,
+				CEE7FACF16DCE3CD003DC914 /* helper */,
+				CEC8893516DB9BFF00B27F73 /* xmlwriter */,
+				CEDE39A416DB225E0066467B /* cache */,
+				CEF3AC7B16DA4B6A00D36235 /* converter */,
+				CEF3AC6716DA45CE00D36235 /* schema */,
+				CEF3AC6316DA40AC00D36235 /* PicoConstants.h */,
+				CEF3AC6416DA40AC00D36235 /* PicoConstants.m */,
+				CEF3AC6616DA444C00D36235 /* PicoBindable.h */,
+				CE22F75E16DC4B8B0073F385 /* PicoWritable.h */,
+				CE22F76016DC4BD50073F385 /* PicoReadable.h */,
+				CE22F76116DC4C4C0073F385 /* PicoXMLWriter.h */,
+				CE22F76216DC4C4C0073F385 /* PicoXMLWriter.m */,
+				CE22F76416DC50D10073F385 /* PicoConfig.h */,
+				CE22F76516DC50D10073F385 /* PicoConfig.m */,
+				CEE7FAD016DCE847003DC914 /* PicoXMLReadDelegate.h */,
+				CEE7FAD116DCE847003DC914 /* PicoXMLReadDelegate.m */,
+				CEE7FAD316DCF5B2003DC914 /* PicoXMLReader.h */,
+				CEE7FAD416DCF5B2003DC914 /* PicoXMLReader.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		CEF3AC6716DA45CE00D36235 /* schema */ = {
+			isa = PBXGroup;
+			children = (
+				CEF3AC6816DA461700D36235 /* PicoClassSchema.h */,
+				CEF3AC6916DA461700D36235 /* PicoClassSchema.m */,
+				CEF3AC6B16DA484500D36235 /* PicoPropertySchema.h */,
+				CEF3AC6C16DA484500D36235 /* PicoPropertySchema.m */,
+				CEDE398316DB0D480066467B /* PicoBindingSchema.h */,
+				CEDE398416DB0D480066467B /* PicoBindingSchema.m */,
+			);
+			name = schema;
+			sourceTree = "<group>";
+		};
+		CEF3AC7B16DA4B6A00D36235 /* converter */ = {
+			isa = PBXGroup;
+			children = (
+				CEF3AC7C16DA4B9F00D36235 /* PicoConvertable.h */,
+				CEF3AC7D16DA4BF700D36235 /* PicoBoolConverter.h */,
+				CEF3AC7E16DA4BF700D36235 /* PicoBoolConverter.m */,
+				CEF3AC8316DA4EAA00D36235 /* PicoNumberConverter.h */,
+				CEF3AC8416DA4EAA00D36235 /* PicoNumberConverter.m */,
+				CEF3AC8616DA50D500D36235 /* PicoStringConverter.h */,
+				CEF3AC8716DA50D500D36235 /* PicoStringConverter.m */,
+				CEF3AC8916DA51A900D36235 /* PicoDateConverter.h */,
+				CEF3AC8A16DA51A900D36235 /* PicoDateConverter.m */,
+				CEF3AC8C16DA53AE00D36235 /* PicoConverter.h */,
+				CEF3AC8D16DA53AE00D36235 /* PicoConverter.m */,
+			);
+			name = converter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEAA8F1416D9C70E0024B5D7 /* pico */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEAA8F2316D9C70E0024B5D7 /* Build configuration list for PBXNativeTarget "pico" */;
+			buildPhases = (
+				CEAA8F1116D9C70E0024B5D7 /* Sources */,
+				CEAA8F1216D9C70E0024B5D7 /* Frameworks */,
+				CEAA8F1316D9C70E0024B5D7 /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pico;
+			productName = pico;
+			productReference = CEAA8F1516D9C70E0024B5D7 /* libpico.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEAA8F0C16D9C70E0024B5D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Pico;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "LeanSoft Technology";
+			};
+			buildConfigurationList = CEAA8F0F16D9C70E0024B5D7 /* Build configuration list for PBXProject "pico" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CEAA8F0A16D9C70E0024B5D7;
+			productRefGroup = CEAA8F1616D9C70E0024B5D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEAA8F1416D9C70E0024B5D7 /* pico */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEAA8F1116D9C70E0024B5D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF3AC6516DA40AC00D36235 /* PicoConstants.m in Sources */,
+				CEF3AC6A16DA461700D36235 /* PicoClassSchema.m in Sources */,
+				CEF3AC6D16DA484500D36235 /* PicoPropertySchema.m in Sources */,
+				CEF3AC7F16DA4BF700D36235 /* PicoBoolConverter.m in Sources */,
+				CEF3AC8516DA4EAA00D36235 /* PicoNumberConverter.m in Sources */,
+				CEF3AC8816DA50D500D36235 /* PicoStringConverter.m in Sources */,
+				CEF3AC8B16DA51A900D36235 /* PicoDateConverter.m in Sources */,
+				CEF3AC8E16DA53AE00D36235 /* PicoConverter.m in Sources */,
+				CEDE398516DB0D480066467B /* PicoBindingSchema.m in Sources */,
+				CEDE39A216DB20E50066467B /* PicoCacheEntry.m in Sources */,
+				CEDE39A716DB22770066467B /* PicoCache.m in Sources */,
+				CEC8893916DB9C2D00B27F73 /* XMLWriter.m in Sources */,
+				CE22F76316DC4C4C0073F385 /* PicoXMLWriter.m in Sources */,
+				CE22F76616DC50D20073F385 /* PicoConfig.m in Sources */,
+				CEE7FACD16DCE3C7003DC914 /* PicoXMLReadHelper.m in Sources */,
+				CEE7FAD216DCE847003DC914 /* PicoXMLReadDelegate.m in Sources */,
+				CEE7FAD516DCF5B2003DC914 /* PicoXMLReader.m in Sources */,
+				CE17424716E4C18E00BFD307 /* PicoXMLElement.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CEAA8F2116D9C70E0024B5D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CEAA8F2216D9C70E0024B5D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEAA8F2416D9C70E0024B5D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/pico.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pico/pico-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CEAA8F2516D9C70E0024B5D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/pico.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pico/pico-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEAA8F0F16D9C70E0024B5D7 /* Build configuration list for PBXProject "pico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEAA8F2116D9C70E0024B5D7 /* Debug */,
+				CEAA8F2216D9C70E0024B5D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEAA8F2316D9C70E0024B5D7 /* Build configuration list for PBXNativeTarget "pico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEAA8F2416D9C70E0024B5D7 /* Debug */,
+				CEAA8F2516D9C70E0024B5D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEAA8F0C16D9C70E0024B5D7 /* Project object */;
+}
