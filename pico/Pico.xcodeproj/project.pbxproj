@@ -10,6 +10,11 @@
 		CE17424716E4C18E00BFD307 /* PicoXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = CE17424616E4C18E00BFD307 /* PicoXMLElement.m */; };
 		CE22F76316DC4C4C0073F385 /* PicoXMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE22F76216DC4C4C0073F385 /* PicoXMLWriter.m */; };
 		CE22F76616DC50D20073F385 /* PicoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CE22F76516DC50D10073F385 /* PicoConfig.m */; };
+		CEA0186E16E99FD20052DC2B /* PicoBindable.h in Headers */ = {isa = PBXBuildFile; fileRef = CEF3AC6616DA444C00D36235 /* PicoBindable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEA0186F16E99FD20052DC2B /* PicoWritable.h in Headers */ = {isa = PBXBuildFile; fileRef = CE22F75E16DC4B8B0073F385 /* PicoWritable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEA0187016E99FD20052DC2B /* PicoXMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = CE22F76116DC4C4C0073F385 /* PicoXMLWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEA0187116E99FD20052DC2B /* PicoConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = CE22F76416DC50D10073F385 /* PicoConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEA0187216E99FD20052DC2B /* PicoXMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = CEE7FAD316DCF5B2003DC914 /* PicoXMLReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEAA8F1916D9C70E0024B5D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8F1816D9C70E0024B5D7 /* Foundation.framework */; };
 		CEC8893916DB9C2D00B27F73 /* XMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC8893816DB9C2D00B27F73 /* XMLWriter.m */; };
 		CEDE398516DB0D480066467B /* PicoBindingSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE398416DB0D480066467B /* PicoBindingSchema.m */; };
@@ -239,6 +244,21 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		CEA0186C16E99F690052DC2B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA0186E16E99FD20052DC2B /* PicoBindable.h in Headers */,
+				CEA0186F16E99FD20052DC2B /* PicoWritable.h in Headers */,
+				CEA0187016E99FD20052DC2B /* PicoXMLWriter.h in Headers */,
+				CEA0187116E99FD20052DC2B /* PicoConfig.h in Headers */,
+				CEA0187216E99FD20052DC2B /* PicoXMLReader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		CEAA8F1416D9C70E0024B5D7 /* pico */ = {
 			isa = PBXNativeTarget;
@@ -247,6 +267,7 @@
 				CEAA8F1116D9C70E0024B5D7 /* Sources */,
 				CEAA8F1216D9C70E0024B5D7 /* Frameworks */,
 				CEAA8F1316D9C70E0024B5D7 /* Copy Files */,
+				CEA0186C16E99F690052DC2B /* Headers */,
 			);
 			buildRules = (
 			);
@@ -267,7 +288,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "LeanSoft Technology";
 			};
-			buildConfigurationList = CEAA8F0F16D9C70E0024B5D7 /* Build configuration list for PBXProject "pico" */;
+			buildConfigurationList = CEAA8F0F16D9C70E0024B5D7 /* Build configuration list for PBXProject "Pico" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -385,7 +406,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CEAA8F0F16D9C70E0024B5D7 /* Build configuration list for PBXProject "pico" */ = {
+		CEAA8F0F16D9C70E0024B5D7 /* Build configuration list for PBXProject "Pico" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEAA8F2116D9C70E0024B5D7 /* Debug */,

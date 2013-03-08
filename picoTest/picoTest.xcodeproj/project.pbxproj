@@ -12,6 +12,7 @@
 		CE67C46116DE3546008CE51A /* ArrayEntryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67C46016DE3546008CE51A /* ArrayEntryTest.m */; };
 		CE67C46D16DE3AE1008CE51A /* PerformanceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67C46C16DE3AE1008CE51A /* PerformanceTest.m */; };
 		CE67C47C16DE47EF008CE51A /* XMLReadHelperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67C47B16DE47EF008CE51A /* XMLReadHelperTest.m */; };
+		CEA0186B16E99C280052DC2B /* libpico.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA0186A16E99C280052DC2B /* libpico.a */; };
 		CEAA8EAF16D9BBF70024B5D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8EAE16D9BBF70024B5D7 /* UIKit.framework */; };
 		CEAA8EB116D9BBF70024B5D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8EB016D9BBF70024B5D7 /* Foundation.framework */; };
 		CEAA8EB316D9BBF70024B5D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8EB216D9BBF70024B5D7 /* CoreGraphics.framework */; };
@@ -22,7 +23,6 @@
 		CEAA8EC516D9BBF70024B5D7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAA8EC416D9BBF70024B5D7 /* Default-568h@2x.png */; };
 		CEAA8ECE16D9BE5E0024B5D7 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8ECD16D9BE5E0024B5D7 /* GHUnitIOS.framework */; };
 		CEAA8ED016D9C1040024B5D7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8ECF16D9C1040024B5D7 /* QuartzCore.framework */; };
-		CEAA8F3416D9C77F0024B5D7 /* libpico.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8F3216D9C73C0024B5D7 /* libpico.a */; };
 		CEAA8F3916D9C9700024B5D7 /* PicoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAA8F3816D9C9700024B5D7 /* PicoTest.m */; };
 		CEC8893116DB8D0600B27F73 /* CacheTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC8893016DB8D0600B27F73 /* CacheTest.m */; };
 		CECC6D7716DDB1BD00E5CE91 /* CaseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC6D7616DDB1BD00E5CE91 /* CaseTest.m */; };
@@ -43,29 +43,13 @@
 		CEF7721216DF0D6D0046B168 /* UnicodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7721116DF0D6D0046B168 /* UnicodeTest.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		CEAA8F3116D9C73C0024B5D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEAA8F2A16D9C73C0024B5D7 /* pico.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CEAA8F1516D9C70E0024B5D7;
-			remoteInfo = pico;
-		};
-		CEAA8F3516D9C79F0024B5D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEAA8F2A16D9C73C0024B5D7 /* pico.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = CEAA8F1416D9C70E0024B5D7;
-			remoteInfo = pico;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		CE52FAB016E5A02700EE0771 /* AnyElementTestCaseA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnyElementTestCaseA.m; sourceTree = "<group>"; };
 		CE52FAB316E5AED900EE0771 /* AnyElementTestCaseB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnyElementTestCaseB.m; sourceTree = "<group>"; };
 		CE67C46016DE3546008CE51A /* ArrayEntryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayEntryTest.m; sourceTree = "<group>"; };
 		CE67C46C16DE3AE1008CE51A /* PerformanceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformanceTest.m; sourceTree = "<group>"; };
 		CE67C47B16DE47EF008CE51A /* XMLReadHelperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReadHelperTest.m; sourceTree = "<group>"; };
+		CEA0186A16E99C280052DC2B /* libpico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpico.a; path = "../../../../../../Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos/libpico.a"; sourceTree = "<group>"; };
 		CEAA8EAA16D9BBF70024B5D7 /* picoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = picoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAA8EAE16D9BBF70024B5D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEAA8EB016D9BBF70024B5D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,7 +63,6 @@
 		CEAA8EC416D9BBF70024B5D7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CEAA8ECD16D9BE5E0024B5D7 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
 		CEAA8ECF16D9C1040024B5D7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		CEAA8F2A16D9C73C0024B5D7 /* pico.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = pico.xcodeproj; path = ../pico/pico.xcodeproj; sourceTree = "<group>"; };
 		CEAA8F3816D9C9700024B5D7 /* PicoTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicoTest.m; path = tests/PicoTest.m; sourceTree = "<group>"; };
 		CEC8893016DB8D0600B27F73 /* CacheTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheTest.m; sourceTree = "<group>"; };
 		CECC6D7616DDB1BD00E5CE91 /* CaseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaseTest.m; sourceTree = "<group>"; };
@@ -108,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEAA8F3416D9C77F0024B5D7 /* libpico.a in Frameworks */,
+				CEA0186B16E99C280052DC2B /* libpico.a in Frameworks */,
 				CEAA8ED016D9C1040024B5D7 /* QuartzCore.framework in Frameworks */,
 				CEAA8EAF16D9BBF70024B5D7 /* UIKit.framework in Frameworks */,
 				CEAA8EB116D9BBF70024B5D7 /* Foundation.framework in Frameworks */,
@@ -123,7 +106,7 @@
 		CEAA8E9F16D9BBF70024B5D7 = {
 			isa = PBXGroup;
 			children = (
-				CEAA8F2A16D9C73C0024B5D7 /* pico.xcodeproj */,
+				CEA0186A16E99C280052DC2B /* libpico.a */,
 				CEAA8EB416D9BBF70024B5D7 /* picoTest */,
 				CEAA8EAD16D9BBF70024B5D7 /* Frameworks */,
 				CEAA8EAB16D9BBF70024B5D7 /* Products */,
@@ -198,14 +181,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CEAA8F2B16D9C73C0024B5D7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CEAA8F3216D9C73C0024B5D7 /* libpico.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		CECC6D8916DDC57400E5CE91 /* resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,7 +203,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				CEAA8F3616D9C79F0024B5D7 /* PBXTargetDependency */,
 			);
 			name = picoTest;
 			productName = picoTest;
@@ -254,28 +228,12 @@
 			mainGroup = CEAA8E9F16D9BBF70024B5D7;
 			productRefGroup = CEAA8EAB16D9BBF70024B5D7 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = CEAA8F2B16D9C73C0024B5D7 /* Products */;
-					ProjectRef = CEAA8F2A16D9C73C0024B5D7 /* pico.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				CEAA8EA916D9BBF70024B5D7 /* picoTest */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		CEAA8F3216D9C73C0024B5D7 /* libpico.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libpico.a;
-			remoteRef = CEAA8F3116D9C73C0024B5D7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CEAA8EA816D9BBF70024B5D7 /* Resources */ = {
@@ -325,14 +283,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		CEAA8F3616D9C79F0024B5D7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = pico;
-			targetProxy = CEAA8F3516D9C79F0024B5D7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		CEAA8EB716D9BBF70024B5D7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -366,7 +316,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ../pico/pico;
+				HEADER_SEARCH_PATHS = "../pico/pico/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -388,7 +338,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ../pico/pico;
+				HEADER_SEARCH_PATHS = "../pico/pico/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
@@ -400,6 +350,7 @@
 		CEAA8EC916D9BBF70024B5D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -408,6 +359,11 @@
 				GCC_PREFIX_HEADER = "picoTest/picoTest-Prefix.pch";
 				HEADER_SEARCH_PATHS = "../pico/pico/**";
 				INFOPLIST_FILE = "picoTest/picoTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -420,6 +376,8 @@
 		CEAA8ECA16D9BBF70024B5D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -428,11 +386,17 @@
 				GCC_PREFIX_HEADER = "picoTest/picoTest-Prefix.pch";
 				HEADER_SEARCH_PATHS = "../pico/pico/**";
 				INFOPLIST_FILE = "picoTest/picoTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

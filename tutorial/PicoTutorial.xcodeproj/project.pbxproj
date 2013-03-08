@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEA0188316E9A3520052DC2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA0188216E9A3520052DC2B /* UIKit.framework */; };
+		CEA0188516E9A3520052DC2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA0188416E9A3520052DC2B /* Foundation.framework */; };
+		CEA0188716E9A3520052DC2B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA0188616E9A3520052DC2B /* CoreGraphics.framework */; };
+		CEA0188D16E9A3520052DC2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEA0188B16E9A3520052DC2B /* InfoPlist.strings */; };
+		CEA0188F16E9A3520052DC2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA0188E16E9A3520052DC2B /* main.m */; };
+		CEA0189316E9A3520052DC2B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA0189216E9A3520052DC2B /* AppDelegate.m */; };
+		CEA0189516E9A3520052DC2B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA0189416E9A3520052DC2B /* Default.png */; };
+		CEA0189716E9A3520052DC2B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA0189616E9A3520052DC2B /* Default@2x.png */; };
+		CEA0189916E9A3520052DC2B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA0189816E9A3520052DC2B /* Default-568h@2x.png */; };
+		CEA0189C16E9A3520052DC2B /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA0189A16E9A3520052DC2B /* MainStoryboard_iPhone.storyboard */; };
+		CEA0189F16E9A3520052DC2B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA0189D16E9A3520052DC2B /* MainStoryboard_iPad.storyboard */; };
+		CEA018A216E9A3520052DC2B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA018A116E9A3520052DC2B /* ViewController.m */; };
+		CEA018AD16E9A48C0052DC2B /* libpico.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA018AC16E9A48C0052DC2B /* libpico.a */; };
+		CEA018C916E9A6340052DC2B /* Party.xml in Resources */ = {isa = PBXBuildFile; fileRef = CEA018C816E9A6340052DC2B /* Party.xml */; };
+		CEA018D516E9AF000052DC2B /* Party.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA018D016E9AF000052DC2B /* Party.m */; };
+		CEA018D616E9AF000052DC2B /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA018D216E9AF000052DC2B /* Player.m */; };
+		CEA018D716E9AF000052DC2B /* RPGClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA018D416E9AF000052DC2B /* RPGClass.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CEA0187E16E9A3520052DC2B /* PicoTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicoTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA0188216E9A3520052DC2B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEA0188416E9A3520052DC2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEA0188616E9A3520052DC2B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEA0188A16E9A3520052DC2B /* PicoTutorial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PicoTutorial-Info.plist"; sourceTree = "<group>"; };
+		CEA0188C16E9A3520052DC2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEA0188E16E9A3520052DC2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEA0189016E9A3520052DC2B /* PicoTutorial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PicoTutorial-Prefix.pch"; sourceTree = "<group>"; };
+		CEA0189116E9A3520052DC2B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEA0189216E9A3520052DC2B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEA0189416E9A3520052DC2B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CEA0189616E9A3520052DC2B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CEA0189816E9A3520052DC2B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CEA0189B16E9A3520052DC2B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		CEA0189E16E9A3520052DC2B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		CEA018A016E9A3520052DC2B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CEA018A116E9A3520052DC2B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CEA018AC16E9A48C0052DC2B /* libpico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpico.a; path = "../../../../../../Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos/libpico.a"; sourceTree = "<group>"; };
+		CEA018C816E9A6340052DC2B /* Party.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Party.xml; sourceTree = "<group>"; };
+		CEA018CF16E9AF000052DC2B /* Party.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Party.h; sourceTree = "<group>"; };
+		CEA018D016E9AF000052DC2B /* Party.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Party.m; sourceTree = "<group>"; };
+		CEA018D116E9AF000052DC2B /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		CEA018D216E9AF000052DC2B /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		CEA018D316E9AF000052DC2B /* RPGClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPGClass.h; sourceTree = "<group>"; };
+		CEA018D416E9AF000052DC2B /* RPGClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPGClass.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEA0187B16E9A3520052DC2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA018AD16E9A48C0052DC2B /* libpico.a in Frameworks */,
+				CEA0188316E9A3520052DC2B /* UIKit.framework in Frameworks */,
+				CEA0188516E9A3520052DC2B /* Foundation.framework in Frameworks */,
+				CEA0188716E9A3520052DC2B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEA0187316E9A3520052DC2B = {
+			isa = PBXGroup;
+			children = (
+				CEA018AC16E9A48C0052DC2B /* libpico.a */,
+				CEA0188816E9A3520052DC2B /* PicoTutorial */,
+				CEA0188116E9A3520052DC2B /* Frameworks */,
+				CEA0187F16E9A3520052DC2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEA0187F16E9A3520052DC2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEA0187E16E9A3520052DC2B /* PicoTutorial.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEA0188116E9A3520052DC2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEA0188216E9A3520052DC2B /* UIKit.framework */,
+				CEA0188416E9A3520052DC2B /* Foundation.framework */,
+				CEA0188616E9A3520052DC2B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEA0188816E9A3520052DC2B /* PicoTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				CEA018CE16E9AF000052DC2B /* Model */,
+				CEA0189116E9A3520052DC2B /* AppDelegate.h */,
+				CEA0189216E9A3520052DC2B /* AppDelegate.m */,
+				CEA0189A16E9A3520052DC2B /* MainStoryboard_iPhone.storyboard */,
+				CEA0189D16E9A3520052DC2B /* MainStoryboard_iPad.storyboard */,
+				CEA018A016E9A3520052DC2B /* ViewController.h */,
+				CEA018A116E9A3520052DC2B /* ViewController.m */,
+				CEA0188916E9A3520052DC2B /* Supporting Files */,
+			);
+			path = PicoTutorial;
+			sourceTree = "<group>";
+		};
+		CEA0188916E9A3520052DC2B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEA018C816E9A6340052DC2B /* Party.xml */,
+				CEA0188A16E9A3520052DC2B /* PicoTutorial-Info.plist */,
+				CEA0188B16E9A3520052DC2B /* InfoPlist.strings */,
+				CEA0188E16E9A3520052DC2B /* main.m */,
+				CEA0189016E9A3520052DC2B /* PicoTutorial-Prefix.pch */,
+				CEA0189416E9A3520052DC2B /* Default.png */,
+				CEA0189616E9A3520052DC2B /* Default@2x.png */,
+				CEA0189816E9A3520052DC2B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEA018CE16E9AF000052DC2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEA018CF16E9AF000052DC2B /* Party.h */,
+				CEA018D016E9AF000052DC2B /* Party.m */,
+				CEA018D116E9AF000052DC2B /* Player.h */,
+				CEA018D216E9AF000052DC2B /* Player.m */,
+				CEA018D316E9AF000052DC2B /* RPGClass.h */,
+				CEA018D416E9AF000052DC2B /* RPGClass.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEA0187D16E9A3520052DC2B /* PicoTutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA018A516E9A3520052DC2B /* Build configuration list for PBXNativeTarget "PicoTutorial" */;
+			buildPhases = (
+				CEA0187A16E9A3520052DC2B /* Sources */,
+				CEA0187B16E9A3520052DC2B /* Frameworks */,
+				CEA0187C16E9A3520052DC2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PicoTutorial;
+			productName = PicoTutorial;
+			productReference = CEA0187E16E9A3520052DC2B /* PicoTutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEA0187516E9A3520052DC2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Leansoft;
+			};
+			buildConfigurationList = CEA0187816E9A3520052DC2B /* Build configuration list for PBXProject "PicoTutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CEA0187316E9A3520052DC2B;
+			productRefGroup = CEA0187F16E9A3520052DC2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEA0187D16E9A3520052DC2B /* PicoTutorial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEA0187C16E9A3520052DC2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA0188D16E9A3520052DC2B /* InfoPlist.strings in Resources */,
+				CEA0189516E9A3520052DC2B /* Default.png in Resources */,
+				CEA0189716E9A3520052DC2B /* Default@2x.png in Resources */,
+				CEA0189916E9A3520052DC2B /* Default-568h@2x.png in Resources */,
+				CEA0189C16E9A3520052DC2B /* MainStoryboard_iPhone.storyboard in Resources */,
+				CEA0189F16E9A3520052DC2B /* MainStoryboard_iPad.storyboard in Resources */,
+				CEA018C916E9A6340052DC2B /* Party.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEA0187A16E9A3520052DC2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA0188F16E9A3520052DC2B /* main.m in Sources */,
+				CEA0189316E9A3520052DC2B /* AppDelegate.m in Sources */,
+				CEA018A216E9A3520052DC2B /* ViewController.m in Sources */,
+				CEA018D516E9AF000052DC2B /* Party.m in Sources */,
+				CEA018D616E9AF000052DC2B /* Player.m in Sources */,
+				CEA018D716E9AF000052DC2B /* RPGClass.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEA0188B16E9A3520052DC2B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA0188C16E9A3520052DC2B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CEA0189A16E9A3520052DC2B /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA0189B16E9A3520052DC2B /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		CEA0189D16E9A3520052DC2B /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA0189E16E9A3520052DC2B /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEA018A316E9A3520052DC2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEA018A416E9A3520052DC2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEA018A616E9A3520052DC2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PicoTutorial/PicoTutorial-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../pico/pico/**";
+				INFOPLIST_FILE = "PicoTutorial/PicoTutorial-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CEA018A716E9A3520052DC2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PicoTutorial/PicoTutorial-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../pico/pico/**";
+				INFOPLIST_FILE = "PicoTutorial/PicoTutorial-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEA0187816E9A3520052DC2B /* Build configuration list for PBXProject "PicoTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA018A316E9A3520052DC2B /* Debug */,
+				CEA018A416E9A3520052DC2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA018A516E9A3520052DC2B /* Build configuration list for PBXNativeTarget "PicoTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA018A616E9A3520052DC2B /* Debug */,
+				CEA018A716E9A3520052DC2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEA0187516E9A3520052DC2B /* Project object */;
+}
