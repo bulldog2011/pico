@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.leansoft.com/person" xmlns:tns="http://www.leansoft.com/person" elementFormDefault="qualified">
+
+    <complexType name="PersonType">
+    	<sequence>
+    		<element name="firstName" type="string"></element>
+    		<element name="lastName" type="string"></element>
+    		<element name="address1" type="string"></element>
+    		<element name="address2" type="string"></element>
+    		<element name="postCode" type="string"></element>
+    		<element name="city" type="string"></element>
+    		<element name="country" type="string"></element>
+    	</sequence>
+    	<attribute name="id" type="int"></attribute>
+    </complexType>
+
+    <complexType name="PersonListType">
+    	<sequence>
+    		<element name="person" type="tns:PersonType" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="persons" type="tns:PersonListType"></element>
+</schema>

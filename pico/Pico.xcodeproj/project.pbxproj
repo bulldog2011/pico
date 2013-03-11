@@ -14,15 +14,20 @@
 		CEA0186F16E99FD20052DC2B /* PicoWritable.h in Headers */ = {isa = PBXBuildFile; fileRef = CE22F75E16DC4B8B0073F385 /* PicoWritable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEA0187016E99FD20052DC2B /* PicoXMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = CE22F76116DC4C4C0073F385 /* PicoXMLWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEA0187116E99FD20052DC2B /* PicoConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = CE22F76416DC50D10073F385 /* PicoConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CEA0187216E99FD20052DC2B /* PicoXMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = CEE7FAD316DCF5B2003DC914 /* PicoXMLReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEA0187216E99FD20052DC2B /* PicoNSXMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = CEE7FAD316DCF5B2003DC914 /* PicoNSXMLReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEA418CA16ED78EB0088C17C /* XMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = CEA418C816ED78EB0088C17C /* XMLWriter.h */; };
+		CEA418CB16ED78EB0088C17C /* XMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA418C916ED78EB0088C17C /* XMLWriter.m */; };
+		CEA418D316ED7D310088C17C /* PicoXMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = CEA418D116ED7D300088C17C /* PicoXMLReader.h */; };
+		CEA418D416ED7D310088C17C /* PicoXMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA418D216ED7D310088C17C /* PicoXMLReader.m */; };
+		CEA418DD16ED871E0088C17C /* GDataXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = CEA418DB16ED871E0088C17C /* GDataXMLNode.h */; };
+		CEA418DE16ED871E0088C17C /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA418DC16ED871E0088C17C /* GDataXMLNode.m */; };
 		CEAA8F1916D9C70E0024B5D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8F1816D9C70E0024B5D7 /* Foundation.framework */; };
-		CEC8893916DB9C2D00B27F73 /* XMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC8893816DB9C2D00B27F73 /* XMLWriter.m */; };
 		CEDE398516DB0D480066467B /* PicoBindingSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE398416DB0D480066467B /* PicoBindingSchema.m */; };
 		CEDE39A216DB20E50066467B /* PicoCacheEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE39A116DB20E50066467B /* PicoCacheEntry.m */; };
 		CEDE39A716DB22770066467B /* PicoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE39A616DB22770066467B /* PicoCache.m */; };
-		CEE7FACD16DCE3C7003DC914 /* PicoXMLReadHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE7FACC16DCE3C7003DC914 /* PicoXMLReadHelper.m */; };
-		CEE7FAD216DCE847003DC914 /* PicoXMLReadDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE7FAD116DCE847003DC914 /* PicoXMLReadDelegate.m */; };
-		CEE7FAD516DCF5B2003DC914 /* PicoXMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE7FAD416DCF5B2003DC914 /* PicoXMLReader.m */; };
+		CEE7FACD16DCE3C7003DC914 /* PicoNSXMLReadHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE7FACC16DCE3C7003DC914 /* PicoNSXMLReadHelper.m */; };
+		CEE7FAD216DCE847003DC914 /* PicoNSXMLReadDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE7FAD116DCE847003DC914 /* PicoNSXMLReadDelegate.m */; };
+		CEE7FAD516DCF5B2003DC914 /* PicoNSXMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE7FAD416DCF5B2003DC914 /* PicoNSXMLReader.m */; };
 		CEF3AC6516DA40AC00D36235 /* PicoConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3AC6416DA40AC00D36235 /* PicoConstants.m */; };
 		CEF3AC6A16DA461700D36235 /* PicoClassSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3AC6916DA461700D36235 /* PicoClassSchema.m */; };
 		CEF3AC6D16DA484500D36235 /* PicoPropertySchema.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3AC6C16DA484500D36235 /* PicoPropertySchema.m */; };
@@ -55,23 +60,28 @@
 		CE22F76216DC4C4C0073F385 /* PicoXMLWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoXMLWriter.m; sourceTree = "<group>"; };
 		CE22F76416DC50D10073F385 /* PicoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoConfig.h; sourceTree = "<group>"; };
 		CE22F76516DC50D10073F385 /* PicoConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoConfig.m; sourceTree = "<group>"; };
+		CEA418C816ED78EB0088C17C /* XMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLWriter.h; sourceTree = "<group>"; };
+		CEA418C916ED78EB0088C17C /* XMLWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLWriter.m; sourceTree = "<group>"; };
+		CEA418D116ED7D300088C17C /* PicoXMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoXMLReader.h; sourceTree = "<group>"; };
+		CEA418D216ED7D310088C17C /* PicoXMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoXMLReader.m; sourceTree = "<group>"; };
+		CEA418DB16ED871E0088C17C /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		CEA418DC16ED871E0088C17C /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		CEA418DF16ED92EC0088C17C /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		CEAA8F1516D9C70E0024B5D7 /* libpico.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpico.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAA8F1816D9C70E0024B5D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEAA8F1C16D9C70E0024B5D7 /* pico-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pico-Prefix.pch"; sourceTree = "<group>"; };
-		CEC8893716DB9C2D00B27F73 /* XMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLWriter.h; path = xmlwriter/XMLWriter.h; sourceTree = "<group>"; };
-		CEC8893816DB9C2D00B27F73 /* XMLWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLWriter.m; path = xmlwriter/XMLWriter.m; sourceTree = "<group>"; };
 		CEDE398316DB0D480066467B /* PicoBindingSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicoBindingSchema.h; path = schema/PicoBindingSchema.h; sourceTree = "<group>"; };
 		CEDE398416DB0D480066467B /* PicoBindingSchema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicoBindingSchema.m; path = schema/PicoBindingSchema.m; sourceTree = "<group>"; };
 		CEDE39A016DB20E50066467B /* PicoCacheEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicoCacheEntry.h; path = cache/PicoCacheEntry.h; sourceTree = "<group>"; };
 		CEDE39A116DB20E50066467B /* PicoCacheEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicoCacheEntry.m; path = cache/PicoCacheEntry.m; sourceTree = "<group>"; };
 		CEDE39A516DB22770066467B /* PicoCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicoCache.h; path = cache/PicoCache.h; sourceTree = "<group>"; };
 		CEDE39A616DB22770066467B /* PicoCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicoCache.m; path = cache/PicoCache.m; sourceTree = "<group>"; };
-		CEE7FACB16DCE3C7003DC914 /* PicoXMLReadHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicoXMLReadHelper.h; path = helper/PicoXMLReadHelper.h; sourceTree = "<group>"; };
-		CEE7FACC16DCE3C7003DC914 /* PicoXMLReadHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicoXMLReadHelper.m; path = helper/PicoXMLReadHelper.m; sourceTree = "<group>"; };
-		CEE7FAD016DCE847003DC914 /* PicoXMLReadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoXMLReadDelegate.h; sourceTree = "<group>"; };
-		CEE7FAD116DCE847003DC914 /* PicoXMLReadDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoXMLReadDelegate.m; sourceTree = "<group>"; };
-		CEE7FAD316DCF5B2003DC914 /* PicoXMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoXMLReader.h; sourceTree = "<group>"; };
-		CEE7FAD416DCF5B2003DC914 /* PicoXMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoXMLReader.m; sourceTree = "<group>"; };
+		CEE7FACB16DCE3C7003DC914 /* PicoNSXMLReadHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicoNSXMLReadHelper.h; path = helper/PicoNSXMLReadHelper.h; sourceTree = "<group>"; };
+		CEE7FACC16DCE3C7003DC914 /* PicoNSXMLReadHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicoNSXMLReadHelper.m; path = helper/PicoNSXMLReadHelper.m; sourceTree = "<group>"; };
+		CEE7FAD016DCE847003DC914 /* PicoNSXMLReadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoNSXMLReadDelegate.h; sourceTree = "<group>"; };
+		CEE7FAD116DCE847003DC914 /* PicoNSXMLReadDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoNSXMLReadDelegate.m; sourceTree = "<group>"; };
+		CEE7FAD316DCF5B2003DC914 /* PicoNSXMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoNSXMLReader.h; sourceTree = "<group>"; };
+		CEE7FAD416DCF5B2003DC914 /* PicoNSXMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoNSXMLReader.m; sourceTree = "<group>"; };
 		CEF3AC6316DA40AC00D36235 /* PicoConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoConstants.h; sourceTree = "<group>"; };
 		CEF3AC6416DA40AC00D36235 /* PicoConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoConstants.m; sourceTree = "<group>"; };
 		CEF3AC6616DA444C00D36235 /* PicoBindable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoBindable.h; sourceTree = "<group>"; };
@@ -113,9 +123,28 @@
 			name = xmlsupport;
 			sourceTree = "<group>";
 		};
+		CEA418C716ED78EB0088C17C /* XMLWriter */ = {
+			isa = PBXGroup;
+			children = (
+				CEA418C816ED78EB0088C17C /* XMLWriter.h */,
+				CEA418C916ED78EB0088C17C /* XMLWriter.m */,
+			);
+			path = XMLWriter;
+			sourceTree = "<group>";
+		};
+		CEA418DA16ED871E0088C17C /* GDataXML */ = {
+			isa = PBXGroup;
+			children = (
+				CEA418DB16ED871E0088C17C /* GDataXMLNode.h */,
+				CEA418DC16ED871E0088C17C /* GDataXMLNode.m */,
+			);
+			path = GDataXML;
+			sourceTree = "<group>";
+		};
 		CEAA8F0A16D9C70E0024B5D7 = {
 			isa = PBXGroup;
 			children = (
+				CEA418DF16ED92EC0088C17C /* libxml2.dylib */,
 				CEAA8F1A16D9C70E0024B5D7 /* Pico */,
 				CEAA8F1716D9C70E0024B5D7 /* Frameworks */,
 				CEAA8F1616D9C70E0024B5D7 /* Products */,
@@ -156,15 +185,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CEC8893516DB9BFF00B27F73 /* xmlwriter */ = {
-			isa = PBXGroup;
-			children = (
-				CEC8893716DB9C2D00B27F73 /* XMLWriter.h */,
-				CEC8893816DB9C2D00B27F73 /* XMLWriter.m */,
-			);
-			name = xmlwriter;
-			sourceTree = "<group>";
-		};
 		CEDE39A416DB225E0066467B /* cache */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,8 +199,8 @@
 		CEE7FACF16DCE3CD003DC914 /* helper */ = {
 			isa = PBXGroup;
 			children = (
-				CEE7FACB16DCE3C7003DC914 /* PicoXMLReadHelper.h */,
-				CEE7FACC16DCE3C7003DC914 /* PicoXMLReadHelper.m */,
+				CEE7FACB16DCE3C7003DC914 /* PicoNSXMLReadHelper.h */,
+				CEE7FACC16DCE3C7003DC914 /* PicoNSXMLReadHelper.m */,
 			);
 			name = helper;
 			sourceTree = "<group>";
@@ -188,9 +208,10 @@
 		CEF3AC6216DA403600D36235 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CEA418DA16ED871E0088C17C /* GDataXML */,
+				CEA418C716ED78EB0088C17C /* XMLWriter */,
 				CE17424416E4C16600BFD307 /* xmlsupport */,
 				CEE7FACF16DCE3CD003DC914 /* helper */,
-				CEC8893516DB9BFF00B27F73 /* xmlwriter */,
 				CEDE39A416DB225E0066467B /* cache */,
 				CEF3AC7B16DA4B6A00D36235 /* converter */,
 				CEF3AC6716DA45CE00D36235 /* schema */,
@@ -203,10 +224,12 @@
 				CE22F76216DC4C4C0073F385 /* PicoXMLWriter.m */,
 				CE22F76416DC50D10073F385 /* PicoConfig.h */,
 				CE22F76516DC50D10073F385 /* PicoConfig.m */,
-				CEE7FAD016DCE847003DC914 /* PicoXMLReadDelegate.h */,
-				CEE7FAD116DCE847003DC914 /* PicoXMLReadDelegate.m */,
-				CEE7FAD316DCF5B2003DC914 /* PicoXMLReader.h */,
-				CEE7FAD416DCF5B2003DC914 /* PicoXMLReader.m */,
+				CEE7FAD016DCE847003DC914 /* PicoNSXMLReadDelegate.h */,
+				CEE7FAD116DCE847003DC914 /* PicoNSXMLReadDelegate.m */,
+				CEE7FAD316DCF5B2003DC914 /* PicoNSXMLReader.h */,
+				CEE7FAD416DCF5B2003DC914 /* PicoNSXMLReader.m */,
+				CEA418D116ED7D300088C17C /* PicoXMLReader.h */,
+				CEA418D216ED7D310088C17C /* PicoXMLReader.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -253,7 +276,10 @@
 				CEA0186F16E99FD20052DC2B /* PicoWritable.h in Headers */,
 				CEA0187016E99FD20052DC2B /* PicoXMLWriter.h in Headers */,
 				CEA0187116E99FD20052DC2B /* PicoConfig.h in Headers */,
-				CEA0187216E99FD20052DC2B /* PicoXMLReader.h in Headers */,
+				CEA0187216E99FD20052DC2B /* PicoNSXMLReader.h in Headers */,
+				CEA418CA16ED78EB0088C17C /* XMLWriter.h in Headers */,
+				CEA418D316ED7D310088C17C /* PicoXMLReader.h in Headers */,
+				CEA418DD16ED871E0088C17C /* GDataXMLNode.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,13 +347,15 @@
 				CEDE398516DB0D480066467B /* PicoBindingSchema.m in Sources */,
 				CEDE39A216DB20E50066467B /* PicoCacheEntry.m in Sources */,
 				CEDE39A716DB22770066467B /* PicoCache.m in Sources */,
-				CEC8893916DB9C2D00B27F73 /* XMLWriter.m in Sources */,
 				CE22F76316DC4C4C0073F385 /* PicoXMLWriter.m in Sources */,
 				CE22F76616DC50D20073F385 /* PicoConfig.m in Sources */,
-				CEE7FACD16DCE3C7003DC914 /* PicoXMLReadHelper.m in Sources */,
-				CEE7FAD216DCE847003DC914 /* PicoXMLReadDelegate.m in Sources */,
-				CEE7FAD516DCF5B2003DC914 /* PicoXMLReader.m in Sources */,
+				CEE7FACD16DCE3C7003DC914 /* PicoNSXMLReadHelper.m in Sources */,
+				CEE7FAD216DCE847003DC914 /* PicoNSXMLReadDelegate.m in Sources */,
+				CEE7FAD516DCF5B2003DC914 /* PicoNSXMLReader.m in Sources */,
 				CE17424716E4C18E00BFD307 /* PicoXMLElement.m in Sources */,
+				CEA418CB16ED78EB0088C17C /* XMLWriter.m in Sources */,
+				CEA418D416ED7D310088C17C /* PicoXMLReader.m in Sources */,
+				CEA418DE16ED871E0088C17C /* GDataXMLNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +413,7 @@
 				DSTROOT = /tmp/pico.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pico/pico-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -397,6 +426,7 @@
 				DSTROOT = /tmp/pico.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pico/pico-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

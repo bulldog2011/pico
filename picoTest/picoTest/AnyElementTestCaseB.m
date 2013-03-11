@@ -326,7 +326,7 @@ static const NSString *ROOT_ENTRY_B = @"<?xml version=\"1.0\"?>\
     GHAssertEqualStrings(childElement.value, @"value.1", nil);
     
     GHTestLog(@"element result : %@", element);
-    
+
     element = [re.any objectAtIndex:2];
 	GHAssertEqualStrings(element.name, @"entry", nil);
     attrs = [element attributes];
@@ -343,7 +343,7 @@ static const NSString *ROOT_ENTRY_B = @"<?xml version=\"1.0\"?>\
 	GHAssertEqualStrings(ce.one, @"this is the first element", nil);
 	GHAssertEqualStrings(ce.two, @"the second element", nil);
 	GHAssertEqualStrings(ce.three, @"the third element", nil);
-	
+
 	GrandChildEntryB *gcd = ce.grandChild;
 	ElementEntryB *ee = gcd.entryOne;
 	GHAssertEqualStrings(ee.name, @"name.1", nil);

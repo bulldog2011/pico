@@ -41,7 +41,7 @@
 @synthesize config = _config;
 
 - (id)init {
-    return [self initWithConfig:[[PicoConfig alloc] init]];
+    return [self initWithConfig:[[[PicoConfig alloc] init] autorelease]];
 }
 
 - (id)initWithConfig:(PicoConfig *)config {

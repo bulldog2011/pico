@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEAC41FF16EC3A500032CDFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAC41FE16EC3A500032CDFC /* UIKit.framework */; };
+		CEAC420116EC3A500032CDFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAC420016EC3A500032CDFC /* Foundation.framework */; };
+		CEAC420316EC3A500032CDFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAC420216EC3A500032CDFC /* CoreGraphics.framework */; };
+		CEAC420916EC3A500032CDFC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEAC420716EC3A500032CDFC /* InfoPlist.strings */; };
+		CEAC420B16EC3A500032CDFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC420A16EC3A500032CDFC /* main.m */; };
+		CEAC421116EC3A500032CDFC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAC421016EC3A500032CDFC /* Default.png */; };
+		CEAC421316EC3A500032CDFC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAC421216EC3A500032CDFC /* Default@2x.png */; };
+		CEAC421516EC3A500032CDFC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAC421416EC3A500032CDFC /* Default-568h@2x.png */; };
+		CEAC423716EC3D3A0032CDFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC423016EC3D3A0032CDFC /* AppDelegate.m */; };
+		CEAC423816EC3D3A0032CDFC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC423216EC3D3A0032CDFC /* MasterViewController.m */; };
+		CEAC423916EC3D3A0032CDFC /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAC423316EC3D3A0032CDFC /* MasterViewController.xib */; };
+		CEAC423A16EC3D3A0032CDFC /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC423516EC3D3A0032CDFC /* TestViewController.m */; };
+		CEAC423B16EC3D3A0032CDFC /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAC423616EC3D3A0032CDFC /* TestViewController.xib */; };
+		CEAC423F16EC3E6D0032CDFC /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC423E16EC3E6D0032CDFC /* MBProgressHUD.m */; };
+		CEAC424116EC3EEF0032CDFC /* libpico.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAC424016EC3EEF0032CDFC /* libpico.a */; };
+		CEAC425516EC48160032CDFC /* 10records.xml in Resources */ = {isa = PBXBuildFile; fileRef = CEAC425216EC48160032CDFC /* 10records.xml */; };
+		CEAC425616EC48160032CDFC /* 50records.xml in Resources */ = {isa = PBXBuildFile; fileRef = CEAC425316EC48160032CDFC /* 50records.xml */; };
+		CEAC425716EC48160032CDFC /* 300records.xml in Resources */ = {isa = PBXBuildFile; fileRef = CEAC425416EC48160032CDFC /* 300records.xml */; };
+		CEFB845B16ECBC4200A0D522 /* htdocs in Resources */ = {isa = PBXBuildFile; fileRef = CEFB845A16ECBC4200A0D522 /* htdocs */; };
+		CEFB846316ECBEF100A0D522 /* PersonListType.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB846016ECBEF100A0D522 /* PersonListType.m */; };
+		CEFB846416ECBEF100A0D522 /* PersonType.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB846216ECBEF100A0D522 /* PersonType.m */; };
+		CEFB846816ECC1BA00A0D522 /* PersonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB846716ECC1BA00A0D522 /* PersonParser.m */; };
+		CEFDBF5C16EE044F00ACEDD7 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFDBF5B16EE044F00ACEDD7 /* libxml2.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CEAC41FA16EC3A500032CDFC /* PicoPerformance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicoPerformance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEAC41FE16EC3A500032CDFC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEAC420016EC3A500032CDFC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEAC420216EC3A500032CDFC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEAC420616EC3A500032CDFC /* PicoPerformance-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PicoPerformance-Info.plist"; sourceTree = "<group>"; };
+		CEAC420816EC3A500032CDFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEAC420A16EC3A500032CDFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEAC420C16EC3A500032CDFC /* PicoPerformance-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PicoPerformance-Prefix.pch"; sourceTree = "<group>"; };
+		CEAC421016EC3A500032CDFC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CEAC421216EC3A500032CDFC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CEAC421416EC3A500032CDFC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CEAC422F16EC3D3A0032CDFC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEAC423016EC3D3A0032CDFC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEAC423116EC3D3A0032CDFC /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		CEAC423216EC3D3A0032CDFC /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		CEAC423316EC3D3A0032CDFC /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
+		CEAC423416EC3D3A0032CDFC /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		CEAC423516EC3D3A0032CDFC /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		CEAC423616EC3D3A0032CDFC /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		CEAC423D16EC3E6D0032CDFC /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		CEAC423E16EC3E6D0032CDFC /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		CEAC424016EC3EEF0032CDFC /* libpico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpico.a; path = "../../../../../../Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos/libpico.a"; sourceTree = "<group>"; };
+		CEAC425216EC48160032CDFC /* 10records.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 10records.xml; sourceTree = "<group>"; };
+		CEAC425316EC48160032CDFC /* 50records.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 50records.xml; sourceTree = "<group>"; };
+		CEAC425416EC48160032CDFC /* 300records.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 300records.xml; sourceTree = "<group>"; };
+		CEFB845A16ECBC4200A0D522 /* htdocs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = htdocs; sourceTree = "<group>"; };
+		CEFB845F16ECBEF100A0D522 /* PersonListType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonListType.h; sourceTree = "<group>"; };
+		CEFB846016ECBEF100A0D522 /* PersonListType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonListType.m; sourceTree = "<group>"; };
+		CEFB846116ECBEF100A0D522 /* PersonType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonType.h; sourceTree = "<group>"; };
+		CEFB846216ECBEF100A0D522 /* PersonType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonType.m; sourceTree = "<group>"; };
+		CEFB846616ECC1BA00A0D522 /* PersonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonParser.h; sourceTree = "<group>"; };
+		CEFB846716ECC1BA00A0D522 /* PersonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonParser.m; sourceTree = "<group>"; };
+		CEFDBF5B16EE044F00ACEDD7 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEAC41F716EC3A500032CDFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFDBF5C16EE044F00ACEDD7 /* libxml2.dylib in Frameworks */,
+				CEAC424116EC3EEF0032CDFC /* libpico.a in Frameworks */,
+				CEAC41FF16EC3A500032CDFC /* UIKit.framework in Frameworks */,
+				CEAC420116EC3A500032CDFC /* Foundation.framework in Frameworks */,
+				CEAC420316EC3A500032CDFC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEAC41EF16EC3A500032CDFC = {
+			isa = PBXGroup;
+			children = (
+				CEFDBF5B16EE044F00ACEDD7 /* libxml2.dylib */,
+				CEAC424016EC3EEF0032CDFC /* libpico.a */,
+				CEAC420416EC3A500032CDFC /* PicoPerformance */,
+				CEAC41FD16EC3A500032CDFC /* Frameworks */,
+				CEAC41FB16EC3A500032CDFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEAC41FB16EC3A500032CDFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC41FA16EC3A500032CDFC /* PicoPerformance.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEAC41FD16EC3A500032CDFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC41FE16EC3A500032CDFC /* UIKit.framework */,
+				CEAC420016EC3A500032CDFC /* Foundation.framework */,
+				CEAC420216EC3A500032CDFC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEAC420416EC3A500032CDFC /* PicoPerformance */ = {
+			isa = PBXGroup;
+			children = (
+				CEFB846516ECC18E00A0D522 /* NSXMLParser */,
+				CEFB845E16ECBEF100A0D522 /* person */,
+				CEAC423C16EC3E5E0032CDFC /* MBProgressHUD */,
+				CEAC422F16EC3D3A0032CDFC /* AppDelegate.h */,
+				CEAC423016EC3D3A0032CDFC /* AppDelegate.m */,
+				CEAC423116EC3D3A0032CDFC /* MasterViewController.h */,
+				CEAC423216EC3D3A0032CDFC /* MasterViewController.m */,
+				CEAC423316EC3D3A0032CDFC /* MasterViewController.xib */,
+				CEAC423416EC3D3A0032CDFC /* TestViewController.h */,
+				CEAC423516EC3D3A0032CDFC /* TestViewController.m */,
+				CEAC423616EC3D3A0032CDFC /* TestViewController.xib */,
+				CEAC420516EC3A500032CDFC /* Supporting Files */,
+			);
+			path = PicoPerformance;
+			sourceTree = "<group>";
+		};
+		CEAC420516EC3A500032CDFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEFB845A16ECBC4200A0D522 /* htdocs */,
+				CEAC425216EC48160032CDFC /* 10records.xml */,
+				CEAC425316EC48160032CDFC /* 50records.xml */,
+				CEAC425416EC48160032CDFC /* 300records.xml */,
+				CEAC420616EC3A500032CDFC /* PicoPerformance-Info.plist */,
+				CEAC420716EC3A500032CDFC /* InfoPlist.strings */,
+				CEAC420A16EC3A500032CDFC /* main.m */,
+				CEAC420C16EC3A500032CDFC /* PicoPerformance-Prefix.pch */,
+				CEAC421016EC3A500032CDFC /* Default.png */,
+				CEAC421216EC3A500032CDFC /* Default@2x.png */,
+				CEAC421416EC3A500032CDFC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEAC423C16EC3E5E0032CDFC /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC423D16EC3E6D0032CDFC /* MBProgressHUD.h */,
+				CEAC423E16EC3E6D0032CDFC /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		CEFB845E16ECBEF100A0D522 /* person */ = {
+			isa = PBXGroup;
+			children = (
+				CEFB845F16ECBEF100A0D522 /* PersonListType.h */,
+				CEFB846016ECBEF100A0D522 /* PersonListType.m */,
+				CEFB846116ECBEF100A0D522 /* PersonType.h */,
+				CEFB846216ECBEF100A0D522 /* PersonType.m */,
+			);
+			path = person;
+			sourceTree = "<group>";
+		};
+		CEFB846516ECC18E00A0D522 /* NSXMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				CEFB846616ECC1BA00A0D522 /* PersonParser.h */,
+				CEFB846716ECC1BA00A0D522 /* PersonParser.m */,
+			);
+			name = NSXMLParser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEAC41F916EC3A500032CDFC /* PicoPerformance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEAC422A16EC3A500032CDFC /* Build configuration list for PBXNativeTarget "PicoPerformance" */;
+			buildPhases = (
+				CEAC41F616EC3A500032CDFC /* Sources */,
+				CEAC41F716EC3A500032CDFC /* Frameworks */,
+				CEAC41F816EC3A500032CDFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PicoPerformance;
+			productName = PicoPerformance;
+			productReference = CEAC41FA16EC3A500032CDFC /* PicoPerformance.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEAC41F116EC3A500032CDFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Leansoft;
+			};
+			buildConfigurationList = CEAC41F416EC3A500032CDFC /* Build configuration list for PBXProject "PicoPerformance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CEAC41EF16EC3A500032CDFC;
+			productRefGroup = CEAC41FB16EC3A500032CDFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEAC41F916EC3A500032CDFC /* PicoPerformance */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEAC41F816EC3A500032CDFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAC420916EC3A500032CDFC /* InfoPlist.strings in Resources */,
+				CEAC421116EC3A500032CDFC /* Default.png in Resources */,
+				CEAC421316EC3A500032CDFC /* Default@2x.png in Resources */,
+				CEAC421516EC3A500032CDFC /* Default-568h@2x.png in Resources */,
+				CEAC423916EC3D3A0032CDFC /* MasterViewController.xib in Resources */,
+				CEAC423B16EC3D3A0032CDFC /* TestViewController.xib in Resources */,
+				CEAC425516EC48160032CDFC /* 10records.xml in Resources */,
+				CEAC425616EC48160032CDFC /* 50records.xml in Resources */,
+				CEAC425716EC48160032CDFC /* 300records.xml in Resources */,
+				CEFB845B16ECBC4200A0D522 /* htdocs in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEAC41F616EC3A500032CDFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAC420B16EC3A500032CDFC /* main.m in Sources */,
+				CEAC423716EC3D3A0032CDFC /* AppDelegate.m in Sources */,
+				CEAC423816EC3D3A0032CDFC /* MasterViewController.m in Sources */,
+				CEAC423A16EC3D3A0032CDFC /* TestViewController.m in Sources */,
+				CEAC423F16EC3E6D0032CDFC /* MBProgressHUD.m in Sources */,
+				CEFB846316ECBEF100A0D522 /* PersonListType.m in Sources */,
+				CEFB846416ECBEF100A0D522 /* PersonType.m in Sources */,
+				CEFB846816ECC1BA00A0D522 /* PersonParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEAC420716EC3A500032CDFC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEAC420816EC3A500032CDFC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEAC422816EC3A500032CDFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEAC422916EC3A500032CDFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEAC422B16EC3A500032CDFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PicoPerformance/PicoPerformance-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../pico/pico/**";
+				INFOPLIST_FILE = "PicoPerformance/PicoPerformance-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CEAC422C16EC3A500032CDFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PicoPerformance/PicoPerformance-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../pico/pico/**";
+				INFOPLIST_FILE = "PicoPerformance/PicoPerformance-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEAC41F416EC3A500032CDFC /* Build configuration list for PBXProject "PicoPerformance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEAC422816EC3A500032CDFC /* Debug */,
+				CEAC422916EC3A500032CDFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEAC422A16EC3A500032CDFC /* Build configuration list for PBXNativeTarget "PicoPerformance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEAC422B16EC3A500032CDFC /* Debug */,
+				CEAC422C16EC3A500032CDFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEAC41F116EC3A500032CDFC /* Project object */;
+}

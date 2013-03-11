@@ -24,6 +24,7 @@
 		CEA018D516E9AF000052DC2B /* Party.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA018D016E9AF000052DC2B /* Party.m */; };
 		CEA018D616E9AF000052DC2B /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA018D216E9AF000052DC2B /* Player.m */; };
 		CEA018D716E9AF000052DC2B /* RPGClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA018D416E9AF000052DC2B /* RPGClass.m */; };
+		CEFDBF5F16EE051200ACEDD7 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFDBF5E16EE051200ACEDD7 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		CEA018D216E9AF000052DC2B /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		CEA018D316E9AF000052DC2B /* RPGClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPGClass.h; sourceTree = "<group>"; };
 		CEA018D416E9AF000052DC2B /* RPGClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPGClass.m; sourceTree = "<group>"; };
+		CEFDBF5E16EE051200ACEDD7 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFDBF5F16EE051200ACEDD7 /* libxml2.dylib in Frameworks */,
 				CEA018AD16E9A48C0052DC2B /* libpico.a in Frameworks */,
 				CEA0188316E9A3520052DC2B /* UIKit.framework in Frameworks */,
 				CEA0188516E9A3520052DC2B /* Foundation.framework in Frameworks */,
@@ -72,6 +75,7 @@
 		CEA0187316E9A3520052DC2B = {
 			isa = PBXGroup;
 			children = (
+				CEFDBF5E16EE051200ACEDD7 /* libxml2.dylib */,
 				CEA018AC16E9A48C0052DC2B /* libpico.a */,
 				CEA0188816E9A3520052DC2B /* PicoTutorial */,
 				CEA0188116E9A3520052DC2B /* Frameworks */,

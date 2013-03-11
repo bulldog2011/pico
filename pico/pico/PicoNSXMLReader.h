@@ -1,20 +1,21 @@
 //
-//  PicoXMLReader.h
-//  Pico
+//  PicoNSXMLReader.h
+//  pico
 //
-//  Created by bulldog on 13-3-11.
+//  Created by bulldog on 13-2-26.
 //  Copyright (c) 2013 LeanSoft Technology. All rights reserved.
 //
 
 #import "PicoReadable.h"
-#import "PicoConfig.h"
+
 
 @class PicoConfig;
-@interface PicoXMLReader : NSObject <PicoReadable> {
+@interface PicoNSXMLReader : NSObject <PicoReadable> {
 @private
     PicoConfig *_config;
     
 }
+
 
 @property (nonatomic, retain) PicoConfig *config;
 

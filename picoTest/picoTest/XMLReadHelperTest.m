@@ -7,7 +7,7 @@
 //
 
 #import <GHUnitIOS/GHUNit.h>
-#import "PicoXMLReadHelper.h"
+#import "PicoNSXMLReadHelper.h"
 
 
 @interface XMLReadHelperTest : GHTestCase
@@ -17,7 +17,7 @@
 @implementation XMLReadHelperTest
 
 - (void) testDepth {
-	PicoXMLReadHelper* helper = [[PicoXMLReadHelper alloc] init];
+	PicoNSXMLReadHelper* helper = [[PicoNSXMLReadHelper alloc] init];
 	GHAssertTrue(helper.depth == 0, nil);
 	helper.depth++;
 	GHAssertTrue(helper.depth == 1, nil);
@@ -27,7 +27,7 @@
 }
 
 - (void) testIsRoot {
-	PicoXMLReadHelper* helper = [[PicoXMLReadHelper alloc] init];
+	PicoNSXMLReadHelper* helper = [[PicoNSXMLReadHelper alloc] init];
 	GHAssertFalse([helper isRoot], nil);
 	
 	helper.depth++;
@@ -45,7 +45,7 @@
 }
 
 - (void) testPop {
-	PicoXMLReadHelper* helper = [[PicoXMLReadHelper alloc] init];
+	PicoNSXMLReadHelper* helper = [[PicoNSXMLReadHelper alloc] init];
 	[helper push:@"element1"];
 	[helper push:@"element2"];
 	
@@ -68,7 +68,7 @@
 }
 
 - (void) testPeek {
-	PicoXMLReadHelper* helper = [[PicoXMLReadHelper alloc] init];
+	PicoNSXMLReadHelper* helper = [[PicoNSXMLReadHelper alloc] init];
 	@try {
 		[helper peek];
 		GHFail(@"should not goto here");
@@ -88,7 +88,7 @@
 }
 
 - (void) testPush {
-	PicoXMLReadHelper* helper = [[PicoXMLReadHelper alloc] init];
+	PicoNSXMLReadHelper* helper = [[PicoNSXMLReadHelper alloc] init];
 	
 	[helper push:@"element1"];
 	GHAssertEqualStrings(@"element1", [helper peek], nil);
@@ -102,7 +102,7 @@
 }
 
 - (void) testSize {
-	PicoXMLReadHelper* helper = [[PicoXMLReadHelper alloc] init];
+	PicoNSXMLReadHelper* helper = [[PicoNSXMLReadHelper alloc] init];
 	
 	GHAssertTrue(0 == [helper size], nil);
 	

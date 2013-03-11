@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 LeanSoft Technology. All rights reserved.
 //
 
-#import "PicoXMLReadHelper.h"
+#import "PicoNSXMLReadHelper.h"
 
-@implementation PicoXMLReadHelper
+@implementation PicoNSXMLReadHelper
 
 @synthesize depth = _depth, buffer = _buffer, stack = _stack, isAnyElement = _isAnyElement;
 

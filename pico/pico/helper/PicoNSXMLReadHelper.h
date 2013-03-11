@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 LeanSoft Technology. All rights reserved.
 //
 
-@interface PicoXMLReadHelper : NSObject {
+@interface PicoNSXMLReadHelper : NSObject {
 @private
     int _depth;
     NSMutableString *_buffer;

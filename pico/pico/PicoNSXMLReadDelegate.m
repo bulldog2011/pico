@@ -1,12 +1,12 @@
 //
-//  PicoXMLReadDelegate.m
+//  PicoNSXMLReadDelegate.m
 //  pico
 //
 //  Created by bulldog on 13-2-26.
 //  Copyright (c) 2013 LeanSoft Technology. All rights reserved.
 //
 
-#import "PicoXMLReadDelegate.h"
+#import "PicoNSXMLReadDelegate.h"
 #import "PicoBindingSchema.h"
 #import "PicoConverter.h"
 #import "PicoPropertySchema.h"
@@ -15,11 +15,11 @@
 #import "PicoBindable.h"
 #import "PicoXMLElement.h"
 
-@implementation PicoXMLReadDelegate
+@implementation PicoNSXMLReadDelegate
 
 @synthesize helper = _helper;
 
-- (id) initWithHelper:(PicoXMLReadHelper *) helper {
+- (id) initWithHelper:(PicoNSXMLReadHelper *) helper {
     self = [super init];
 	if (self != nil) {
 		self.helper = helper;

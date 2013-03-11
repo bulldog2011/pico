@@ -13,6 +13,7 @@
 		CE67C46D16DE3AE1008CE51A /* PerformanceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67C46C16DE3AE1008CE51A /* PerformanceTest.m */; };
 		CE67C47C16DE47EF008CE51A /* XMLReadHelperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67C47B16DE47EF008CE51A /* XMLReadHelperTest.m */; };
 		CEA0186B16E99C280052DC2B /* libpico.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA0186A16E99C280052DC2B /* libpico.a */; };
+		CEA418E716ED939A0088C17C /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA418E616ED939A0088C17C /* libxml2.dylib */; };
 		CEAA8EAF16D9BBF70024B5D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8EAE16D9BBF70024B5D7 /* UIKit.framework */; };
 		CEAA8EB116D9BBF70024B5D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8EB016D9BBF70024B5D7 /* Foundation.framework */; };
 		CEAA8EB316D9BBF70024B5D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8EB216D9BBF70024B5D7 /* CoreGraphics.framework */; };
@@ -50,6 +51,7 @@
 		CE67C46C16DE3AE1008CE51A /* PerformanceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformanceTest.m; sourceTree = "<group>"; };
 		CE67C47B16DE47EF008CE51A /* XMLReadHelperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReadHelperTest.m; sourceTree = "<group>"; };
 		CEA0186A16E99C280052DC2B /* libpico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpico.a; path = "../../../../../../Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos/libpico.a"; sourceTree = "<group>"; };
+		CEA418E616ED939A0088C17C /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		CEAA8EAA16D9BBF70024B5D7 /* picoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = picoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAA8EAE16D9BBF70024B5D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEAA8EB016D9BBF70024B5D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -91,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA418E716ED939A0088C17C /* libxml2.dylib in Frameworks */,
 				CEA0186B16E99C280052DC2B /* libpico.a in Frameworks */,
 				CEAA8ED016D9C1040024B5D7 /* QuartzCore.framework in Frameworks */,
 				CEAA8EAF16D9BBF70024B5D7 /* UIKit.framework in Frameworks */,
@@ -106,6 +109,7 @@
 		CEAA8E9F16D9BBF70024B5D7 = {
 			isa = PBXGroup;
 			children = (
+				CEA418E616ED939A0088C17C /* libxml2.dylib */,
 				CEA0186A16E99C280052DC2B /* libpico.a */,
 				CEAA8EB416D9BBF70024B5D7 /* picoTest */,
 				CEAA8EAD16D9BBF70024B5D7 /* Frameworks */,
