@@ -17,7 +17,7 @@
 #import "PicoXMLElement.h"
 #import "PicoBindable.h"
 
-@interface PicoXMLWriter ()
+@interface PicoXMLWriter (Private)
 
 -(void)writeObject:(XMLWriter *)xmlWriter source:(id)source ;
 
@@ -79,15 +79,11 @@
     
     
     PicoBindingSchema *bindingSchema = [PicoBindingSchema fromObject:obj];
-    NSString *xmlName = nil;
-    NSString *namespace = nil;
     PicoClassSchema *classSchema = [bindingSchema classSchema];
-    if (classSchema) {
-        xmlName = classSchema.xmlName;
-        namespace = classSchema.nsURI;
-        if (!xmlName) { // workaround, in case xml name is not provided in class schema, use class name instead
-            xmlName = bindingSchema.className;
-        }
+    NSString *xmlName = classSchema.xmlName;
+    NSString *namespace = classSchema.nsURI;
+    if (!xmlName) { // workaround, in case xml name is not provided in class schema, use class name instead
+        xmlName = bindingSchema.className;
     }
     
     if ([namespace length] != 0) {
@@ -129,7 +125,7 @@
         [xmlWriter setPrefix:prefix namespaceURI:namespace];
     }
     [self writeElements:xmlWriter source:source schema:bindingSchema namespace:namespace];
-
+    
     [self writeAnyElements:xmlWriter source:source schema:bindingSchema];
 }
 
@@ -207,16 +203,12 @@
 
 -(void)writePicoObject:(XMLWriter *)xmlWriter source:(id)source {
     if (!source) return; // to be cautious
-    PicoBindingSchema *bs = [PicoBindingSchema fromObject:source];
-    NSString *xmlName = nil;
-    NSString *namespace = nil;
-    PicoClassSchema *classSchema = [bs classSchema];
-    if (classSchema) {
-        xmlName = classSchema.xmlName;
-        namespace = classSchema.nsURI;
-        if (!xmlName) { // workaround, in case xml name is not provided in class schema, use class name instead
-            xmlName = bs.className;
-        }
+    PicoBindingSchema *bindingSchema = [PicoBindingSchema fromObject:source];
+    PicoClassSchema *classSchema = [bindingSchema classSchema];
+    NSString *xmlName = classSchema.xmlName;
+    NSString *namespace = classSchema.nsURI;
+    if (!xmlName) { // workaround, in case xml name is not provided in class schema, use class name instead
+        xmlName = bindingSchema.className;
     }
     
     [xmlWriter writeStartElementWithNamespace:namespace localName:xmlName];
