@@ -33,6 +33,7 @@ static dispatch_queue_t pico_request_operation_processing_queue() {
 @synthesize PicoError  = _PicoError;
 @synthesize responseClazz = _responseClazz;
 @synthesize soapVersion = _soapVersion;
+@synthesize debug = _debug;
 
 -(void)dealloc {
     [_responseObj release];
@@ -43,6 +44,12 @@ static dispatch_queue_t pico_request_operation_processing_queue() {
 
 -(id)responseObj {
     if (!_responseObj && [self isFinished] && [self.responseData length] > 0 && !self.PicoError) {
+        
+        if (self.debug) {
+            NSLog(@"Response soap message:");
+            NSLog(@"%@", [NSString stringWithUTF8String:[self.responseData bytes]]);
+        }
+        
         @try {
             // unmarshall to object
             PicoSOAPReader *soapReader = [[PicoSOAPReader alloc] init];

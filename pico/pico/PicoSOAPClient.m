@@ -28,6 +28,7 @@ enum {
 @implementation PicoSOAPClient
 @synthesize endpointURL = _endpointURL;
 @synthesize soapVersion = _soapVersion;
+@synthesize debug = _debug;
 
 + (instancetype)clientWithEndpointURL:(NSURL *)URL {
     return [[self alloc] initWithEndpointURL:URL];
@@ -86,6 +87,7 @@ enum {
     PicoRequestOperation *picoOperation = (PicoRequestOperation *)httpOperation;
     picoOperation.soapVersion = self.soapVersion;
     picoOperation.responseClazz = responseClazz;
+    picoOperation.debug = self.debug;
     
     [self enqueueHTTPRequestOperation:httpOperation];
 }
@@ -121,6 +123,12 @@ enum {
     [soapWriter release];
     
     NSAssert(soapData != nil, @"Expect success soap marshalling");
+    
+    if (self.debug) {
+        NSLog(@"Request soap message:");
+        NSLog(@"%@", [NSString stringWithUTF8String:[soapData bytes]]);
+    }
+    
     request.HTTPBody = soapData;
     
     return request;

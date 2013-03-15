@@ -40,6 +40,11 @@
  */
 @property (readwrite, nonatomic, assign) PicoSOAPVersion soapVersion;
 
+/**
+ output debug info, such as response soap message
+ */
+@property (readwrite, nonatomic, assign) BOOL debug;
+
 ///----------------------------------
 /// @name Creating Request Operations
 ///----------------------------------

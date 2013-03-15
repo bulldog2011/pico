@@ -25,6 +25,11 @@
 /**
  
  */
+@property (readwrite, nonatomic, assign) BOOL debug;
+
+/**
+ 
+ */
 + (instancetype)clientWithEndpointURL:(NSURL *)URL;
 
 /**
