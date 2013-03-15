@@ -15,14 +15,6 @@
 #import "PicoConverter.h"
 #import "PicoXMLElement.h"
 
-@interface PicoXMLReader (Private)
-
--(void)read:(id)value element:(GDataXMLElement *)element;
-
--(PicoXMLElement *)convertToPicoElement:(GDataXMLElement *)element;
-
-@end
-
 @implementation PicoXMLReader
 
 @synthesize config = _config;
@@ -72,6 +64,23 @@
 }
 
 -(void)read:(id)value element:(GDataXMLElement *)element {
+    
+    [self readAttribute:value element:element];
+
+    
+    BOOL hasText = [self readText:value element:element];
+    if (hasText) {
+        return; // no further read if xml text presents
+    }
+    
+    [self readElement:value element:element];
+    
+    
+    [self readAnyElement:value element:element];
+
+}
+
+-(void)readAttribute:(id)value element:(GDataXMLElement *)element {
     PicoBindingSchema *bs = [PicoBindingSchema fromObject:value];
     
     // read xml attributes
@@ -91,6 +100,10 @@
             }
         }
     }
+}
+
+-(BOOL)readText:(id)value element:(GDataXMLElement *) element {
+    PicoBindingSchema *bs = [PicoBindingSchema fromObject:value];
     
     // read xml value if any
     PicoPropertySchema *valuePs = bs.valueSchema;
@@ -103,8 +116,13 @@
             }
         }
         
-        return; // if xml value presents, no need to handle elements
+        return YES;
     }
+    return NO;
+}
+
+-(void)readElement:(id)value element:(GDataXMLElement *)element {
+    PicoBindingSchema *bs = [PicoBindingSchema fromObject:value];
     
     // read xml element
     NSDictionary *elementMap = bs.xml2ElementSchemaMapping;
@@ -162,40 +180,21 @@
             [childElements release];
         }
     }
+}
+
+-(void)readAnyElement:(id)value element:(GDataXMLElement *)element {
+    PicoBindingSchema *bs = [PicoBindingSchema fromObject:value];
     
     // read xml any element
     PicoPropertySchema *anyPs = bs.anyElementSchema;
     if (anyPs) {
         if (anyPs.clazz) { // target class specified
-            PicoBindingSchema *bs = [PicoBindingSchema fromClass:anyPs.clazz];
-            PicoClassSchema *cs = [bs classSchema];;
-            NSString *xmlName = cs.xmlName;
-            if ([xmlName length] == 0) {
-                xmlName = bs.className;
-            }
-            NSMutableArray *childElements = [[NSMutableArray alloc] init];
-            NSArray *children = [element children];
-            for(GDataXMLNode *node in children) {
-                if ([node kind] == GDataXMLElementKind && [xmlName isEqualToString:[node localName]]) {
-                    [childElements addObject:node];
-                }
-            }
-            if (childElements.count > 0) {
-                NSMutableArray *array = [[NSMutableArray alloc] init];
-                [value setValue:array forKey: anyPs.propertyName];
-                [array release];
-                for(GDataXMLElement *childElement in childElements) {
-                    id obj = [anyPs.clazz new];
-                    [array addObject:obj];
-                    [obj release];
-                    [self read: obj element: childElement];
-                }
-
-            }
-            [childElements release];
+            [self readAnyElement:value element:element bindClass:anyPs.clazz];
         } else {
             NSMutableArray *anyChildElements = [[NSMutableArray alloc] init];
             NSArray *children = [element children];
+            
+            NSDictionary *elementMap = bs.xml2ElementSchemaMapping;
             
             for(GDataXMLNode *node in children) {
                 if ([node kind] == GDataXMLElementKind) {
@@ -212,11 +211,54 @@
     }
 }
 
+-(BOOL)readAnyElement:(id)value element:(GDataXMLElement *)element bindClass:(Class) clazz {
+    BOOL result = NO;
+    PicoBindingSchema *bs = [PicoBindingSchema fromClass:clazz];
+    PicoClassSchema *cs = [bs classSchema];;
+    NSString *xmlName = cs.xmlName;
+    if ([xmlName length] == 0) {
+        xmlName = bs.className;
+    }
+    NSMutableArray *childElements = [[NSMutableArray alloc] init];
+    NSArray *children = [element children];
+    for(GDataXMLNode *node in children) {
+        if ([node kind] == GDataXMLElementKind && [xmlName isEqualToString:[node localName]]) {
+            [childElements addObject:node];
+        }
+    }
+    if (childElements.count > 0) {
+        
+        PicoBindingSchema *bs = [PicoBindingSchema fromObject:value];
+        
+        // read xml any element
+        PicoPropertySchema *anyPs = bs.anyElementSchema;
+        
+        NSMutableArray *array = [[NSMutableArray alloc] init];
+        [value setValue:array forKey: anyPs.propertyName];
+        [array release];
+        for(GDataXMLElement *childElement in childElements) {
+            id obj = [clazz new];
+            [array addObject:obj];
+            [obj release];
+            [self read: obj element: childElement];
+        }
+        result = YES;
+    }
+    [childElements release];
+    
+    return result;
+}
+
 -(PicoXMLElement *)convertToPicoElement:(GDataXMLElement *)element {
     PicoXMLElement *picoElement = [[PicoXMLElement alloc] init];
     picoElement.name = element.localName;
     picoElement.nsUri = element.URI;
-    picoElement.value = element.stringValue;
+    if ([element childCount] == 1) {
+        GDataXMLNode *node = [element.children objectAtIndex:0];
+        if (node.kind == GDataXMLTextKind) {
+            picoElement.value = node.stringValue;
+        }
+    }
     if (element.attributes) {
         NSMutableDictionary *attrDic = [[NSMutableDictionary alloc] init];
         picoElement.attributes = attrDic;

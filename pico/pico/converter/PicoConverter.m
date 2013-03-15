@@ -67,6 +67,10 @@ static NSMutableDictionary *cache = nil;
 	converter = [[PicoStringConverter alloc] init];
 	[cache setObject: converter forKey: PICO_TYPE_CHAR];
 	[converter release];
+    
+    converter = [[PicoStringConverter alloc] init];
+	[cache setObject: converter forKey: PICO_TYPE_QNAME];
+	[converter release];
 	
 	converter = [[PicoNumberConverter alloc] init];
 	[cache setObject: converter forKey: PICO_TYPE_BYTE];

@@ -41,6 +41,9 @@ extern NSString *const PICO_TYPE_OBJECT;
 // string
 extern NSString *const PICO_TYPE_STRING;
 
+// qname
+extern NSString *const PICO_TYPE_QNAME;
+
 // data
 extern NSString *const PICO_TYPE_DATA;
 

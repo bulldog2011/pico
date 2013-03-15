@@ -10,6 +10,7 @@
 #import "PicoConfig.h"
 
 @class PicoConfig;
+@class GDataXMLElement;
 @interface PicoXMLReader : NSObject <PicoReadable> {
 @private
     PicoConfig *_config;

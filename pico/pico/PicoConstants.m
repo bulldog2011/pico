@@ -51,6 +51,9 @@ NSString *const PICO_TYPE_OBJECT = @"object";
 // string
 NSString *const PICO_TYPE_STRING = @"string";
 
+// qname
+NSString *const PICO_TYPE_QNAME = @"qname";
+
 // data
 NSString *const PICO_TYPE_DATA = @"data";
 

@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		CE52FAB116E5A02700EE0771 /* AnyElementTestCaseA.m in Sources */ = {isa = PBXBuildFile; fileRef = CE52FAB016E5A02700EE0771 /* AnyElementTestCaseA.m */; };
 		CE52FAB416E5AED900EE0771 /* AnyElementTestCaseB.m in Sources */ = {isa = PBXBuildFile; fileRef = CE52FAB316E5AED900EE0771 /* AnyElementTestCaseB.m */; };
-		CE5D408A16EEDDDC00D2CD3C /* XMLReadHelperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5D408916EEDDDC00D2CD3C /* XMLReadHelperTest.m */; };
 		CE67C46116DE3546008CE51A /* ArrayEntryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67C46016DE3546008CE51A /* ArrayEntryTest.m */; };
 		CE67C46D16DE3AE1008CE51A /* PerformanceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67C46C16DE3AE1008CE51A /* PerformanceTest.m */; };
+		CE9B246F16F1F6B2000AC982 /* SOAPTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B246E16F1F6B2000AC982 /* SOAPTest.m */; };
 		CEA0186B16E99C280052DC2B /* libpico.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA0186A16E99C280052DC2B /* libpico.a */; };
 		CEA418E716ED939A0088C17C /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA418E616ED939A0088C17C /* libxml2.dylib */; };
 		CEAA8EAF16D9BBF70024B5D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8EAE16D9BBF70024B5D7 /* UIKit.framework */; };
@@ -47,9 +47,9 @@
 /* Begin PBXFileReference section */
 		CE52FAB016E5A02700EE0771 /* AnyElementTestCaseA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnyElementTestCaseA.m; sourceTree = "<group>"; };
 		CE52FAB316E5AED900EE0771 /* AnyElementTestCaseB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnyElementTestCaseB.m; sourceTree = "<group>"; };
-		CE5D408916EEDDDC00D2CD3C /* XMLReadHelperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReadHelperTest.m; sourceTree = "<group>"; };
 		CE67C46016DE3546008CE51A /* ArrayEntryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayEntryTest.m; sourceTree = "<group>"; };
 		CE67C46C16DE3AE1008CE51A /* PerformanceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformanceTest.m; sourceTree = "<group>"; };
+		CE9B246E16F1F6B2000AC982 /* SOAPTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAPTest.m; sourceTree = "<group>"; };
 		CEA0186A16E99C280052DC2B /* libpico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpico.a; path = "../../../../../../Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos/libpico.a"; sourceTree = "<group>"; };
 		CEA418E616ED939A0088C17C /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		CEAA8EAA16D9BBF70024B5D7 /* picoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = picoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,7 +146,6 @@
 				CEF3AC8116DA4D4E00D36235 /* ConverterTest.m */,
 				CEDE398E16DB11F80066467B /* Bulldog.h */,
 				CEDE398F16DB11F80066467B /* Bulldog.m */,
-				CE5D408916EEDDDC00D2CD3C /* XMLReadHelperTest.m */,
 				CEDE399216DB144B0066467B /* BindingSchemaTest.m */,
 				CEDE399D16DB18930066467B /* ChineseBulldog.h */,
 				CEDE399E16DB18930066467B /* ChineseBulldog.m */,
@@ -167,6 +166,7 @@
 				CEF7721116DF0D6D0046B168 /* UnicodeTest.m */,
 				CE52FAB016E5A02700EE0771 /* AnyElementTestCaseA.m */,
 				CE52FAB316E5AED900EE0771 /* AnyElementTestCaseB.m */,
+				CE9B246E16F1F6B2000AC982 /* SOAPTest.m */,
 			);
 			path = picoTest;
 			sourceTree = "<group>";
@@ -281,7 +281,7 @@
 				CEF7721216DF0D6D0046B168 /* UnicodeTest.m in Sources */,
 				CE52FAB116E5A02700EE0771 /* AnyElementTestCaseA.m in Sources */,
 				CE52FAB416E5AED900EE0771 /* AnyElementTestCaseB.m in Sources */,
-				CE5D408A16EEDDDC00D2CD3C /* XMLReadHelperTest.m in Sources */,
+				CE9B246F16F1F6B2000AC982 /* SOAPTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,6 @@
 
 @class PicoConfig;
 @interface PicoXMLWriter : NSObject <PicoWritable> {
-@private
     PicoConfig *_config;
     int _autoPrefixCount;
 }

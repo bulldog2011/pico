@@ -17,25 +17,6 @@
 #import "PicoXMLElement.h"
 #import "PicoBindable.h"
 
-@interface PicoXMLWriter (Private)
-
--(void)writeObject:(XMLWriter *)xmlWriter source:(id)source ;
-
--(void)writeAttributes:(XMLWriter *)xmlWriter source:(id)source schema:(PicoBindingSchema *)bindingSchema;
-
--(void)writeValue:(XMLWriter *)xmlWriter source:(id)source schema:(PicoBindingSchema *)bindingSchema;
-
--(void)writeElements:(XMLWriter *)xmlWriter source:(id)source schema:(PicoBindingSchema *)bindingSchema namespace:(NSString *)nsURI;
-
--(void)writeAnyElements:(XMLWriter *)xmlWriter source:(id)source schema:(PicoBindingSchema *)bindingSchema;
-
--(void)writePicoXMLElement:(XMLWriter *)xmlWriter xmlElement:(PicoXMLElement *)element;
-
--(void)writePicoObject:(XMLWriter *)xmlWriter source:(id)source;
-
-
-@end
-
 @implementation PicoXMLWriter
 
 @synthesize config = _config;
@@ -182,6 +163,11 @@
         if (namespace.length == 0) {
             namespace = nil;
         }
+        // automatic prefixing
+        if (namespace && ![xmlWriter getPrefix:namespace]) {
+            NSString *prefix = [NSString stringWithFormat:@"ns%d", _autoPrefixCount++];
+            [xmlWriter setPrefix:prefix namespaceURI:namespace];
+        }
         [xmlWriter writeStartElementWithNamespace:namespace localName:element.name];
         if (element.attributes) { // write attributes
             for(NSString *key in element.attributes) {
@@ -211,6 +197,11 @@
         xmlName = bindingSchema.className;
     }
     
+    // automatic prefixing
+    if (namespace && ![xmlWriter getPrefix:namespace]) {
+        NSString *prefix = [NSString stringWithFormat:@"ns%d", _autoPrefixCount++];
+        [xmlWriter setPrefix:prefix namespaceURI:namespace];
+    }
     [xmlWriter writeStartElementWithNamespace:namespace localName:xmlName];
     [self writeObject:xmlWriter source:source];
     [xmlWriter writeEndElementWithNamespace:namespace localName:xmlName];
