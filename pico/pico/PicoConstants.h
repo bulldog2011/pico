@@ -76,6 +76,20 @@ extern NSString *const PICO_GET_CLASS_META_DATA_METHOD;
 extern NSString *const PICO_GET_PROPERTY_META_DATA_METHOD;
 
 
+// soap version
+typedef enum {
+    SOAP11 = 11,
+    SOAP12 = 12,
+} PicoSOAPVersion;
+
+#define PicoErrorDomain @"com.leansoft.pico"
+
+// pico custom error code
+typedef enum {
+    ReaderError = -1000,
+    WriterError
+    
+} PicoErrorCode;
 
 
 

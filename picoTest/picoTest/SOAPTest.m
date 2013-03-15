@@ -2,8 +2,8 @@
 //  SOAPTest.m
 //  picoTest
 //
-//  Created by user on 13-3-14.
-//  Copyright (c) 2013年 LeanSoft Technology. All rights reserved.
+//  Created by bulldog on 13-3-14.
+//  Copyright (c) 2013 LeanSoft Technology. All rights reserved.
 //
 
 #import "PicoTestBase.h"

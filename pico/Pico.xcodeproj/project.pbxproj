@@ -70,6 +70,8 @@
 		CE08A72016F0347E00B8D682 /* SOAP12UpgradeType.m in Sources */ = {isa = PBXBuildFile; fileRef = CE08A6FC16F0347E00B8D682 /* SOAP12UpgradeType.m */; };
 		CE17424716E4C18E00BFD307 /* PicoXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = CE17424616E4C18E00BFD307 /* PicoXMLElement.m */; };
 		CE22F76616DC50D20073F385 /* PicoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CE22F76516DC50D10073F385 /* PicoConfig.m */; };
+		CE3E587D16F2D49F00CFE4E5 /* PicoRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = CE3E587B16F2D49F00CFE4E5 /* PicoRequestOperation.h */; };
+		CE3E587E16F2D49F00CFE4E5 /* PicoRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3E587C16F2D49F00CFE4E5 /* PicoRequestOperation.m */; };
 		CE5D408216EEDD3400D2CD3C /* PicoXMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = CE5D408016EEDD3400D2CD3C /* PicoXMLWriter.h */; };
 		CE5D408316EEDD3400D2CD3C /* PicoXMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5D408116EEDD3400D2CD3C /* PicoXMLWriter.m */; };
 		CE9B247816F20969000AC982 /* PicoSOAPWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9B247616F20968000AC982 /* PicoSOAPWriter.h */; };
@@ -79,6 +81,8 @@
 		CEA0186E16E99FD20052DC2B /* PicoBindable.h in Headers */ = {isa = PBXBuildFile; fileRef = CEF3AC6616DA444C00D36235 /* PicoBindable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEA0186F16E99FD20052DC2B /* PicoWritable.h in Headers */ = {isa = PBXBuildFile; fileRef = CE22F75E16DC4B8B0073F385 /* PicoWritable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEA0187116E99FD20052DC2B /* PicoConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = CE22F76416DC50D10073F385 /* PicoConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEA1E58F16F34981006358C0 /* PicoSOAPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CEA1E58D16F34981006358C0 /* PicoSOAPClient.h */; };
+		CEA1E59016F34981006358C0 /* PicoSOAPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA1E58E16F34981006358C0 /* PicoSOAPClient.m */; };
 		CEA418D316ED7D310088C17C /* PicoXMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = CEA418D116ED7D300088C17C /* PicoXMLReader.h */; };
 		CEA418D416ED7D310088C17C /* PicoXMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA418D216ED7D310088C17C /* PicoXMLReader.m */; };
 		CEAA8F1916D9C70E0024B5D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8F1816D9C70E0024B5D7 /* Foundation.framework */; };
@@ -176,12 +180,16 @@
 		CE22F76016DC4BD50073F385 /* PicoReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoReadable.h; sourceTree = "<group>"; };
 		CE22F76416DC50D10073F385 /* PicoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoConfig.h; sourceTree = "<group>"; };
 		CE22F76516DC50D10073F385 /* PicoConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoConfig.m; sourceTree = "<group>"; };
+		CE3E587B16F2D49F00CFE4E5 /* PicoRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoRequestOperation.h; sourceTree = "<group>"; };
+		CE3E587C16F2D49F00CFE4E5 /* PicoRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoRequestOperation.m; sourceTree = "<group>"; };
 		CE5D408016EEDD3400D2CD3C /* PicoXMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoXMLWriter.h; sourceTree = "<group>"; };
 		CE5D408116EEDD3400D2CD3C /* PicoXMLWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoXMLWriter.m; sourceTree = "<group>"; };
 		CE9B247616F20968000AC982 /* PicoSOAPWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoSOAPWriter.h; sourceTree = "<group>"; };
 		CE9B247716F20968000AC982 /* PicoSOAPWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoSOAPWriter.m; sourceTree = "<group>"; };
 		CE9C4EEA16F0A3F100EB8E8E /* PicoSOAPReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoSOAPReader.h; sourceTree = "<group>"; };
 		CE9C4EEB16F0A3F100EB8E8E /* PicoSOAPReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoSOAPReader.m; sourceTree = "<group>"; };
+		CEA1E58D16F34981006358C0 /* PicoSOAPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoSOAPClient.h; sourceTree = "<group>"; };
+		CEA1E58E16F34981006358C0 /* PicoSOAPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoSOAPClient.m; sourceTree = "<group>"; };
 		CEA418D116ED7D300088C17C /* PicoXMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoXMLReader.h; sourceTree = "<group>"; };
 		CEA418D216ED7D310088C17C /* PicoXMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoXMLReader.m; sourceTree = "<group>"; };
 		CEAA8F1516D9C70E0024B5D7 /* libpico.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpico.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -353,6 +361,17 @@
 			name = xmlsupport;
 			sourceTree = "<group>";
 		};
+		CE3E587916F2D47900CFE4E5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CE3E587B16F2D49F00CFE4E5 /* PicoRequestOperation.h */,
+				CE3E587C16F2D49F00CFE4E5 /* PicoRequestOperation.m */,
+				CEA1E58D16F34981006358C0 /* PicoSOAPClient.h */,
+				CEA1E58E16F34981006358C0 /* PicoSOAPClient.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
 		CEAA8F0A16D9C70E0024B5D7 = {
 			isa = PBXGroup;
 			children = (
@@ -381,6 +400,7 @@
 		CEAA8F1A16D9C70E0024B5D7 /* Pico */ = {
 			isa = PBXGroup;
 			children = (
+				CE3E587916F2D47900CFE4E5 /* Networking */,
 				CE08A6D616F0347E00B8D682 /* SOAP */,
 				CE08A6A016F02D8200B8D682 /* Vendor */,
 				CEF3AC6216DA403600D36235 /* Classes */,
@@ -507,6 +527,8 @@
 				CE08A71F16F0347E00B8D682 /* SOAP12UpgradeType.h in Headers */,
 				CE9C4EEC16F0A3F100EB8E8E /* PicoSOAPReader.h in Headers */,
 				CE9B247816F20969000AC982 /* PicoSOAPWriter.h in Headers */,
+				CE3E587D16F2D49F00CFE4E5 /* PicoRequestOperation.h in Headers */,
+				CEA1E58F16F34981006358C0 /* PicoSOAPClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +632,8 @@
 				CE08A72016F0347E00B8D682 /* SOAP12UpgradeType.m in Sources */,
 				CE9C4EED16F0A3F100EB8E8E /* PicoSOAPReader.m in Sources */,
 				CE9B247916F20969000AC982 /* PicoSOAPWriter.m in Sources */,
+				CE3E587E16F2D49F00CFE4E5 /* PicoRequestOperation.m in Sources */,
+				CEA1E59016F34981006358C0 /* PicoSOAPClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
