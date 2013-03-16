@@ -50,6 +50,7 @@
     }
     NSString *rootName = [rootElement localName];
     if (![xmlName isEqualToString: rootName]) {
+        [doc release];
 		@throw [NSException exceptionWithName:@"ReaderException" reason:[NSString stringWithFormat:@"root name mismatch , xml name : %@, root name : %@", xmlName, rootName] userInfo:nil];
 	}
     
@@ -201,7 +202,6 @@
                     if (elementMap.count == 0 || ![elementMap objectForKey:[node localName]]) {
                         PicoXMLElement *picoElement = [self convertToPicoElement:(GDataXMLElement *)node];
                         [anyChildElements addObject:picoElement];
-                        [picoElement release];
                     }
                 }
             }
@@ -250,7 +250,7 @@
 }
 
 -(PicoXMLElement *)convertToPicoElement:(GDataXMLElement *)element {
-    PicoXMLElement *picoElement = [[PicoXMLElement alloc] init];
+    PicoXMLElement *picoElement = [[[PicoXMLElement alloc] init] autorelease];
     picoElement.name = element.localName;
     picoElement.nsUri = element.URI;
     if ([element childCount] == 1) {
@@ -276,7 +276,6 @@
                 PicoXMLElement *childPicoElement = [self convertToPicoElement:(GDataXMLElement *)node];
                 childPicoElement.parent = picoElement;
                 [childrenArray addObject: childPicoElement];
-                [childPicoElement release];
             }
         }
     }

@@ -52,7 +52,7 @@ static dispatch_queue_t pico_request_operation_processing_queue() {
                 NSLog(@"Response HTTP headers : ");
                 for(NSString *key in [self.response allHeaderFields]) {
                     NSLog(@"Header : %@", key);
-                    NSLog(@"Value : %@", [[[self.response allHeaderFields] valueForKey:key] string]);
+                    NSLog(@"Value : %@", [[self.response allHeaderFields] valueForKey:key]);
                 }
             }
         }

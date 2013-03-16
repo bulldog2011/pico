@@ -8,7 +8,7 @@
 
 #import "EBayFindingServiceClient.h"
 
-static NSString *const eBayAppId = @"ebaysjinternal";
+static NSString *const eBayAppId = @"YOUR APPID HERE";
 
 // production
 static NSString *const eBayFindingServiceURLString = @"http://svcs.ebay.com/services/search/FindingService/v1";
@@ -22,7 +22,7 @@ static NSString *const eBayFindingServiceURLString = @"http://svcs.ebay.com/serv
     static EBayFindingServiceClient *_sharedClient = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedClient = [[EBayFindingServiceClient alloc] initWithBaseURL:[NSURL URLWithString:eBayFindingServiceURLString]];
+        _sharedClient = [[EBayFindingServiceClient alloc] initWithEndpointURL:[NSURL URLWithString:eBayFindingServiceURLString]];
     });
     
     return _sharedClient;
@@ -35,11 +35,15 @@ static NSString *const eBayFindingServiceURLString = @"http://svcs.ebay.com/serv
         return nil;
     }
     
-    self.soapVersion = SOAP12; // eBay finding service use SOAP 12
+    self.soapVersion = SOAP12; // eBay finding service supports SOAP 12
+    [self setDefaultHeader:@"Accept" value:@"application/soap+xml"];
+    [self setDefaultHeader:@"Content-Type" value:@"application/soap+xml"];
     
     [super setDefaultHeader:@"X-EBAY-SOA-SECURITY-APPNAME" value:eBayAppId];
     [super setDefaultHeader:@"X-EBAY-SOA-MESSAGE-PROTOCOL" value:@"SOAP12"];
     [super setDefaultHeader:@"X-EBAY-SOA-REQUEST-DATA-FORMAT" value:@"SOAP"];
+    
+    return self;
 }
 
 @end

@@ -34,12 +34,12 @@
 }
 
 - (id)initWithCountLimit:(NSUInteger)limit {
-    self = [super self];
+    self = [super init];
     if (self) {
-        self.entries = [[NSMutableDictionary alloc] init];
-        self.entriesByTime = [[NSMutableArray alloc] init];
+        _entries = [[NSMutableDictionary alloc] init];
+        _entriesByTime = [[NSMutableArray alloc] init];
         
-        self.countLimit = limit;
+        _countLimit = limit;
     }
     return self;
 }

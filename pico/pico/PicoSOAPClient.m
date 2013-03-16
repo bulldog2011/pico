@@ -30,10 +30,6 @@ enum {
 @synthesize soapVersion = _soapVersion;
 @synthesize debug = _debug;
 
-+ (instancetype)clientWithEndpointURL:(NSURL *)URL {
-    return [[self alloc] initWithEndpointURL:URL];
-}
-
 - (id)initWithEndpointURL:(NSURL *)URL {
     NSParameterAssert(URL);
     
@@ -47,7 +43,8 @@ enum {
     self.parameterEncoding = PicoSOAPParameterEncoding;
     
     [self registerHTTPOperationClass:[PicoRequestOperation class]];
-    [self setDefaultHeader:@"Accept" value:@"application/soap+xml"];
+    [self setDefaultHeader:@"Accept" value:@"text/xml"];
+    [self setDefaultHeader:@"Content-Type" value:@"text/xml"];
     
     self.endpointURL = URL;
     
@@ -63,7 +60,7 @@ enum {
         PicoRequestOperation *picoOperation = (PicoRequestOperation *)operation;
         if (picoOperation.error) {
             if (failure) {
-                failure(picoOperation, picoOperation.error, nil); // http or parsing error
+                failure(picoOperation, picoOperation.error, nil); // parsing error
             }
         } else if (picoOperation.responseObj) {
             if ([picoOperation.responseObj isMemberOfClass:[SOAP11Fault class]] || [picoOperation.responseObj isMemberOfClass:[SOAP12Fault class]]) {
@@ -80,7 +77,13 @@ enum {
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) { // http error
         if (failure) {
             PicoRequestOperation *picoOperation = (PicoRequestOperation *)operation;
-            failure(picoOperation, picoOperation.error, picoOperation.responseObj);
+            if (picoOperation.responseObj) {
+                if ([picoOperation.responseObj isMemberOfClass:[SOAP11Fault class]] || [picoOperation.responseObj isMemberOfClass:[SOAP12Fault class]]) {
+                    failure(picoOperation, nil, picoOperation.responseObj); // soap fault
+                }
+            } else {
+                failure(picoOperation, picoOperation.error, nil);
+            }
         }
     }];
     
@@ -95,7 +98,7 @@ enum {
         NSLog(@"Request HTTP Headers : ");
         for(NSString *key in [request allHTTPHeaderFields]) {
             NSLog(@"Header : %@", key);
-            NSLog(@"Value : %@", [[[request allHTTPHeaderFields] valueForKey:key] string]);
+            NSLog(@"Value : %@", [[request allHTTPHeaderFields] valueForKey:key]);
         }
     }
     
@@ -117,7 +120,7 @@ enum {
         SOAP11Body *soap11Body = [[SOAP11Body alloc] init];
         soap11Envelope.body = soap11Body;
         soap11Envelope.body.any = [NSMutableArray arrayWithObject:requestObject];
-        soapData = [soapWriter toData:requestObject];
+        soapData = [soapWriter toData:soap11Envelope];
         [soap11Body release];
         [soap11Envelope release];
     } else {
@@ -125,7 +128,7 @@ enum {
         SOAP12Body *soap12Body = [[SOAP12Body alloc] init];
         soap12Envelope.body = soap12Body;
         soap12Envelope.body.any = [NSMutableArray arrayWithObject:requestObject];
-        soapData = [soapWriter toData:requestObject];
+        soapData = [soapWriter toData:soap12Envelope];
         [soap12Body release];
         [soap12Envelope release];
     }

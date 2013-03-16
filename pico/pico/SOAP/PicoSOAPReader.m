@@ -61,6 +61,7 @@ static NSString *INNER_CLASS_KEY = @"innerClass";
     }
     NSString *rootName = [rootElement localName];
     if (![xmlName isEqualToString: rootName]) {
+        [doc release];
 		@throw [NSException exceptionWithName:@"ReaderException" reason:[NSString stringWithFormat:@"root name mismatch , xml name : %@, root name : %@", xmlName, rootName] userInfo:nil];
 	}
     

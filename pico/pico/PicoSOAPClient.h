@@ -30,11 +30,6 @@
 /**
  
  */
-+ (instancetype)clientWithEndpointURL:(NSURL *)URL;
-
-/**
- 
- */
 - (id)initWithEndpointURL:(NSURL *)URL;
 
 
