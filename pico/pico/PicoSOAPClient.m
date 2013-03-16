@@ -89,6 +89,16 @@ enum {
     picoOperation.responseClazz = responseClazz;
     picoOperation.debug = self.debug;
     
+    if (self.debug) {
+        NSLog(@"Sending reqeust to :");
+        NSLog(@"%@", [self.endpointURL absoluteString]);
+        NSLog(@"Request HTTP Headers : ");
+        for(NSString *key in [request allHTTPHeaderFields]) {
+            NSLog(@"Header : %@", key);
+            NSLog(@"Value : %@", [[[request allHTTPHeaderFields] valueForKey:key] string]);
+        }
+    }
+    
     [self enqueueHTTPRequestOperation:httpOperation];
 }
 
@@ -125,7 +135,7 @@ enum {
     NSAssert(soapData != nil, @"Expect success soap marshalling");
     
     if (self.debug) {
-        NSLog(@"Request soap message:");
+        NSLog(@"Request message:");
         NSLog(@"%@", [NSString stringWithUTF8String:[soapData bytes]]);
     }
     

@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:PicoPerformance/PicoPerformance.xcodeproj">
+      location = "group:HelloeBayFinding/HelloeBayFinding.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:tutorial/PicoTutorial.xcodeproj">
+      location = "group:PicoPerformance/PicoPerformance.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:pico/Pico.xcodeproj">

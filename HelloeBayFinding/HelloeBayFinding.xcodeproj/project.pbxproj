@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEF4C46116F41AF80005B2F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4C46016F41AF80005B2F8 /* UIKit.framework */; };
+		CEF4C46316F41AF80005B2F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4C46216F41AF80005B2F8 /* Foundation.framework */; };
+		CEF4C46516F41AF80005B2F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4C46416F41AF80005B2F8 /* CoreGraphics.framework */; };
+		CEF4C46B16F41AF80005B2F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEF4C46916F41AF80005B2F8 /* InfoPlist.strings */; };
+		CEF4C46D16F41AF80005B2F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C46C16F41AF80005B2F8 /* main.m */; };
+		CEF4C47116F41AF80005B2F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C47016F41AF80005B2F8 /* AppDelegate.m */; };
+		CEF4C47316F41AF80005B2F8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF4C47216F41AF80005B2F8 /* Default.png */; };
+		CEF4C47516F41AF80005B2F8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF4C47416F41AF80005B2F8 /* Default@2x.png */; };
+		CEF4C47716F41AF80005B2F8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF4C47616F41AF80005B2F8 /* Default-568h@2x.png */; };
+		CEF4C63516F41CC20005B2F8 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4C63416F41CC20005B2F8 /* libxml2.dylib */; };
+		CEF4C63716F41CC90005B2F8 /* libpico.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4C63616F41CC90005B2F8 /* libpico.a */; };
+		CEF4C7AC16F420E60005B2F8 /* AckValue.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C71C16F420E60005B2F8 /* AckValue.m */; };
+		CEF4C7AD16F420E60005B2F8 /* Affiliate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C71E16F420E60005B2F8 /* Affiliate.m */; };
+		CEF4C7AE16F420E60005B2F8 /* Amount.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C72016F420E60005B2F8 /* Amount.m */; };
+		CEF4C7AF16F420E60005B2F8 /* Aspect.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C72216F420E60005B2F8 /* Aspect.m */; };
+		CEF4C7B016F420E60005B2F8 /* AspectFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C72416F420E60005B2F8 /* AspectFilter.m */; };
+		CEF4C7B116F420E60005B2F8 /* AspectHistogramContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C72616F420E60005B2F8 /* AspectHistogramContainer.m */; };
+		CEF4C7B216F420E60005B2F8 /* AspectValueHistogram.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C72816F420E60005B2F8 /* AspectValueHistogram.m */; };
+		CEF4C7B316F420E60005B2F8 /* BaseFindingServiceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C72A16F420E60005B2F8 /* BaseFindingServiceRequest.m */; };
+		CEF4C7B416F420E60005B2F8 /* BaseFindingServiceResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C72C16F420E60005B2F8 /* BaseFindingServiceResponse.m */; };
+		CEF4C7B516F420E60005B2F8 /* BaseServiceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C72E16F420E60005B2F8 /* BaseServiceRequest.m */; };
+		CEF4C7B616F420E60005B2F8 /* BaseServiceResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C73016F420E60005B2F8 /* BaseServiceResponse.m */; };
+		CEF4C7B716F420E60005B2F8 /* BestMatchFindingServiceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C73216F420E60005B2F8 /* BestMatchFindingServiceRequest.m */; };
+		CEF4C7B816F420E60005B2F8 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C73416F420E60005B2F8 /* Category.m */; };
+		CEF4C7B916F420E60005B2F8 /* CategoryHistogram.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C73616F420E60005B2F8 /* CategoryHistogram.m */; };
+		CEF4C7BA16F420E60005B2F8 /* CategoryHistogramContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C73816F420E60005B2F8 /* CategoryHistogramContainer.m */; };
+		CEF4C7BB16F420E60005B2F8 /* FindingServicePortType_Client.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C73B16F420E60005B2F8 /* FindingServicePortType_Client.m */; };
+		CEF4C7BC16F420E60005B2F8 /* Condition.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C73F16F420E60005B2F8 /* Condition.m */; };
+		CEF4C7BD16F420E60005B2F8 /* ConditionHistogram.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C74116F420E60005B2F8 /* ConditionHistogram.m */; };
+		CEF4C7BE16F420E60005B2F8 /* ConditionHistogramContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C74316F420E60005B2F8 /* ConditionHistogramContainer.m */; };
+		CEF4C7BF16F420E60005B2F8 /* DiscountPriceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C74516F420E60005B2F8 /* DiscountPriceInfo.m */; };
+		CEF4C7C016F420E60005B2F8 /* Distance.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C74716F420E60005B2F8 /* Distance.m */; };
+		CEF4C7C116F420E60005B2F8 /* DomainFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C74916F420E60005B2F8 /* DomainFilter.m */; };
+		CEF4C7C216F420E60005B2F8 /* ErrorCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C74B16F420E60005B2F8 /* ErrorCategory.m */; };
+		CEF4C7C316F420E60005B2F8 /* ErrorData.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C74D16F420E60005B2F8 /* ErrorData.m */; };
+		CEF4C7C416F420E60005B2F8 /* ErrorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C74F16F420E60005B2F8 /* ErrorMessage.m */; };
+		CEF4C7C516F420E60005B2F8 /* ErrorParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C75116F420E60005B2F8 /* ErrorParameter.m */; };
+		CEF4C7C616F420E60005B2F8 /* ErrorSeverity.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C75316F420E60005B2F8 /* ErrorSeverity.m */; };
+		CEF4C7C716F420E60005B2F8 /* ExtensionType.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C75516F420E60005B2F8 /* ExtensionType.m */; };
+		CEF4C7C816F420E60005B2F8 /* FindCompletedItemsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C75716F420E60005B2F8 /* FindCompletedItemsRequest.m */; };
+		CEF4C7C916F420E60005B2F8 /* FindCompletedItemsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C75916F420E60005B2F8 /* FindCompletedItemsResponse.m */; };
+		CEF4C7CA16F420E60005B2F8 /* FindItemsAdvancedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C75B16F420E60005B2F8 /* FindItemsAdvancedRequest.m */; };
+		CEF4C7CB16F420E60005B2F8 /* FindItemsAdvancedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C75D16F420E60005B2F8 /* FindItemsAdvancedResponse.m */; };
+		CEF4C7CC16F420E60005B2F8 /* FindItemsByCategoryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C75F16F420E60005B2F8 /* FindItemsByCategoryRequest.m */; };
+		CEF4C7CD16F420E60005B2F8 /* FindItemsByCategoryResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C76116F420E60005B2F8 /* FindItemsByCategoryResponse.m */; };
+		CEF4C7CE16F420E60005B2F8 /* FindItemsByImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C76316F420E60005B2F8 /* FindItemsByImageRequest.m */; };
+		CEF4C7CF16F420E60005B2F8 /* FindItemsByImageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C76516F420E60005B2F8 /* FindItemsByImageResponse.m */; };
+		CEF4C7D016F420E60005B2F8 /* FindItemsByKeywordsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C76716F420E60005B2F8 /* FindItemsByKeywordsRequest.m */; };
+		CEF4C7D116F420E60005B2F8 /* FindItemsByKeywordsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C76916F420E60005B2F8 /* FindItemsByKeywordsResponse.m */; };
+		CEF4C7D216F420E60005B2F8 /* FindItemsByProductRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C76B16F420E60005B2F8 /* FindItemsByProductRequest.m */; };
+		CEF4C7D316F420E60005B2F8 /* FindItemsByProductResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C76D16F420E60005B2F8 /* FindItemsByProductResponse.m */; };
+		CEF4C7D416F420E60005B2F8 /* FindItemsForFavoriteSearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C76F16F420E60005B2F8 /* FindItemsForFavoriteSearchRequest.m */; };
+		CEF4C7D516F420E60005B2F8 /* FindItemsForFavoriteSearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C77116F420E60005B2F8 /* FindItemsForFavoriteSearchResponse.m */; };
+		CEF4C7D616F420E60005B2F8 /* FindItemsIneBayStoresRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C77316F420E60005B2F8 /* FindItemsIneBayStoresRequest.m */; };
+		CEF4C7D716F420E60005B2F8 /* FindItemsIneBayStoresResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C77516F420E60005B2F8 /* FindItemsIneBayStoresResponse.m */; };
+		CEF4C7D816F420E60005B2F8 /* GalleryInfoContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C77716F420E60005B2F8 /* GalleryInfoContainer.m */; };
+		CEF4C7D916F420E60005B2F8 /* GallerySizeEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C77916F420E60005B2F8 /* GallerySizeEnum.m */; };
+		CEF4C7DA16F420E60005B2F8 /* GalleryURL.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C77B16F420E60005B2F8 /* GalleryURL.m */; };
+		CEF4C7DB16F420E60005B2F8 /* GetHistogramsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C77D16F420E60005B2F8 /* GetHistogramsRequest.m */; };
+		CEF4C7DC16F420E60005B2F8 /* GetHistogramsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C77F16F420E60005B2F8 /* GetHistogramsResponse.m */; };
+		CEF4C7DD16F420E60005B2F8 /* GetSearchKeywordsRecommendationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C78116F420E60005B2F8 /* GetSearchKeywordsRecommendationRequest.m */; };
+		CEF4C7DE16F420E60005B2F8 /* GetSearchKeywordsRecommendationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C78316F420E60005B2F8 /* GetSearchKeywordsRecommendationResponse.m */; };
+		CEF4C7DF16F420E60005B2F8 /* GetVersionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C78516F420E60005B2F8 /* GetVersionRequest.m */; };
+		CEF4C7E016F420E60005B2F8 /* GetVersionResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C78716F420E60005B2F8 /* GetVersionResponse.m */; };
+		CEF4C7E116F420E60005B2F8 /* ItemAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C78916F420E60005B2F8 /* ItemAttribute.m */; };
+		CEF4C7E216F420E60005B2F8 /* ItemFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C78B16F420E60005B2F8 /* ItemFilter.m */; };
+		CEF4C7E316F420E60005B2F8 /* ItemFilterType.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C78D16F420E60005B2F8 /* ItemFilterType.m */; };
+		CEF4C7E416F420E60005B2F8 /* ListingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C78F16F420E60005B2F8 /* ListingInfo.m */; };
+		CEF4C7E516F420E60005B2F8 /* MapExposureEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C79116F420E60005B2F8 /* MapExposureEnum.m */; };
+		CEF4C7E616F420E60005B2F8 /* OutputSelectorType.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C79316F420E60005B2F8 /* OutputSelectorType.m */; };
+		CEF4C7E716F420E60005B2F8 /* PaginationInput.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C79516F420E60005B2F8 /* PaginationInput.m */; };
+		CEF4C7E816F420E60005B2F8 /* PaginationOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C79716F420E60005B2F8 /* PaginationOutput.m */; };
+		CEF4C7E916F420E60005B2F8 /* PriceTreatmentEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C79916F420E60005B2F8 /* PriceTreatmentEnum.m */; };
+		CEF4C7EA16F420E60005B2F8 /* ProductId.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C79B16F420E60005B2F8 /* ProductId.m */; };
+		CEF4C7EB16F420E60005B2F8 /* SearchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C79D16F420E60005B2F8 /* SearchItem.m */; };
+		CEF4C7EC16F420E60005B2F8 /* SearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C79F16F420E60005B2F8 /* SearchResult.m */; };
+		CEF4C7ED16F420E60005B2F8 /* SellerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C7A116F420E60005B2F8 /* SellerInfo.m */; };
+		CEF4C7EE16F420E60005B2F8 /* SellingStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C7A316F420E60005B2F8 /* SellingStatus.m */; };
+		CEF4C7EF16F420E60005B2F8 /* ShippingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C7A516F420E60005B2F8 /* ShippingInfo.m */; };
+		CEF4C7F016F420E70005B2F8 /* SortOrderType.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C7A716F420E60005B2F8 /* SortOrderType.m */; };
+		CEF4C7F116F420E70005B2F8 /* Storefront.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C7A916F420E60005B2F8 /* Storefront.m */; };
+		CEF4C7F216F420E70005B2F8 /* UnitPriceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C7AB16F420E60005B2F8 /* UnitPriceInfo.m */; };
+		CEF4C7F516F4212B0005B2F8 /* EBayFindingServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4C7F416F4212B0005B2F8 /* EBayFindingServiceClient.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CEF4C45C16F41AF80005B2F8 /* HelloeBayFinding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloeBayFinding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF4C46016F41AF80005B2F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEF4C46216F41AF80005B2F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEF4C46416F41AF80005B2F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEF4C46816F41AF80005B2F8 /* HelloeBayFinding-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloeBayFinding-Info.plist"; sourceTree = "<group>"; };
+		CEF4C46A16F41AF80005B2F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEF4C46C16F41AF80005B2F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEF4C46E16F41AF80005B2F8 /* HelloeBayFinding-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloeBayFinding-Prefix.pch"; sourceTree = "<group>"; };
+		CEF4C46F16F41AF80005B2F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEF4C47016F41AF80005B2F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEF4C47216F41AF80005B2F8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CEF4C47416F41AF80005B2F8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CEF4C47616F41AF80005B2F8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CEF4C63416F41CC20005B2F8 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		CEF4C63616F41CC90005B2F8 /* libpico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpico.a; path = "../../../../../../Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos/libpico.a"; sourceTree = "<group>"; };
+		CEF4C71B16F420E60005B2F8 /* AckValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AckValue.h; sourceTree = "<group>"; };
+		CEF4C71C16F420E60005B2F8 /* AckValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AckValue.m; sourceTree = "<group>"; };
+		CEF4C71D16F420E60005B2F8 /* Affiliate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Affiliate.h; sourceTree = "<group>"; };
+		CEF4C71E16F420E60005B2F8 /* Affiliate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Affiliate.m; sourceTree = "<group>"; };
+		CEF4C71F16F420E60005B2F8 /* Amount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Amount.h; sourceTree = "<group>"; };
+		CEF4C72016F420E60005B2F8 /* Amount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Amount.m; sourceTree = "<group>"; };
+		CEF4C72116F420E60005B2F8 /* Aspect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspect.h; sourceTree = "<group>"; };
+		CEF4C72216F420E60005B2F8 /* Aspect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspect.m; sourceTree = "<group>"; };
+		CEF4C72316F420E60005B2F8 /* AspectFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AspectFilter.h; sourceTree = "<group>"; };
+		CEF4C72416F420E60005B2F8 /* AspectFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AspectFilter.m; sourceTree = "<group>"; };
+		CEF4C72516F420E60005B2F8 /* AspectHistogramContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AspectHistogramContainer.h; sourceTree = "<group>"; };
+		CEF4C72616F420E60005B2F8 /* AspectHistogramContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AspectHistogramContainer.m; sourceTree = "<group>"; };
+		CEF4C72716F420E60005B2F8 /* AspectValueHistogram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AspectValueHistogram.h; sourceTree = "<group>"; };
+		CEF4C72816F420E60005B2F8 /* AspectValueHistogram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AspectValueHistogram.m; sourceTree = "<group>"; };
+		CEF4C72916F420E60005B2F8 /* BaseFindingServiceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFindingServiceRequest.h; sourceTree = "<group>"; };
+		CEF4C72A16F420E60005B2F8 /* BaseFindingServiceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFindingServiceRequest.m; sourceTree = "<group>"; };
+		CEF4C72B16F420E60005B2F8 /* BaseFindingServiceResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFindingServiceResponse.h; sourceTree = "<group>"; };
+		CEF4C72C16F420E60005B2F8 /* BaseFindingServiceResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFindingServiceResponse.m; sourceTree = "<group>"; };
+		CEF4C72D16F420E60005B2F8 /* BaseServiceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseServiceRequest.h; sourceTree = "<group>"; };
+		CEF4C72E16F420E60005B2F8 /* BaseServiceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseServiceRequest.m; sourceTree = "<group>"; };
+		CEF4C72F16F420E60005B2F8 /* BaseServiceResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseServiceResponse.h; sourceTree = "<group>"; };
+		CEF4C73016F420E60005B2F8 /* BaseServiceResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseServiceResponse.m; sourceTree = "<group>"; };
+		CEF4C73116F420E60005B2F8 /* BestMatchFindingServiceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestMatchFindingServiceRequest.h; sourceTree = "<group>"; };
+		CEF4C73216F420E60005B2F8 /* BestMatchFindingServiceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestMatchFindingServiceRequest.m; sourceTree = "<group>"; };
+		CEF4C73316F420E60005B2F8 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		CEF4C73416F420E60005B2F8 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
+		CEF4C73516F420E60005B2F8 /* CategoryHistogram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryHistogram.h; sourceTree = "<group>"; };
+		CEF4C73616F420E60005B2F8 /* CategoryHistogram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryHistogram.m; sourceTree = "<group>"; };
+		CEF4C73716F420E60005B2F8 /* CategoryHistogramContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryHistogramContainer.h; sourceTree = "<group>"; };
+		CEF4C73816F420E60005B2F8 /* CategoryHistogramContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryHistogramContainer.m; sourceTree = "<group>"; };
+		CEF4C73A16F420E60005B2F8 /* FindingServicePortType_Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindingServicePortType_Client.h; sourceTree = "<group>"; };
+		CEF4C73B16F420E60005B2F8 /* FindingServicePortType_Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindingServicePortType_Client.m; sourceTree = "<group>"; };
+		CEF4C73D16F420E60005B2F8 /* CommonTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTypes.h; sourceTree = "<group>"; };
+		CEF4C73E16F420E60005B2F8 /* Condition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Condition.h; sourceTree = "<group>"; };
+		CEF4C73F16F420E60005B2F8 /* Condition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Condition.m; sourceTree = "<group>"; };
+		CEF4C74016F420E60005B2F8 /* ConditionHistogram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConditionHistogram.h; sourceTree = "<group>"; };
+		CEF4C74116F420E60005B2F8 /* ConditionHistogram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConditionHistogram.m; sourceTree = "<group>"; };
+		CEF4C74216F420E60005B2F8 /* ConditionHistogramContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConditionHistogramContainer.h; sourceTree = "<group>"; };
+		CEF4C74316F420E60005B2F8 /* ConditionHistogramContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConditionHistogramContainer.m; sourceTree = "<group>"; };
+		CEF4C74416F420E60005B2F8 /* DiscountPriceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscountPriceInfo.h; sourceTree = "<group>"; };
+		CEF4C74516F420E60005B2F8 /* DiscountPriceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscountPriceInfo.m; sourceTree = "<group>"; };
+		CEF4C74616F420E60005B2F8 /* Distance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Distance.h; sourceTree = "<group>"; };
+		CEF4C74716F420E60005B2F8 /* Distance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Distance.m; sourceTree = "<group>"; };
+		CEF4C74816F420E60005B2F8 /* DomainFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DomainFilter.h; sourceTree = "<group>"; };
+		CEF4C74916F420E60005B2F8 /* DomainFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DomainFilter.m; sourceTree = "<group>"; };
+		CEF4C74A16F420E60005B2F8 /* ErrorCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorCategory.h; sourceTree = "<group>"; };
+		CEF4C74B16F420E60005B2F8 /* ErrorCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorCategory.m; sourceTree = "<group>"; };
+		CEF4C74C16F420E60005B2F8 /* ErrorData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorData.h; sourceTree = "<group>"; };
+		CEF4C74D16F420E60005B2F8 /* ErrorData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorData.m; sourceTree = "<group>"; };
+		CEF4C74E16F420E60005B2F8 /* ErrorMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorMessage.h; sourceTree = "<group>"; };
+		CEF4C74F16F420E60005B2F8 /* ErrorMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorMessage.m; sourceTree = "<group>"; };
+		CEF4C75016F420E60005B2F8 /* ErrorParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorParameter.h; sourceTree = "<group>"; };
+		CEF4C75116F420E60005B2F8 /* ErrorParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorParameter.m; sourceTree = "<group>"; };
+		CEF4C75216F420E60005B2F8 /* ErrorSeverity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorSeverity.h; sourceTree = "<group>"; };
+		CEF4C75316F420E60005B2F8 /* ErrorSeverity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorSeverity.m; sourceTree = "<group>"; };
+		CEF4C75416F420E60005B2F8 /* ExtensionType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionType.h; sourceTree = "<group>"; };
+		CEF4C75516F420E60005B2F8 /* ExtensionType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtensionType.m; sourceTree = "<group>"; };
+		CEF4C75616F420E60005B2F8 /* FindCompletedItemsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindCompletedItemsRequest.h; sourceTree = "<group>"; };
+		CEF4C75716F420E60005B2F8 /* FindCompletedItemsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindCompletedItemsRequest.m; sourceTree = "<group>"; };
+		CEF4C75816F420E60005B2F8 /* FindCompletedItemsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindCompletedItemsResponse.h; sourceTree = "<group>"; };
+		CEF4C75916F420E60005B2F8 /* FindCompletedItemsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindCompletedItemsResponse.m; sourceTree = "<group>"; };
+		CEF4C75A16F420E60005B2F8 /* FindItemsAdvancedRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindItemsAdvancedRequest.h; sourceTree = "<group>"; };
+		CEF4C75B16F420E60005B2F8 /* FindItemsAdvancedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindItemsAdvancedRequest.m; sourceTree = "<group>"; };
+		CEF4C75C16F420E60005B2F8 /* FindItemsAdvancedResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindItemsAdvancedResponse.h; sourceTree = "<group>"; };
+		CEF4C75D16F420E60005B2F8 /* FindItemsAdvancedResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindItemsAdvancedResponse.m; sourceTree = "<group>"; };
+		CEF4C75E16F420E60005B2F8 /* FindItemsByCategoryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindItemsByCategoryRequest.h; sourceTree = "<group>"; };
+		CEF4C75F16F420E60005B2F8 /* FindItemsByCategoryRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindItemsByCategoryRequest.m; sourceTree = "<group>"; };
+		CEF4C76016F420E60005B2F8 /* FindItemsByCategoryResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindItemsByCategoryResponse.h; sourceTree = "<group>"; };
+		CEF4C76116F420E60005B2F8 /* FindItemsByCategoryResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindItemsByCategoryResponse.m; sourceTree = "<group>"; };
+		CEF4C76216F420E60005B2F8 /* FindItemsByImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindItemsByImageRequest.h; sourceTree = "<group>"; };
+		CEF4C76316F420E60005B2F8 /* FindItemsByImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindItemsByImageRequest.m; sourceTree = "<group>"; };
+		CEF4C76416F420E60005B2F8 /* FindItemsByImageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindItemsByImageResponse.h; sourceTree = "<group>"; };
+		CEF4C76516F420E60005B2F8 /* FindItemsByImageResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindItemsByImageResponse.m; sourceTree = "<group>"; };
+		CEF4C76616F420E60005B2F8 /* FindItemsByKeywordsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindItemsByKeywordsRequest.h; sourceTree = "<group>"; };
+		CEF4C76716F420E60005B2F8 /* FindItemsByKeywordsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindItemsByKeywordsRequest.m; sourceTree = "<group>"; };
+		CEF4C76816F420E60005B2F8 /* FindItemsByKeywordsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindItemsByKeywordsResponse.h; sourceTree = "<group>"; };
+		CEF4C76916F420E60005B2F8 /* FindItemsByKeywordsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindItemsByKeywordsResponse.m; sourceTree = "<group>"; };
+		CEF4C76A16F420E60005B2F8 /* FindItemsByProductRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindItemsByProductRequest.h; sourceTree = "<group>"; };
+		CEF4C76B16F420E60005B2F8 /* FindItemsByProductRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindItemsByProductRequest.m; sourceTree = "<group>"; };
+		CEF4C76C16F420E60005B2F8 /* FindItemsByProductResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindItemsByProductResponse.h; sourceTree = "<group>"; };
+		CEF4C76D16F420E60005B2F8 /* FindItemsByProductResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindItemsByProductResponse.m; sourceTree = "<group>"; };
+		CEF4C76E16F420E60005B2F8 /* FindItemsForFavoriteSearchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindItemsForFavoriteSearchRequest.h; sourceTree = "<group>"; };
+		CEF4C76F16F420E60005B2F8 /* FindItemsForFavoriteSearchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindItemsForFavoriteSearchRequest.m; sourceTree = "<group>"; };
+		CEF4C77016F420E60005B2F8 /* FindItemsForFavoriteSearchResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindItemsForFavoriteSearchResponse.h; sourceTree = "<group>"; };
+		CEF4C77116F420E60005B2F8 /* FindItemsForFavoriteSearchResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindItemsForFavoriteSearchResponse.m; sourceTree = "<group>"; };
+		CEF4C77216F420E60005B2F8 /* FindItemsIneBayStoresRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindItemsIneBayStoresRequest.h; sourceTree = "<group>"; };
+		CEF4C77316F420E60005B2F8 /* FindItemsIneBayStoresRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindItemsIneBayStoresRequest.m; sourceTree = "<group>"; };
+		CEF4C77416F420E60005B2F8 /* FindItemsIneBayStoresResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindItemsIneBayStoresResponse.h; sourceTree = "<group>"; };
+		CEF4C77516F420E60005B2F8 /* FindItemsIneBayStoresResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindItemsIneBayStoresResponse.m; sourceTree = "<group>"; };
+		CEF4C77616F420E60005B2F8 /* GalleryInfoContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryInfoContainer.h; sourceTree = "<group>"; };
+		CEF4C77716F420E60005B2F8 /* GalleryInfoContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryInfoContainer.m; sourceTree = "<group>"; };
+		CEF4C77816F420E60005B2F8 /* GallerySizeEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GallerySizeEnum.h; sourceTree = "<group>"; };
+		CEF4C77916F420E60005B2F8 /* GallerySizeEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GallerySizeEnum.m; sourceTree = "<group>"; };
+		CEF4C77A16F420E60005B2F8 /* GalleryURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryURL.h; sourceTree = "<group>"; };
+		CEF4C77B16F420E60005B2F8 /* GalleryURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryURL.m; sourceTree = "<group>"; };
+		CEF4C77C16F420E60005B2F8 /* GetHistogramsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetHistogramsRequest.h; sourceTree = "<group>"; };
+		CEF4C77D16F420E60005B2F8 /* GetHistogramsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetHistogramsRequest.m; sourceTree = "<group>"; };
+		CEF4C77E16F420E60005B2F8 /* GetHistogramsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetHistogramsResponse.h; sourceTree = "<group>"; };
+		CEF4C77F16F420E60005B2F8 /* GetHistogramsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetHistogramsResponse.m; sourceTree = "<group>"; };
+		CEF4C78016F420E60005B2F8 /* GetSearchKeywordsRecommendationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetSearchKeywordsRecommendationRequest.h; sourceTree = "<group>"; };
+		CEF4C78116F420E60005B2F8 /* GetSearchKeywordsRecommendationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetSearchKeywordsRecommendationRequest.m; sourceTree = "<group>"; };
+		CEF4C78216F420E60005B2F8 /* GetSearchKeywordsRecommendationResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetSearchKeywordsRecommendationResponse.h; sourceTree = "<group>"; };
+		CEF4C78316F420E60005B2F8 /* GetSearchKeywordsRecommendationResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetSearchKeywordsRecommendationResponse.m; sourceTree = "<group>"; };
+		CEF4C78416F420E60005B2F8 /* GetVersionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetVersionRequest.h; sourceTree = "<group>"; };
+		CEF4C78516F420E60005B2F8 /* GetVersionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetVersionRequest.m; sourceTree = "<group>"; };
+		CEF4C78616F420E60005B2F8 /* GetVersionResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetVersionResponse.h; sourceTree = "<group>"; };
+		CEF4C78716F420E60005B2F8 /* GetVersionResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetVersionResponse.m; sourceTree = "<group>"; };
+		CEF4C78816F420E60005B2F8 /* ItemAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemAttribute.h; sourceTree = "<group>"; };
+		CEF4C78916F420E60005B2F8 /* ItemAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemAttribute.m; sourceTree = "<group>"; };
+		CEF4C78A16F420E60005B2F8 /* ItemFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemFilter.h; sourceTree = "<group>"; };
+		CEF4C78B16F420E60005B2F8 /* ItemFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemFilter.m; sourceTree = "<group>"; };
+		CEF4C78C16F420E60005B2F8 /* ItemFilterType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemFilterType.h; sourceTree = "<group>"; };
+		CEF4C78D16F420E60005B2F8 /* ItemFilterType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemFilterType.m; sourceTree = "<group>"; };
+		CEF4C78E16F420E60005B2F8 /* ListingInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListingInfo.h; sourceTree = "<group>"; };
+		CEF4C78F16F420E60005B2F8 /* ListingInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListingInfo.m; sourceTree = "<group>"; };
+		CEF4C79016F420E60005B2F8 /* MapExposureEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapExposureEnum.h; sourceTree = "<group>"; };
+		CEF4C79116F420E60005B2F8 /* MapExposureEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapExposureEnum.m; sourceTree = "<group>"; };
+		CEF4C79216F420E60005B2F8 /* OutputSelectorType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutputSelectorType.h; sourceTree = "<group>"; };
+		CEF4C79316F420E60005B2F8 /* OutputSelectorType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutputSelectorType.m; sourceTree = "<group>"; };
+		CEF4C79416F420E60005B2F8 /* PaginationInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaginationInput.h; sourceTree = "<group>"; };
+		CEF4C79516F420E60005B2F8 /* PaginationInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaginationInput.m; sourceTree = "<group>"; };
+		CEF4C79616F420E60005B2F8 /* PaginationOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaginationOutput.h; sourceTree = "<group>"; };
+		CEF4C79716F420E60005B2F8 /* PaginationOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaginationOutput.m; sourceTree = "<group>"; };
+		CEF4C79816F420E60005B2F8 /* PriceTreatmentEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceTreatmentEnum.h; sourceTree = "<group>"; };
+		CEF4C79916F420E60005B2F8 /* PriceTreatmentEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriceTreatmentEnum.m; sourceTree = "<group>"; };
+		CEF4C79A16F420E60005B2F8 /* ProductId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductId.h; sourceTree = "<group>"; };
+		CEF4C79B16F420E60005B2F8 /* ProductId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductId.m; sourceTree = "<group>"; };
+		CEF4C79C16F420E60005B2F8 /* SearchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchItem.h; sourceTree = "<group>"; };
+		CEF4C79D16F420E60005B2F8 /* SearchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchItem.m; sourceTree = "<group>"; };
+		CEF4C79E16F420E60005B2F8 /* SearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResult.h; sourceTree = "<group>"; };
+		CEF4C79F16F420E60005B2F8 /* SearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResult.m; sourceTree = "<group>"; };
+		CEF4C7A016F420E60005B2F8 /* SellerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SellerInfo.h; sourceTree = "<group>"; };
+		CEF4C7A116F420E60005B2F8 /* SellerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SellerInfo.m; sourceTree = "<group>"; };
+		CEF4C7A216F420E60005B2F8 /* SellingStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SellingStatus.h; sourceTree = "<group>"; };
+		CEF4C7A316F420E60005B2F8 /* SellingStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SellingStatus.m; sourceTree = "<group>"; };
+		CEF4C7A416F420E60005B2F8 /* ShippingInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShippingInfo.h; sourceTree = "<group>"; };
+		CEF4C7A516F420E60005B2F8 /* ShippingInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShippingInfo.m; sourceTree = "<group>"; };
+		CEF4C7A616F420E60005B2F8 /* SortOrderType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortOrderType.h; sourceTree = "<group>"; };
+		CEF4C7A716F420E60005B2F8 /* SortOrderType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortOrderType.m; sourceTree = "<group>"; };
+		CEF4C7A816F420E60005B2F8 /* Storefront.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Storefront.h; sourceTree = "<group>"; };
+		CEF4C7A916F420E60005B2F8 /* Storefront.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Storefront.m; sourceTree = "<group>"; };
+		CEF4C7AA16F420E60005B2F8 /* UnitPriceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitPriceInfo.h; sourceTree = "<group>"; };
+		CEF4C7AB16F420E60005B2F8 /* UnitPriceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitPriceInfo.m; sourceTree = "<group>"; };
+		CEF4C7F316F4212B0005B2F8 /* EBayFindingServiceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBayFindingServiceClient.h; sourceTree = "<group>"; };
+		CEF4C7F416F4212B0005B2F8 /* EBayFindingServiceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBayFindingServiceClient.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEF4C45916F41AF80005B2F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF4C63716F41CC90005B2F8 /* libpico.a in Frameworks */,
+				CEF4C63516F41CC20005B2F8 /* libxml2.dylib in Frameworks */,
+				CEF4C46116F41AF80005B2F8 /* UIKit.framework in Frameworks */,
+				CEF4C46316F41AF80005B2F8 /* Foundation.framework in Frameworks */,
+				CEF4C46516F41AF80005B2F8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEF4C45116F41AF80005B2F8 = {
+			isa = PBXGroup;
+			children = (
+				CEF4C71916F420D60005B2F8 /* EBayFindingService */,
+				CEF4C63616F41CC90005B2F8 /* libpico.a */,
+				CEF4C63416F41CC20005B2F8 /* libxml2.dylib */,
+				CEF4C46616F41AF80005B2F8 /* HelloeBayFinding */,
+				CEF4C45F16F41AF80005B2F8 /* Frameworks */,
+				CEF4C45D16F41AF80005B2F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEF4C45D16F41AF80005B2F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4C45C16F41AF80005B2F8 /* HelloeBayFinding.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEF4C45F16F41AF80005B2F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4C46016F41AF80005B2F8 /* UIKit.framework */,
+				CEF4C46216F41AF80005B2F8 /* Foundation.framework */,
+				CEF4C46416F41AF80005B2F8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEF4C46616F41AF80005B2F8 /* HelloeBayFinding */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4C46F16F41AF80005B2F8 /* AppDelegate.h */,
+				CEF4C47016F41AF80005B2F8 /* AppDelegate.m */,
+				CEF4C46716F41AF80005B2F8 /* Supporting Files */,
+			);
+			path = HelloeBayFinding;
+			sourceTree = "<group>";
+		};
+		CEF4C46716F41AF80005B2F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4C46816F41AF80005B2F8 /* HelloeBayFinding-Info.plist */,
+				CEF4C46916F41AF80005B2F8 /* InfoPlist.strings */,
+				CEF4C46C16F41AF80005B2F8 /* main.m */,
+				CEF4C46E16F41AF80005B2F8 /* HelloeBayFinding-Prefix.pch */,
+				CEF4C47216F41AF80005B2F8 /* Default.png */,
+				CEF4C47416F41AF80005B2F8 /* Default@2x.png */,
+				CEF4C47616F41AF80005B2F8 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEF4C71916F420D60005B2F8 /* EBayFindingService */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4C71A16F420E60005B2F8 /* Proxy */,
+				CEF4C7F316F4212B0005B2F8 /* EBayFindingServiceClient.h */,
+				CEF4C7F416F4212B0005B2F8 /* EBayFindingServiceClient.m */,
+			);
+			name = EBayFindingService;
+			sourceTree = "<group>";
+		};
+		CEF4C71A16F420E60005B2F8 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4C71B16F420E60005B2F8 /* AckValue.h */,
+				CEF4C71C16F420E60005B2F8 /* AckValue.m */,
+				CEF4C71D16F420E60005B2F8 /* Affiliate.h */,
+				CEF4C71E16F420E60005B2F8 /* Affiliate.m */,
+				CEF4C71F16F420E60005B2F8 /* Amount.h */,
+				CEF4C72016F420E60005B2F8 /* Amount.m */,
+				CEF4C72116F420E60005B2F8 /* Aspect.h */,
+				CEF4C72216F420E60005B2F8 /* Aspect.m */,
+				CEF4C72316F420E60005B2F8 /* AspectFilter.h */,
+				CEF4C72416F420E60005B2F8 /* AspectFilter.m */,
+				CEF4C72516F420E60005B2F8 /* AspectHistogramContainer.h */,
+				CEF4C72616F420E60005B2F8 /* AspectHistogramContainer.m */,
+				CEF4C72716F420E60005B2F8 /* AspectValueHistogram.h */,
+				CEF4C72816F420E60005B2F8 /* AspectValueHistogram.m */,
+				CEF4C72916F420E60005B2F8 /* BaseFindingServiceRequest.h */,
+				CEF4C72A16F420E60005B2F8 /* BaseFindingServiceRequest.m */,
+				CEF4C72B16F420E60005B2F8 /* BaseFindingServiceResponse.h */,
+				CEF4C72C16F420E60005B2F8 /* BaseFindingServiceResponse.m */,
+				CEF4C72D16F420E60005B2F8 /* BaseServiceRequest.h */,
+				CEF4C72E16F420E60005B2F8 /* BaseServiceRequest.m */,
+				CEF4C72F16F420E60005B2F8 /* BaseServiceResponse.h */,
+				CEF4C73016F420E60005B2F8 /* BaseServiceResponse.m */,
+				CEF4C73116F420E60005B2F8 /* BestMatchFindingServiceRequest.h */,
+				CEF4C73216F420E60005B2F8 /* BestMatchFindingServiceRequest.m */,
+				CEF4C73316F420E60005B2F8 /* Category.h */,
+				CEF4C73416F420E60005B2F8 /* Category.m */,
+				CEF4C73516F420E60005B2F8 /* CategoryHistogram.h */,
+				CEF4C73616F420E60005B2F8 /* CategoryHistogram.m */,
+				CEF4C73716F420E60005B2F8 /* CategoryHistogramContainer.h */,
+				CEF4C73816F420E60005B2F8 /* CategoryHistogramContainer.m */,
+				CEF4C73916F420E60005B2F8 /* client */,
+				CEF4C73C16F420E60005B2F8 /* common */,
+				CEF4C73E16F420E60005B2F8 /* Condition.h */,
+				CEF4C73F16F420E60005B2F8 /* Condition.m */,
+				CEF4C74016F420E60005B2F8 /* ConditionHistogram.h */,
+				CEF4C74116F420E60005B2F8 /* ConditionHistogram.m */,
+				CEF4C74216F420E60005B2F8 /* ConditionHistogramContainer.h */,
+				CEF4C74316F420E60005B2F8 /* ConditionHistogramContainer.m */,
+				CEF4C74416F420E60005B2F8 /* DiscountPriceInfo.h */,
+				CEF4C74516F420E60005B2F8 /* DiscountPriceInfo.m */,
+				CEF4C74616F420E60005B2F8 /* Distance.h */,
+				CEF4C74716F420E60005B2F8 /* Distance.m */,
+				CEF4C74816F420E60005B2F8 /* DomainFilter.h */,
+				CEF4C74916F420E60005B2F8 /* DomainFilter.m */,
+				CEF4C74A16F420E60005B2F8 /* ErrorCategory.h */,
+				CEF4C74B16F420E60005B2F8 /* ErrorCategory.m */,
+				CEF4C74C16F420E60005B2F8 /* ErrorData.h */,
+				CEF4C74D16F420E60005B2F8 /* ErrorData.m */,
+				CEF4C74E16F420E60005B2F8 /* ErrorMessage.h */,
+				CEF4C74F16F420E60005B2F8 /* ErrorMessage.m */,
+				CEF4C75016F420E60005B2F8 /* ErrorParameter.h */,
+				CEF4C75116F420E60005B2F8 /* ErrorParameter.m */,
+				CEF4C75216F420E60005B2F8 /* ErrorSeverity.h */,
+				CEF4C75316F420E60005B2F8 /* ErrorSeverity.m */,
+				CEF4C75416F420E60005B2F8 /* ExtensionType.h */,
+				CEF4C75516F420E60005B2F8 /* ExtensionType.m */,
+				CEF4C75616F420E60005B2F8 /* FindCompletedItemsRequest.h */,
+				CEF4C75716F420E60005B2F8 /* FindCompletedItemsRequest.m */,
+				CEF4C75816F420E60005B2F8 /* FindCompletedItemsResponse.h */,
+				CEF4C75916F420E60005B2F8 /* FindCompletedItemsResponse.m */,
+				CEF4C75A16F420E60005B2F8 /* FindItemsAdvancedRequest.h */,
+				CEF4C75B16F420E60005B2F8 /* FindItemsAdvancedRequest.m */,
+				CEF4C75C16F420E60005B2F8 /* FindItemsAdvancedResponse.h */,
+				CEF4C75D16F420E60005B2F8 /* FindItemsAdvancedResponse.m */,
+				CEF4C75E16F420E60005B2F8 /* FindItemsByCategoryRequest.h */,
+				CEF4C75F16F420E60005B2F8 /* FindItemsByCategoryRequest.m */,
+				CEF4C76016F420E60005B2F8 /* FindItemsByCategoryResponse.h */,
+				CEF4C76116F420E60005B2F8 /* FindItemsByCategoryResponse.m */,
+				CEF4C76216F420E60005B2F8 /* FindItemsByImageRequest.h */,
+				CEF4C76316F420E60005B2F8 /* FindItemsByImageRequest.m */,
+				CEF4C76416F420E60005B2F8 /* FindItemsByImageResponse.h */,
+				CEF4C76516F420E60005B2F8 /* FindItemsByImageResponse.m */,
+				CEF4C76616F420E60005B2F8 /* FindItemsByKeywordsRequest.h */,
+				CEF4C76716F420E60005B2F8 /* FindItemsByKeywordsRequest.m */,
+				CEF4C76816F420E60005B2F8 /* FindItemsByKeywordsResponse.h */,
+				CEF4C76916F420E60005B2F8 /* FindItemsByKeywordsResponse.m */,
+				CEF4C76A16F420E60005B2F8 /* FindItemsByProductRequest.h */,
+				CEF4C76B16F420E60005B2F8 /* FindItemsByProductRequest.m */,
+				CEF4C76C16F420E60005B2F8 /* FindItemsByProductResponse.h */,
+				CEF4C76D16F420E60005B2F8 /* FindItemsByProductResponse.m */,
+				CEF4C76E16F420E60005B2F8 /* FindItemsForFavoriteSearchRequest.h */,
+				CEF4C76F16F420E60005B2F8 /* FindItemsForFavoriteSearchRequest.m */,
+				CEF4C77016F420E60005B2F8 /* FindItemsForFavoriteSearchResponse.h */,
+				CEF4C77116F420E60005B2F8 /* FindItemsForFavoriteSearchResponse.m */,
+				CEF4C77216F420E60005B2F8 /* FindItemsIneBayStoresRequest.h */,
+				CEF4C77316F420E60005B2F8 /* FindItemsIneBayStoresRequest.m */,
+				CEF4C77416F420E60005B2F8 /* FindItemsIneBayStoresResponse.h */,
+				CEF4C77516F420E60005B2F8 /* FindItemsIneBayStoresResponse.m */,
+				CEF4C77616F420E60005B2F8 /* GalleryInfoContainer.h */,
+				CEF4C77716F420E60005B2F8 /* GalleryInfoContainer.m */,
+				CEF4C77816F420E60005B2F8 /* GallerySizeEnum.h */,
+				CEF4C77916F420E60005B2F8 /* GallerySizeEnum.m */,
+				CEF4C77A16F420E60005B2F8 /* GalleryURL.h */,
+				CEF4C77B16F420E60005B2F8 /* GalleryURL.m */,
+				CEF4C77C16F420E60005B2F8 /* GetHistogramsRequest.h */,
+				CEF4C77D16F420E60005B2F8 /* GetHistogramsRequest.m */,
+				CEF4C77E16F420E60005B2F8 /* GetHistogramsResponse.h */,
+				CEF4C77F16F420E60005B2F8 /* GetHistogramsResponse.m */,
+				CEF4C78016F420E60005B2F8 /* GetSearchKeywordsRecommendationRequest.h */,
+				CEF4C78116F420E60005B2F8 /* GetSearchKeywordsRecommendationRequest.m */,
+				CEF4C78216F420E60005B2F8 /* GetSearchKeywordsRecommendationResponse.h */,
+				CEF4C78316F420E60005B2F8 /* GetSearchKeywordsRecommendationResponse.m */,
+				CEF4C78416F420E60005B2F8 /* GetVersionRequest.h */,
+				CEF4C78516F420E60005B2F8 /* GetVersionRequest.m */,
+				CEF4C78616F420E60005B2F8 /* GetVersionResponse.h */,
+				CEF4C78716F420E60005B2F8 /* GetVersionResponse.m */,
+				CEF4C78816F420E60005B2F8 /* ItemAttribute.h */,
+				CEF4C78916F420E60005B2F8 /* ItemAttribute.m */,
+				CEF4C78A16F420E60005B2F8 /* ItemFilter.h */,
+				CEF4C78B16F420E60005B2F8 /* ItemFilter.m */,
+				CEF4C78C16F420E60005B2F8 /* ItemFilterType.h */,
+				CEF4C78D16F420E60005B2F8 /* ItemFilterType.m */,
+				CEF4C78E16F420E60005B2F8 /* ListingInfo.h */,
+				CEF4C78F16F420E60005B2F8 /* ListingInfo.m */,
+				CEF4C79016F420E60005B2F8 /* MapExposureEnum.h */,
+				CEF4C79116F420E60005B2F8 /* MapExposureEnum.m */,
+				CEF4C79216F420E60005B2F8 /* OutputSelectorType.h */,
+				CEF4C79316F420E60005B2F8 /* OutputSelectorType.m */,
+				CEF4C79416F420E60005B2F8 /* PaginationInput.h */,
+				CEF4C79516F420E60005B2F8 /* PaginationInput.m */,
+				CEF4C79616F420E60005B2F8 /* PaginationOutput.h */,
+				CEF4C79716F420E60005B2F8 /* PaginationOutput.m */,
+				CEF4C79816F420E60005B2F8 /* PriceTreatmentEnum.h */,
+				CEF4C79916F420E60005B2F8 /* PriceTreatmentEnum.m */,
+				CEF4C79A16F420E60005B2F8 /* ProductId.h */,
+				CEF4C79B16F420E60005B2F8 /* ProductId.m */,
+				CEF4C79C16F420E60005B2F8 /* SearchItem.h */,
+				CEF4C79D16F420E60005B2F8 /* SearchItem.m */,
+				CEF4C79E16F420E60005B2F8 /* SearchResult.h */,
+				CEF4C79F16F420E60005B2F8 /* SearchResult.m */,
+				CEF4C7A016F420E60005B2F8 /* SellerInfo.h */,
+				CEF4C7A116F420E60005B2F8 /* SellerInfo.m */,
+				CEF4C7A216F420E60005B2F8 /* SellingStatus.h */,
+				CEF4C7A316F420E60005B2F8 /* SellingStatus.m */,
+				CEF4C7A416F420E60005B2F8 /* ShippingInfo.h */,
+				CEF4C7A516F420E60005B2F8 /* ShippingInfo.m */,
+				CEF4C7A616F420E60005B2F8 /* SortOrderType.h */,
+				CEF4C7A716F420E60005B2F8 /* SortOrderType.m */,
+				CEF4C7A816F420E60005B2F8 /* Storefront.h */,
+				CEF4C7A916F420E60005B2F8 /* Storefront.m */,
+				CEF4C7AA16F420E60005B2F8 /* UnitPriceInfo.h */,
+				CEF4C7AB16F420E60005B2F8 /* UnitPriceInfo.m */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		CEF4C73916F420E60005B2F8 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4C73A16F420E60005B2F8 /* FindingServicePortType_Client.h */,
+				CEF4C73B16F420E60005B2F8 /* FindingServicePortType_Client.m */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
+		CEF4C73C16F420E60005B2F8 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4C73D16F420E60005B2F8 /* CommonTypes.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEF4C45B16F41AF80005B2F8 /* HelloeBayFinding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF4C47A16F41AF80005B2F8 /* Build configuration list for PBXNativeTarget "HelloeBayFinding" */;
+			buildPhases = (
+				CEF4C45816F41AF80005B2F8 /* Sources */,
+				CEF4C45916F41AF80005B2F8 /* Frameworks */,
+				CEF4C45A16F41AF80005B2F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloeBayFinding;
+			productName = HelloeBayFinding;
+			productReference = CEF4C45C16F41AF80005B2F8 /* HelloeBayFinding.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEF4C45316F41AF80005B2F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Leansoft;
+			};
+			buildConfigurationList = CEF4C45616F41AF80005B2F8 /* Build configuration list for PBXProject "HelloeBayFinding" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CEF4C45116F41AF80005B2F8;
+			productRefGroup = CEF4C45D16F41AF80005B2F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEF4C45B16F41AF80005B2F8 /* HelloeBayFinding */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEF4C45A16F41AF80005B2F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF4C46B16F41AF80005B2F8 /* InfoPlist.strings in Resources */,
+				CEF4C47316F41AF80005B2F8 /* Default.png in Resources */,
+				CEF4C47516F41AF80005B2F8 /* Default@2x.png in Resources */,
+				CEF4C47716F41AF80005B2F8 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEF4C45816F41AF80005B2F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF4C46D16F41AF80005B2F8 /* main.m in Sources */,
+				CEF4C47116F41AF80005B2F8 /* AppDelegate.m in Sources */,
+				CEF4C7AC16F420E60005B2F8 /* AckValue.m in Sources */,
+				CEF4C7AD16F420E60005B2F8 /* Affiliate.m in Sources */,
+				CEF4C7AE16F420E60005B2F8 /* Amount.m in Sources */,
+				CEF4C7AF16F420E60005B2F8 /* Aspect.m in Sources */,
+				CEF4C7B016F420E60005B2F8 /* AspectFilter.m in Sources */,
+				CEF4C7B116F420E60005B2F8 /* AspectHistogramContainer.m in Sources */,
+				CEF4C7B216F420E60005B2F8 /* AspectValueHistogram.m in Sources */,
+				CEF4C7B316F420E60005B2F8 /* BaseFindingServiceRequest.m in Sources */,
+				CEF4C7B416F420E60005B2F8 /* BaseFindingServiceResponse.m in Sources */,
+				CEF4C7B516F420E60005B2F8 /* BaseServiceRequest.m in Sources */,
+				CEF4C7B616F420E60005B2F8 /* BaseServiceResponse.m in Sources */,
+				CEF4C7B716F420E60005B2F8 /* BestMatchFindingServiceRequest.m in Sources */,
+				CEF4C7B816F420E60005B2F8 /* Category.m in Sources */,
+				CEF4C7B916F420E60005B2F8 /* CategoryHistogram.m in Sources */,
+				CEF4C7BA16F420E60005B2F8 /* CategoryHistogramContainer.m in Sources */,
+				CEF4C7BB16F420E60005B2F8 /* FindingServicePortType_Client.m in Sources */,
+				CEF4C7BC16F420E60005B2F8 /* Condition.m in Sources */,
+				CEF4C7BD16F420E60005B2F8 /* ConditionHistogram.m in Sources */,
+				CEF4C7BE16F420E60005B2F8 /* ConditionHistogramContainer.m in Sources */,
+				CEF4C7BF16F420E60005B2F8 /* DiscountPriceInfo.m in Sources */,
+				CEF4C7C016F420E60005B2F8 /* Distance.m in Sources */,
+				CEF4C7C116F420E60005B2F8 /* DomainFilter.m in Sources */,
+				CEF4C7C216F420E60005B2F8 /* ErrorCategory.m in Sources */,
+				CEF4C7C316F420E60005B2F8 /* ErrorData.m in Sources */,
+				CEF4C7C416F420E60005B2F8 /* ErrorMessage.m in Sources */,
+				CEF4C7C516F420E60005B2F8 /* ErrorParameter.m in Sources */,
+				CEF4C7C616F420E60005B2F8 /* ErrorSeverity.m in Sources */,
+				CEF4C7C716F420E60005B2F8 /* ExtensionType.m in Sources */,
+				CEF4C7C816F420E60005B2F8 /* FindCompletedItemsRequest.m in Sources */,
+				CEF4C7C916F420E60005B2F8 /* FindCompletedItemsResponse.m in Sources */,
+				CEF4C7CA16F420E60005B2F8 /* FindItemsAdvancedRequest.m in Sources */,
+				CEF4C7CB16F420E60005B2F8 /* FindItemsAdvancedResponse.m in Sources */,
+				CEF4C7CC16F420E60005B2F8 /* FindItemsByCategoryRequest.m in Sources */,
+				CEF4C7CD16F420E60005B2F8 /* FindItemsByCategoryResponse.m in Sources */,
+				CEF4C7CE16F420E60005B2F8 /* FindItemsByImageRequest.m in Sources */,
+				CEF4C7CF16F420E60005B2F8 /* FindItemsByImageResponse.m in Sources */,
+				CEF4C7D016F420E60005B2F8 /* FindItemsByKeywordsRequest.m in Sources */,
+				CEF4C7D116F420E60005B2F8 /* FindItemsByKeywordsResponse.m in Sources */,
+				CEF4C7D216F420E60005B2F8 /* FindItemsByProductRequest.m in Sources */,
+				CEF4C7D316F420E60005B2F8 /* FindItemsByProductResponse.m in Sources */,
+				CEF4C7D416F420E60005B2F8 /* FindItemsForFavoriteSearchRequest.m in Sources */,
+				CEF4C7D516F420E60005B2F8 /* FindItemsForFavoriteSearchResponse.m in Sources */,
+				CEF4C7D616F420E60005B2F8 /* FindItemsIneBayStoresRequest.m in Sources */,
+				CEF4C7D716F420E60005B2F8 /* FindItemsIneBayStoresResponse.m in Sources */,
+				CEF4C7D816F420E60005B2F8 /* GalleryInfoContainer.m in Sources */,
+				CEF4C7D916F420E60005B2F8 /* GallerySizeEnum.m in Sources */,
+				CEF4C7DA16F420E60005B2F8 /* GalleryURL.m in Sources */,
+				CEF4C7DB16F420E60005B2F8 /* GetHistogramsRequest.m in Sources */,
+				CEF4C7DC16F420E60005B2F8 /* GetHistogramsResponse.m in Sources */,
+				CEF4C7DD16F420E60005B2F8 /* GetSearchKeywordsRecommendationRequest.m in Sources */,
+				CEF4C7DE16F420E60005B2F8 /* GetSearchKeywordsRecommendationResponse.m in Sources */,
+				CEF4C7DF16F420E60005B2F8 /* GetVersionRequest.m in Sources */,
+				CEF4C7E016F420E60005B2F8 /* GetVersionResponse.m in Sources */,
+				CEF4C7E116F420E60005B2F8 /* ItemAttribute.m in Sources */,
+				CEF4C7E216F420E60005B2F8 /* ItemFilter.m in Sources */,
+				CEF4C7E316F420E60005B2F8 /* ItemFilterType.m in Sources */,
+				CEF4C7E416F420E60005B2F8 /* ListingInfo.m in Sources */,
+				CEF4C7E516F420E60005B2F8 /* MapExposureEnum.m in Sources */,
+				CEF4C7E616F420E60005B2F8 /* OutputSelectorType.m in Sources */,
+				CEF4C7E716F420E60005B2F8 /* PaginationInput.m in Sources */,
+				CEF4C7E816F420E60005B2F8 /* PaginationOutput.m in Sources */,
+				CEF4C7E916F420E60005B2F8 /* PriceTreatmentEnum.m in Sources */,
+				CEF4C7EA16F420E60005B2F8 /* ProductId.m in Sources */,
+				CEF4C7EB16F420E60005B2F8 /* SearchItem.m in Sources */,
+				CEF4C7EC16F420E60005B2F8 /* SearchResult.m in Sources */,
+				CEF4C7ED16F420E60005B2F8 /* SellerInfo.m in Sources */,
+				CEF4C7EE16F420E60005B2F8 /* SellingStatus.m in Sources */,
+				CEF4C7EF16F420E60005B2F8 /* ShippingInfo.m in Sources */,
+				CEF4C7F016F420E70005B2F8 /* SortOrderType.m in Sources */,
+				CEF4C7F116F420E70005B2F8 /* Storefront.m in Sources */,
+				CEF4C7F216F420E70005B2F8 /* UnitPriceInfo.m in Sources */,
+				CEF4C7F516F4212B0005B2F8 /* EBayFindingServiceClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEF4C46916F41AF80005B2F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF4C46A16F41AF80005B2F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEF4C47816F41AF80005B2F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEF4C47916F41AF80005B2F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEF4C47B16F41AF80005B2F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloeBayFinding/HelloeBayFinding-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../pico/pico/**";
+				INFOPLIST_FILE = "HelloeBayFinding/HelloeBayFinding-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CEF4C47C16F41AF80005B2F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloeBayFinding/HelloeBayFinding-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../pico/pico/**";
+				INFOPLIST_FILE = "HelloeBayFinding/HelloeBayFinding-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEF4C45616F41AF80005B2F8 /* Build configuration list for PBXProject "HelloeBayFinding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF4C47816F41AF80005B2F8 /* Debug */,
+				CEF4C47916F41AF80005B2F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF4C47A16F41AF80005B2F8 /* Build configuration list for PBXNativeTarget "HelloeBayFinding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF4C47B16F41AF80005B2F8 /* Debug */,
+				CEF4C47C16F41AF80005B2F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEF4C45316F41AF80005B2F8 /* Project object */;
+}

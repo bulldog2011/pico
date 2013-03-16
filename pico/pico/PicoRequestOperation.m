@@ -46,13 +46,21 @@ static dispatch_queue_t pico_request_operation_processing_queue() {
     if (!_responseObj && [self isFinished] && [self.responseData length] > 0 && !self.PicoError) {
         
         if (self.debug) {
-            NSLog(@"Response soap message:");
+            NSLog(@"Response message:");
             NSLog(@"%@", [NSString stringWithUTF8String:[self.responseData bytes]]);
+            if (self.response) {
+                NSLog(@"Response HTTP headers : ");
+                for(NSString *key in [self.response allHeaderFields]) {
+                    NSLog(@"Header : %@", key);
+                    NSLog(@"Value : %@", [[[self.response allHeaderFields] valueForKey:key] string]);
+                }
+            }
         }
         
+        PicoSOAPReader *soapReader = nil;
         @try {
             // unmarshall to object
-            PicoSOAPReader *soapReader = [[PicoSOAPReader alloc] init];
+            soapReader = [[PicoSOAPReader alloc] init];
             if (self.soapVersion == SOAP11) {
                 SOAP11Envelope *soap11Envelope = [soapReader fromData:self.responseData withSOAPClass:[SOAP11Envelope class] innerClass:self.responseClazz];
                 if (soap11Envelope && soap11Envelope.body && soap11Envelope.body.any.count > 0) {
@@ -71,7 +79,7 @@ static dispatch_queue_t pico_request_operation_processing_queue() {
             self.PicoError = [NSError errorWithDomain:PicoErrorDomain code:ReaderError userInfo:userInfo];
             
         } @finally {
-            [PicoSOAPReader release];
+            [soapReader release];
         }
     }
     
