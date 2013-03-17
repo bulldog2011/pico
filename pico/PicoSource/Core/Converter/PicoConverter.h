@@ -10,8 +10,8 @@
 
 @interface PicoConverter : NSObject
 
-+(id)read: (NSString *)value withType: (NSString *)type;
-+(NSString *)write: (id)value withType: (NSString *)type;
++(id)read: (NSString *)value withType: (NSString *)type config:(PicoConfig *)config;
++(NSString *)write: (id)value withType: (NSString *)type config:(PicoConfig *)config;
 +(BOOL)isPrimitive: (NSString *)type;
 +(id <PicoConvertable>)lookup: (NSString *)type;
 

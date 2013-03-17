@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CE565B9416F5A5880097A66B /* libPico.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE565B9316F5A5880097A66B /* libPico.a */; };
+		CEDDB0F216F5C19A008632A8 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDDB0F116F5C19A008632A8 /* Toast+UIView.m */; };
+		CEDDB0F416F5C1C7008632A8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDDB0F316F5C1C7008632A8 /* QuartzCore.framework */; };
 		CEF613E116F4870500A3CB13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF613E016F4870500A3CB13 /* UIKit.framework */; };
 		CEF613E316F4870500A3CB13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF613E216F4870500A3CB13 /* Foundation.framework */; };
 		CEF613E516F4870500A3CB13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF613E416F4870500A3CB13 /* CoreGraphics.framework */; };
@@ -96,7 +98,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE565B9316F5A5880097A66B /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPico.a; path = "../Pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
+		CE565B9316F5A5880097A66B /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPico.a; path = "../Pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
+		CEDDB0F016F5C19A008632A8 /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
+		CEDDB0F116F5C19A008632A8 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
+		CEDDB0F316F5C1C7008632A8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CEF613DC16F4870500A3CB13 /* eBayFinding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eBayFinding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF613E016F4870500A3CB13 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEF613E216F4870500A3CB13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -267,6 +272,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDDB0F416F5C1C7008632A8 /* QuartzCore.framework in Frameworks */,
 				CE565B9416F5A5880097A66B /* libPico.a in Frameworks */,
 				CEF614E616F487CC00A3CB13 /* libxml2.dylib in Frameworks */,
 				CEF613E116F4870500A3CB13 /* UIKit.framework in Frameworks */,
@@ -278,9 +284,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CEDDB0EF16F5C19A008632A8 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				CEDDB0F016F5C19A008632A8 /* Toast+UIView.h */,
+				CEDDB0F116F5C19A008632A8 /* Toast+UIView.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
 		CEF613D116F4870400A3CB13 = {
 			isa = PBXGroup;
 			children = (
+				CEDDB0F316F5C1C7008632A8 /* QuartzCore.framework */,
 				CE565B9316F5A5880097A66B /* libPico.a */,
 				CEF614E516F487CC00A3CB13 /* libxml2.dylib */,
 				CEF613E616F4870500A3CB13 /* eBayFinding */,
@@ -310,6 +326,7 @@
 		CEF613E616F4870500A3CB13 /* eBayFinding */ = {
 			isa = PBXGroup;
 			children = (
+				CEDDB0EF16F5C19A008632A8 /* Toast */,
 				CEF6140616F4876800A3CB13 /* eBayFindingService */,
 				CEF613EF16F4870500A3CB13 /* AppDelegate.h */,
 				CEF613F016F4870500A3CB13 /* AppDelegate.m */,
@@ -654,6 +671,7 @@
 				CEF614DE16F4877500A3CB13 /* Storefront.m in Sources */,
 				CEF614DF16F4877500A3CB13 /* UnitPriceInfo.m in Sources */,
 				CEF614E216F4878500A3CB13 /* EBayFindingServiceClient.m in Sources */,
+				CEDDB0F216F5C19A008632A8 /* Toast+UIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

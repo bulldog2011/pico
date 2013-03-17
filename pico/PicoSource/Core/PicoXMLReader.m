@@ -93,7 +93,7 @@
             if (attrNode) {
                 NSString *attrValue = [attrNode stringValue];
                 if ([attrValue length] > 0) {
-                    id objValue = [PicoConverter read:attrValue withType:ps.propertyType];
+                    id objValue = [PicoConverter read:attrValue withType:ps.propertyType config:self.config];
                     if (objValue) {
                         [value setValue:objValue forKey: ps.propertyName];
                     }
@@ -111,7 +111,7 @@
     if (valuePs) {
         NSString *text = [element stringValue];
         if (text.length > 0) {
-            id objValue = [PicoConverter read: text withType: valuePs.propertyType];
+            id objValue = [PicoConverter read: text withType: valuePs.propertyType config:self.config];
             if (objValue) {
                 [value setValue: objValue forKey: valuePs.propertyName];
             }
@@ -145,7 +145,7 @@
                     if ([PicoConverter isPrimitive:ps.propertyType]) {
                         NSString *xmlValue = [childElement stringValue];
                         if (xmlValue.length > 0) {
-                            id objValue = [PicoConverter read: xmlValue withType: ps.propertyType];
+                            id objValue = [PicoConverter read: xmlValue withType: ps.propertyType config:self.config];
                             if (objValue) {
                                 [value setValue: objValue forKey: ps.propertyName];
                             }
@@ -165,7 +165,7 @@
                         if ([PicoConverter isPrimitive: ps.propertyType]) {
                             NSString *xmlValue = [childElement stringValue];
                             if (xmlValue.length > 0) {
-                                id objValue = [PicoConverter read:xmlValue withType:ps.propertyType];
+                                id objValue = [PicoConverter read:xmlValue withType:ps.propertyType config:self.config];
                                 [array addObject: objValue];
                             }
                         } else if ([ps.propertyType isEqualToString:PICO_TYPE_OBJECT]) { // object

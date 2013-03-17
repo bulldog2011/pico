@@ -29,6 +29,7 @@ enum {
 @synthesize endpointURL = _endpointURL;
 @synthesize soapVersion = _soapVersion;
 @synthesize debug = _debug;
+@synthesize config = _config;
 
 - (id)initWithEndpointURL:(NSURL *)URL {
     NSParameterAssert(URL);
@@ -39,6 +40,8 @@ enum {
     }
     
     self.soapVersion = SOAP11; // defaut to soap 11
+    
+    _config = [[PicoConfig alloc] init]; // default config
     
     self.parameterEncoding = PicoSOAPParameterEncoding;
     
@@ -55,54 +58,68 @@ enum {
        success:(void (^)(PicoRequestOperation *operation, id<PicoBindable> responseObject))success
        failure:(void (^)(PicoRequestOperation *operation, NSError *error, id<PicoBindable> soapFault))failure {
     
-    NSMutableURLRequest *request = [self requestWithMethod:@"POST" requestObject:requestObject];
-    AFHTTPRequestOperation *httpOperation = [self HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        PicoRequestOperation *picoOperation = (PicoRequestOperation *)operation;
-        if (picoOperation.error) {
-            if (failure) {
-                failure(picoOperation, picoOperation.error, nil); // parsing error
-            }
-        } else if (picoOperation.responseObj) {
-            if ([picoOperation.responseObj isMemberOfClass:[SOAP11Fault class]] || [picoOperation.responseObj isMemberOfClass:[SOAP12Fault class]]) {
+    NSParameterAssert(self.config);
+
+    @try {
+        NSMutableURLRequest *request = [self requestWithMethod:@"POST" requestObject:requestObject];
+
+        AFHTTPRequestOperation *httpOperation = [self HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            PicoRequestOperation *picoOperation = (PicoRequestOperation *)operation;
+            if (picoOperation.error) {
                 if (failure) {
-                    failure(picoOperation, nil, picoOperation.responseObj); // soap fault
+                    failure(picoOperation, picoOperation.error, nil); // parsing error
                 }
-            } else {
-                if (success) {
-                    success(picoOperation, picoOperation.responseObj);
+            } else if (picoOperation.responseObj) {
+                if ([picoOperation.responseObj isMemberOfClass:[SOAP11Fault class]] || [picoOperation.responseObj isMemberOfClass:[SOAP12Fault class]]) {
+                    if (failure) {
+                        failure(picoOperation, nil, picoOperation.responseObj); // soap fault
+                    }
+                } else {
+                    if (success) {
+                        success(picoOperation, picoOperation.responseObj);
+                    }
                 }
+            }
+
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) { // http error
+            if (failure) {
+                PicoRequestOperation *picoOperation = (PicoRequestOperation *)operation;
+                if (picoOperation.responseObj) {
+                    if ([picoOperation.responseObj isMemberOfClass:[SOAP11Fault class]] || [picoOperation.responseObj isMemberOfClass:[SOAP12Fault class]]) {
+                        failure(picoOperation, nil, picoOperation.responseObj); // soap fault
+                    }
+                } else {
+                    failure(picoOperation, picoOperation.error, nil);
+                }
+            }
+        }];
+
+        PicoRequestOperation *picoOperation = (PicoRequestOperation *)httpOperation;
+        picoOperation.soapVersion = self.soapVersion;
+        picoOperation.responseClazz = responseClazz;
+        picoOperation.debug = self.debug;
+        picoOperation.config = self.config;
+
+        if (self.debug) {
+            NSLog(@"Sending reqeust to : %@", [self.endpointURL absoluteString]);
+            NSLog(@"Request HTTP Headers : ");
+            for(NSString *key in [request allHTTPHeaderFields]) {
+                NSLog(@"%@ = %@", key, [[request allHTTPHeaderFields] valueForKey:key]);
             }
         }
 
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) { // http error
+        [self enqueueHTTPRequestOperation:httpOperation];
+        
+    } @catch (NSException* ex) {
+        NSMutableDictionary *userInfo = [NSMutableDictionary dictionaryWithObject:@"Error to build request" forKey:NSLocalizedDescriptionKey];
+        [userInfo setValue:ex.reason forKey:NSLocalizedFailureReasonErrorKey];
+        [userInfo setValue:ex forKey:NSUnderlyingErrorKey];
+        NSError *error = [NSError errorWithDomain:PicoErrorDomain code:WriterError userInfo:userInfo];
         if (failure) {
-            PicoRequestOperation *picoOperation = (PicoRequestOperation *)operation;
-            if (picoOperation.responseObj) {
-                if ([picoOperation.responseObj isMemberOfClass:[SOAP11Fault class]] || [picoOperation.responseObj isMemberOfClass:[SOAP12Fault class]]) {
-                    failure(picoOperation, nil, picoOperation.responseObj); // soap fault
-                }
-            } else {
-                failure(picoOperation, picoOperation.error, nil);
-            }
+            failure(nil, error, nil);
         }
-    }];
-    
-    PicoRequestOperation *picoOperation = (PicoRequestOperation *)httpOperation;
-    picoOperation.soapVersion = self.soapVersion;
-    picoOperation.responseClazz = responseClazz;
-    picoOperation.debug = self.debug;
-    
-    if (self.debug) {
-        NSLog(@"Sending reqeust to :");
-        NSLog(@"%@", [self.endpointURL absoluteString]);
-        NSLog(@"Request HTTP Headers : ");
-        for(NSString *key in [request allHTTPHeaderFields]) {
-            NSLog(@"Header : %@", key);
-            NSLog(@"Value : %@", [[request allHTTPHeaderFields] valueForKey:key]);
-        }
+        return;
     }
-    
-    [self enqueueHTTPRequestOperation:httpOperation];
 }
 
 - (NSMutableURLRequest *)requestWithMethod:(NSString *)method requestObject:(id<PicoBindable>)requestObject {
@@ -111,7 +128,7 @@ enum {
     
     NSMutableURLRequest *request = [super requestWithMethod:method path:[self.endpointURL absoluteString] parameters:nil];
     
-    PicoSOAPWriter *soapWriter = [[PicoSOAPWriter alloc] init];
+    PicoSOAPWriter *soapWriter = [[PicoSOAPWriter alloc] initWithConfig:self.config];
     
     // marshall to soap message
     NSData *soapData = nil;
@@ -145,5 +162,11 @@ enum {
     request.HTTPBody = soapData;
     
     return request;
+}
+
+- (void)dealloc {
+    self.endpointURL = nil;
+    self.config = nil;
+    [super dealloc];
 }
 @end

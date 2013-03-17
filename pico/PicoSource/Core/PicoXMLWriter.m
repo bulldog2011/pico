@@ -117,7 +117,7 @@
             PicoPropertySchema *ps = [map objectForKey:propertyName];
             id propertyValue = [source valueForKey:propertyName];
             if (propertyValue) {
-                NSString *xmlString = [PicoConverter write:propertyValue withType:ps.propertyType];
+                NSString *xmlString = [PicoConverter write:propertyValue withType:ps.propertyType config:self.config];
                 if (xmlString.length > 0) {
                     [xmlWriter writeAttribute:ps.xmlName value:xmlString];
                 }
@@ -131,7 +131,7 @@
     PicoPropertySchema *valuePs = bindingSchema.valueSchema;
     if (valuePs) {
         id propertyValue = [source valueForKey:valuePs.propertyName];
-        NSString *xmlString = [PicoConverter write:propertyValue withType:valuePs.propertyType];
+        NSString *xmlString = [PicoConverter write:propertyValue withType:valuePs.propertyType config:self.config];
         if (xmlString.length > 0) {
             [xmlWriter writeCharacters:xmlString];
         }
@@ -236,7 +236,7 @@
     if (!source) return;
     
     if ([PicoConverter isPrimitive:propertySchema.propertyType]) {
-        NSString *xmlString = [PicoConverter write:source withType:propertySchema.propertyType];
+        NSString *xmlString = [PicoConverter write:source withType:propertySchema.propertyType config:self.config];
         if (xmlString.length > 0) {
             [xmlWriter writeStartElementWithNamespace:nsURI localName:propertySchema.xmlName];
             [xmlWriter writeCharacters:xmlString];

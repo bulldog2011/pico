@@ -12,43 +12,34 @@ NSString *const DEFAULT_XML_ENCODING = @"utf-8";
 
 @implementation PicoConfig
 
-static NSLocale *_locale = nil;
-
-@synthesize indent = _indent, encoding = _encoding;
-
-+ (void)initialize {
-    if (!_locale) {
-        _locale = [NSLocale currentLocale];
-    }
-}
+@synthesize indent = _indent, encoding = _encoding, locale = _locale, timeZone = _tiemZone;
+@synthesize numberFormatter = _numberFormatter, dateFormatter = _dateFormatter;
 
 - (id) init {
-    return [self initWithIndent:YES];
-}
-
-- (id) initWithIndent:(BOOL)indent {
-    return [self initWithIndentAndEncdoing:indent encoding:DEFAULT_XML_ENCODING];
-}
-
-- (id) initWithIndentAndEncdoing:(BOOL)indent encoding:(NSString *)encoding {
     self = [super init];
     if (self) {
-        self.indent = indent;
-        self.encoding = encoding;
+        self.indent = YES;
+        self.encoding = DEFAULT_XML_ENCODING;
+        self.locale = [NSLocale currentLocale];
+        _numberFormatter = [[NSNumberFormatter alloc] init];
+        _numberFormatter.locale = self.locale;
+        
+        self.timeZone = [NSTimeZone timeZoneWithName:@"GMT"];
+        
+        _dateFormatter = [[NSDateFormatter alloc] init];
+        [_dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"];
+        [_dateFormatter setTimeZone:_tiemZone];
     }
     
     return self;
 }
 
-+ (NSLocale *)getLocale {
-    return _locale;
-}
-+ (void)setLocale:(NSLocale *)locale {
-    _locale = locale;
-}
-
 -(void) dealloc {
     self.encoding = nil;
+    self.locale = nil;
+    self.numberFormatter = nil;
+    self.timeZone = nil;
+    self.dateFormatter = nil;
     [super dealloc];
 }
 

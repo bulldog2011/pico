@@ -10,7 +10,7 @@
 
 @implementation PicoBoolConverter
 
--(NSString *)write:(NSNumber *)value {
+-(NSString *)write:(NSNumber *)value withConfig:(PicoConfig *)config {
     if ([value boolValue]) {
         return @"true";
     } else {
@@ -18,7 +18,7 @@
     }
 }
 
--(NSNumber *)read:(NSString *)value {
+-(NSNumber *)read:(NSString *)value withConfig:(PicoConfig *)config {
     NSString *lower = [value lowercaseString];
     NSNumber *result = nil;
     if ([lower isEqualToString:@"true"]) {

@@ -14,6 +14,8 @@
 #import "SOAP12Detail.h"
 #import "SOAP12Reasontext.h"
 
+#import "Toast+UIView.h"
+
 @interface ViewController ()
 
 @end
@@ -39,18 +41,12 @@
     [_searchButton setTitle:@"Search" forState:UIControlStateNormal];
     [_searchButton addTarget:self action:@selector(searchButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_searchButton];
-    
-    // Create a text view in which we will display the search results.
-    _searchResult = [[UITextView alloc] initWithFrame:CGRectMake(5.0f, 50.0f, 310.0f, 400.0f)];
-    _searchResult.editable = NO;
-    [self.view addSubview:_searchResult];
 }
 
 - (void)viewDidUnload
 {
     [_searchText dealloc];
     [_searchButton dealloc];
-    [_searchResult dealloc];
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,53 +57,58 @@
 
 - (void)searchButtonPressed:(id)sender
 {
-    // Reset the search results text and hide the keyboard.
-    _searchResult.text = @"";
+    // Hide the keyboard.
     [_searchText resignFirstResponder];
     
     if (_searchText.text.length > 0) {
         
+        // start progress activity
+        [self.view makeToastActivity];
+        
+        // Get shared service client
         EBayFindingServiceClient *findingClient = [EBayFindingServiceClient sharedClient];
-        findingClient.debug = YES;
+        findingClient.debug = YES; // enable request/response message logging
+        
+        // Build request object
         FindItemsByKeywordsRequest *request = [[[FindItemsByKeywordsRequest alloc] init] autorelease];
         request.keywords = _searchText.text;
+        // only need one item for demo
+        PaginationInput *pagination = [[PaginationInput alloc] init];
+        pagination.pageNumber = [NSNumber numberWithInt:1];
+        pagination.entriesPerPage = [NSNumber numberWithInt:1];
+        request.paginationInput = pagination;
+        [pagination release];
         
+        // make API call and register callbacks
         [findingClient findItemsByKeywords:request success:^(FindItemsByKeywordsResponse *responseObject) {
-            // Build a string that will contain all the found items.
-            NSMutableString* resultsText = [NSMutableString string];
             
-            // Enumerate all the found items and append them to the temporary string
-            int count = [[responseObject.searchResult count] intValue];
-            for (int i = 0; i < count; ++i)
-            {
-                SearchItem *item = [responseObject.searchResult.item objectAtIndex:i];
+            if (responseObject.searchResult.count > 0) {
+                // show the title of the first found item
+                SearchItem *item = [responseObject.searchResult.item objectAtIndex:0];
+                // get gallery image
+                NSURL *imageURL = [NSURL URLWithString:item.galleryURL];
+                NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
                 
-                NSString* itemText = [NSString stringWithFormat:
-                                          @"----------------\n"
-                                          "Title: %@\n"
-                                          "Price: %.2f %@\n"
-                                          "Location: %@, %@\n"
-                                          "URL: %@\n",
-                                          item.title,
-                                          [item.sellingStatus.currentPrice.value floatValue],
-                                          item.sellingStatus.currentPrice.currencyId,
-                                          item.country,
-                                          item.location,
-                                          item.viewItemURL];
+                // stop progress activity
+                [self.view hideToastActivity];
                 
-                [resultsText appendString:itemText];
+                UIImage *image = [UIImage imageWithData:imageData];
+                [self.view makeToast:item.title duration:3.0 position:@"center" title:@"Success" image:image];
+            } else {
+                // no result
+                [self.view makeToast:@"No result" duration:3.0 position:@"center"];
             }
-            
-            // Set the text in the search results control to the temporary string.
-            _searchResult.text = resultsText;
-            
         } failure:^(NSError *error, id<PicoBindable> soapFault) {
+            
+            // stop progress activity
+            [self.view hideToastActivity];
+            
             if (error) {
-                _searchResult.text = [error localizedDescription];
+                [self.view makeToast:[error localizedDescription] duration:3.0 position:@"center" title:@"Error"];
             } else if (soapFault) {
                 SOAP12Fault *soap12Fault = (SOAP12Fault *)soapFault;
                 SOAP12Reasontext *reasonText = [soap12Fault.reason.text objectAtIndex:0];
-                _searchResult.text = [NSString stringWithFormat:@"Got soap fault, reason: %@", reasonText.value];
+                [self.view makeToast:reasonText.value duration:3.0 position:@"center" title:@"SOAP Fault"];
             }
         }];
         

@@ -78,20 +78,20 @@ static NSMutableDictionary *cache = nil;
     
 }
 
-+(id)read: (NSString *)value withType: (NSString *)type {
++(id)read: (NSString *)value withType: (NSString *)type config:(PicoConfig *)config {
 	id <PicoConvertable> converter = [PicoConverter lookup:type];
 	if (converter == nil) {
 		@throw [NSException exceptionWithName:@"ConverterException" reason:[NSString stringWithFormat:@"no converter found for type : %@", type] userInfo:nil];
 	}
-	return [converter read:value];
+	return [converter read:value withConfig:config];
 }
 
-+(NSString *)write: (id)value withType: (NSString *)type {
++(NSString *)write: (id)value withType: (NSString *)type config:(PicoConfig *)config {
 	id <PicoConvertable> converter = [PicoConverter lookup:type];
 	if (converter == nil) {
 		@throw [NSException exceptionWithName:@"ConverterException" reason:[NSString stringWithFormat:@"no converter found for type : %@", type] userInfo:nil];
 	}
-	return [converter write:value];
+	return [converter write:value withConfig:config];
 }
 
 +(BOOL) isPrimitive:(NSString *)type {

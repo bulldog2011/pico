@@ -11,7 +11,6 @@
 @interface ViewController : UIViewController {
     UITextField *_searchText;
     UIButton *_searchButton;
-    UITextView *_searchResult;
 }
 
 @end

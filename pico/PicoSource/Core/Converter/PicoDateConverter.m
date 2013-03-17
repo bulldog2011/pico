@@ -7,53 +7,19 @@
 //
 
 #import "PicoDateConverter.h"
-#import "PicoConfig.h"
 
 @implementation PicoDateConverter
 
-static NSDateFormatter *writeFormatter = nil;
-static NSString *wLock = @"wLock";
-static NSDateFormatter *readFormatter = nil;
-static NSString *rLock = @"rLock";
-
--(NSString *)write:(NSDate *)date {
+-(NSString *)write:(NSDate *)date withConfig:(PicoConfig *)config {
 	
-	NSString *dateString = nil;
-	
-	@synchronized(wLock) {
-        
-		if (writeFormatter == nil) {
-			writeFormatter = [[NSDateFormatter alloc] init];
-			[writeFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"];
-			[writeFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"GMT"]];
-			
-			[writeFormatter setLocale:[PicoConfig getLocale]];
-		}
-        
-		dateString = [writeFormatter stringFromDate: date];
-		
-	}
+	NSString *dateString = [config.dateFormatter stringFromDate: date];
 	
 	return dateString;
 }
 
--(NSDate *)read: (NSString *) value {
+-(NSDate *)read: (NSString *) value withConfig:(PicoConfig *)config{
 	
-	NSDate *date = nil;
-	
-	@synchronized(rLock) {
-		
-		if(readFormatter == nil) {
-			readFormatter = [[NSDateFormatter alloc] init];
-			[readFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"];
-			[readFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"GMT"]];
-			
-			[readFormatter setLocale:[PicoConfig getLocale]];
-		}
-        
-	    date = [readFormatter dateFromString:value];
-		
-	}
+	NSDate *date = [config.dateFormatter dateFromString:value];
 	
 	return date;
 }

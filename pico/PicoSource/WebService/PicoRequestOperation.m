@@ -34,6 +34,7 @@ static dispatch_queue_t pico_request_operation_processing_queue() {
 @synthesize responseClazz = _responseClazz;
 @synthesize soapVersion = _soapVersion;
 @synthesize debug = _debug;
+@synthesize config = _config;
 
 -(void)dealloc {
     [_responseObj release];
@@ -51,8 +52,7 @@ static dispatch_queue_t pico_request_operation_processing_queue() {
             if (self.response) {
                 NSLog(@"Response HTTP headers : ");
                 for(NSString *key in [self.response allHeaderFields]) {
-                    NSLog(@"Header : %@", key);
-                    NSLog(@"Value : %@", [[self.response allHeaderFields] valueForKey:key]);
+                    NSLog(@"%@ = %@", key, [[self.response allHeaderFields] valueForKey:key]);
                 }
             }
         }
@@ -60,7 +60,7 @@ static dispatch_queue_t pico_request_operation_processing_queue() {
         PicoSOAPReader *soapReader = nil;
         @try {
             // unmarshall to object
-            soapReader = [[PicoSOAPReader alloc] init];
+            soapReader = [[PicoSOAPReader alloc] initWithConfig:self.config];
             if (self.soapVersion == SOAP11) {
                 SOAP11Envelope *soap11Envelope = [soapReader fromData:self.responseData withSOAPClass:[SOAP11Envelope class] innerClass:self.responseClazz];
                 if (soap11Envelope && soap11Envelope.body && soap11Envelope.body.any.count > 0) {
@@ -73,7 +73,7 @@ static dispatch_queue_t pico_request_operation_processing_queue() {
                 }
             }
         } @catch (NSException *ex) {
-            NSDictionary *userInfo = [NSDictionary dictionaryWithObject:@"Error to read soap response" forKey:NSLocalizedDescriptionKey];
+            NSMutableDictionary *userInfo = [NSMutableDictionary dictionaryWithObject:@"Error to read soap response" forKey:NSLocalizedDescriptionKey];
             [userInfo setValue:ex.reason forKey:NSLocalizedFailureReasonErrorKey];
             [userInfo setValue:ex forKey:NSUnderlyingErrorKey];
             self.PicoError = [NSError errorWithDomain:PicoErrorDomain code:ReaderError userInfo:userInfo];

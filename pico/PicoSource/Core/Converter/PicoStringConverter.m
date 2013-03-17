@@ -10,11 +10,11 @@
 
 @implementation PicoStringConverter
 
--(NSString *)write:(NSString *)value {
+-(NSString *)write:(NSString *)value withConfig:(PicoConfig *)config {
 	return value;
 }
 
--(NSString *)read:(NSString *)value {
+-(NSString *)read:(NSString *)value withConfig:(PicoConfig *)config {
 	return value;
 }
 

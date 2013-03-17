@@ -23,82 +23,89 @@
 - (void)testNumberConverter {
     GHTestLog(@"Begin to test PicoNumberConverter");
 	
+    PicoConfig *config = [[PicoConfig alloc] init];
 	PicoNumberConverter *numConverter = [[PicoNumberConverter alloc] init];
 	
-	NSNumber *num = [numConverter read:@"25"];
+	NSNumber *num = [numConverter read:@"25" withConfig:config];
 	
 	GHAssertTrue([num intValue] == 25, nil);
 	
-	NSString *numstr = [numConverter write:num];
+	NSString *numstr = [numConverter write:num withConfig:config];
 	GHAssertEqualStrings(numstr, @"25", nil);
 	
-	num = [numConverter read:@"26.5"];
+	num = [numConverter read:@"26.5" withConfig:config];
 	
 	GHAssertTrue([num floatValue] == 26.5, nil);
-	numstr = [numConverter write:num];
+	numstr = [numConverter write:num withConfig: config];
 	GHAssertEqualStrings(numstr, @"26.5", nil);
 	
 	GHAssertTrue([num doubleValue] == 26.5, nil);
 	
 	[numConverter release];
+    [config release];
 }
 
 -(void)testBoolConverter {
 	GHTestLog(@"Begin to test EbayNs_BoolConverter");
 	
+    PicoConfig *config = [[PicoConfig alloc] init];
 	PicoBoolConverter *boolConverter = [[PicoBoolConverter alloc] init];
 	
-	NSNumber *boolNum = [boolConverter read:@"true"];
+	NSNumber *boolNum = [boolConverter read:@"true" withConfig: config];
 	
 	GHAssertTrue([boolNum boolValue], nil);
 	
-	boolNum = [boolConverter read:@"True"];
+	boolNum = [boolConverter read:@"True" withConfig:config];
 	
 	GHAssertTrue([boolNum boolValue], nil);
-	GHAssertEqualStrings([boolConverter write:boolNum], @"true", nil);
+	GHAssertEqualStrings([boolConverter write:boolNum withConfig:config], @"true", nil);
 	
-	boolNum = [boolConverter read:@"YES"];
-	
-	GHAssertFalse([boolNum boolValue], nil);
-	GHAssertEqualStrings([boolConverter write:boolNum], @"false", nil);
-	
-	boolNum = [boolConverter read:@"True1"];
+	boolNum = [boolConverter read:@"YES" withConfig:config];
 	
 	GHAssertFalse([boolNum boolValue], nil);
+	GHAssertEqualStrings([boolConverter write:boolNum withConfig:config], @"false", nil);
 	
-	boolNum = [boolConverter read:@"100"];
+	boolNum = [boolConverter read:@"True1" withConfig:config];
 	
 	GHAssertFalse([boolNum boolValue], nil);
 	
-	boolNum = [boolConverter read:@"1"];
+	boolNum = [boolConverter read:@"100" withConfig: config];
+	
+	GHAssertFalse([boolNum boolValue], nil);
+	
+	boolNum = [boolConverter read:@"1" withConfig: config];
 	GHAssertTrue([boolNum boolValue], nil);
 	
-	boolNum = [boolConverter read:@"0"];
+	boolNum = [boolConverter read:@"0" withConfig: config];
 	GHAssertFalse([boolNum boolValue], nil);
 	
 	
 	[boolConverter release];
+    [config release];
 }
 
 -(void)testStringConverter {
 	GHTestLog(@"Begin to test PicoStringConverter");
 	
+    PicoConfig *config = [[PicoConfig alloc] init];
 	PicoStringConverter *stringConverter = [[[PicoStringConverter alloc] init] autorelease];
 	
-	NSString *str = [stringConverter read:@"test"];
+	NSString *str = [stringConverter read:@"test" withConfig: config];
 	
 	GHAssertEqualStrings(str, @"test", nil);
 	
-	str = [stringConverter write:@"test"];
+	str = [stringConverter write:@"test" withConfig: config];
 	
 	GHAssertEqualStrings(str, @"test", nil);
+    [config release];
 	
 }
 
 -(void)testDateConverter {
 	PicoDateConverter *dateConverter = [[PicoDateConverter alloc] init];
-	
-	NSDate *date = [dateConverter read: @"2011-07-17T16:23:40.000Z"];
+    
+    PicoConfig *config = [[PicoConfig alloc] init];
+	NSDate *date = [dateConverter read: @"2011-07-17T16:23:40.000Z" withConfig:config];
 	NSDateComponents *dateComp = [[[NSDateComponents alloc] init] autorelease];
 	[dateComp setYear:2011];
 	[dateComp setMonth:7];
@@ -121,46 +128,48 @@
 	NSCalendar *localCalendar = [[[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar] autorelease];
 	NSDate *localDate = [localCalendar dateFromComponents:localDateComp];
 	
-	NSString *dateString = [dateConverter write: localDate];
+	NSString *dateString = [dateConverter write: localDate withConfig:config];
 	
 	GHAssertEqualStrings(@"2012-11-30T09:10:30.000Z", dateString, nil);
 	
 	[dateConverter release];
+    [config release];
 }
 
 -(void)testConverter {
 	GHTestLog(@"Begin to test PicoConverter");
 	
+    PicoConfig *config = [[PicoConfig alloc] init];
 	PicoConverter *converter = [[PicoConverter alloc] init];
 	
 	GHAssertTrue([PicoConverter isPrimitive:PICO_TYPE_INT], nil);
 	GHAssertTrue([PicoConverter isPrimitive:PICO_TYPE_STRING], nil);
 	GHAssertFalse([PicoConverter isPrimitive:PICO_TYPE_OBJECT], nil);
 	
-	NSNumber *value = [PicoConverter read:@"25" withType:PICO_TYPE_INT];
+	NSNumber *value = [PicoConverter read:@"25" withType:PICO_TYPE_INT config:config];
 	GHAssertTrue([value intValue] == 25, nil);
 	
-	GHAssertEqualStrings([PicoConverter write:value withType:PICO_TYPE_INT], @"25", nil);
+	GHAssertEqualStrings([PicoConverter write:value withType:PICO_TYPE_INT config:config], @"25", nil);
 	
-	value = [PicoConverter read:@"25.1" withType:PICO_TYPE_FLOAT];
+	value = [PicoConverter read:@"25.1" withType:PICO_TYPE_FLOAT config:config];
 	float f = [value floatValue];
 	GHAssertTrue(abs(f - 25.1) <= 1e-6, nil);
-	GHAssertEqualStrings([PicoConverter write:value withType:PICO_TYPE_FLOAT], @"25.1", nil);
+	GHAssertEqualStrings([PicoConverter write:value withType:PICO_TYPE_FLOAT config:config], @"25.1", nil);
 	
-	value = [PicoConverter read:@"true" withType:PICO_TYPE_BOOL];
+	value = [PicoConverter read:@"true" withType:PICO_TYPE_BOOL config:config];
 	GHAssertTrue([value boolValue], nil);
-	GHAssertEqualStrings([PicoConverter write:value withType:PICO_TYPE_BOOL], @"true", nil);
+	GHAssertEqualStrings([PicoConverter write:value withType:PICO_TYPE_BOOL config:config], @"true", nil);
 	
-	NSString *str = [PicoConverter read:@"27" withType:PICO_TYPE_STRING];
+	NSString *str = [PicoConverter read:@"27" withType:PICO_TYPE_STRING config:config];
 	GHAssertEqualStrings(str, @"27", nil);
-	GHAssertEqualStrings([PicoConverter write:str withType:PICO_TYPE_STRING], @"27", nil);
+	GHAssertEqualStrings([PicoConverter write:str withType:PICO_TYPE_STRING config:config], @"27", nil);
 	
-	str = [PicoConverter read:@"GREEN" withType:PICO_TYPE_ENUM];
+	str = [PicoConverter read:@"GREEN" withType:PICO_TYPE_ENUM config:config];
 	GHAssertEqualStrings(str, @"GREEN", nil);
-	GHAssertEqualStrings([PicoConverter write:str withType:PICO_TYPE_ENUM], @"GREEN", nil);
+	GHAssertEqualStrings([PicoConverter write:str withType:PICO_TYPE_ENUM config:config], @"GREEN", nil);
 	
 	[converter release];
-	
+    [config release];	
 }
 
 @end

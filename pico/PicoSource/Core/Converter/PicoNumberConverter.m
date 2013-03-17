@@ -11,27 +11,13 @@
 
 @implementation PicoNumberConverter
 
--(NSString *)write:(NSNumber *)value {
+-(NSString *)write:(NSNumber *)value withConfig:(PicoConfig *)config {
 	NSString *result = [value stringValue];
 	return result;
 }
 
-static NSNumberFormatter *formatter = nil;
-static NSString *fLock = @"Lock";
-
--(NSNumber *)read:(NSString *)value {
-	
-	NSNumber *result = nil;
-	@synchronized(fLock) {
-        
-		if (formatter == nil) {
-			formatter = [[NSNumberFormatter alloc] init];
-            formatter.locale = [PicoConfig getLocale];
-		}
-        
-		result = [formatter numberFromString:value];
-	}
-	
+-(NSNumber *)read:(NSString *)value withConfig:(PicoConfig *)config {
+	NSNumber *result = [config.numberFormatter numberFromString:value];
 	return result;
 }
 

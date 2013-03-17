@@ -8,6 +8,7 @@
 
 #import "AFHTTPRequestOperation.h"
 #import "PicoConstants.h"
+#import "PicoConfig.h"
 
 /**
  `PicoRequestOperation` is a subclass of `AFHTTPRequestOperation` for Pico binding support.
@@ -44,6 +45,11 @@
  output debug info, such as response soap message
  */
 @property (readwrite, nonatomic, assign) BOOL debug;
+
+/**
+ Configurations like encoding, data/number formatter, etc
+ */
+@property (readwrite, nonatomic, retain) PicoConfig *config;
 
 ///----------------------------------
 /// @name Creating Request Operations
