@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE565B8516F5A4C80097A66B /* libPico.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE565B8416F5A4C80097A66B /* libPico.a */; };
 		CEAC41FF16EC3A500032CDFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAC41FE16EC3A500032CDFC /* UIKit.framework */; };
 		CEAC420116EC3A500032CDFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAC420016EC3A500032CDFC /* Foundation.framework */; };
 		CEAC420316EC3A500032CDFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAC420216EC3A500032CDFC /* CoreGraphics.framework */; };
@@ -21,7 +22,6 @@
 		CEAC423A16EC3D3A0032CDFC /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC423516EC3D3A0032CDFC /* TestViewController.m */; };
 		CEAC423B16EC3D3A0032CDFC /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAC423616EC3D3A0032CDFC /* TestViewController.xib */; };
 		CEAC423F16EC3E6D0032CDFC /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC423E16EC3E6D0032CDFC /* MBProgressHUD.m */; };
-		CEAC424116EC3EEF0032CDFC /* libpico.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAC424016EC3EEF0032CDFC /* libpico.a */; };
 		CEAC425516EC48160032CDFC /* 10records.xml in Resources */ = {isa = PBXBuildFile; fileRef = CEAC425216EC48160032CDFC /* 10records.xml */; };
 		CEAC425616EC48160032CDFC /* 50records.xml in Resources */ = {isa = PBXBuildFile; fileRef = CEAC425316EC48160032CDFC /* 50records.xml */; };
 		CEAC425716EC48160032CDFC /* 300records.xml in Resources */ = {isa = PBXBuildFile; fileRef = CEAC425416EC48160032CDFC /* 300records.xml */; };
@@ -33,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE565B8416F5A4C80097A66B /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPico.a; path = "../Pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
 		CEAC41FA16EC3A500032CDFC /* PicoPerformance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicoPerformance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAC41FE16EC3A500032CDFC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEAC420016EC3A500032CDFC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -54,7 +55,6 @@
 		CEAC423616EC3D3A0032CDFC /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		CEAC423D16EC3E6D0032CDFC /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		CEAC423E16EC3E6D0032CDFC /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		CEAC424016EC3EEF0032CDFC /* libpico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpico.a; path = "../../../../../../Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos/libpico.a"; sourceTree = "<group>"; };
 		CEAC425216EC48160032CDFC /* 10records.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 10records.xml; sourceTree = "<group>"; };
 		CEAC425316EC48160032CDFC /* 50records.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 50records.xml; sourceTree = "<group>"; };
 		CEAC425416EC48160032CDFC /* 300records.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 300records.xml; sourceTree = "<group>"; };
@@ -73,8 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE565B8516F5A4C80097A66B /* libPico.a in Frameworks */,
 				CEFDBF5C16EE044F00ACEDD7 /* libxml2.dylib in Frameworks */,
-				CEAC424116EC3EEF0032CDFC /* libpico.a in Frameworks */,
 				CEAC41FF16EC3A500032CDFC /* UIKit.framework in Frameworks */,
 				CEAC420116EC3A500032CDFC /* Foundation.framework in Frameworks */,
 				CEAC420316EC3A500032CDFC /* CoreGraphics.framework in Frameworks */,
@@ -87,8 +87,8 @@
 		CEAC41EF16EC3A500032CDFC = {
 			isa = PBXGroup;
 			children = (
+				CE565B8416F5A4C80097A66B /* libPico.a */,
 				CEFDBF5B16EE044F00ACEDD7 /* libxml2.dylib */,
-				CEAC424016EC3EEF0032CDFC /* libpico.a */,
 				CEAC420416EC3A500032CDFC /* PicoPerformance */,
 				CEAC41FD16EC3A500032CDFC /* Frameworks */,
 				CEAC41FB16EC3A500032CDFC /* Products */,
@@ -331,8 +331,9 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PicoPerformance/PicoPerformance-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../pico/pico/**";
+				HEADER_SEARCH_PATHS = "../Pico/PicoSource/**";
 				INFOPLIST_FILE = "PicoPerformance/PicoPerformance-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"/Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos\"",
@@ -349,8 +350,9 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PicoPerformance/PicoPerformance-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../pico/pico/**";
+				HEADER_SEARCH_PATHS = "../Pico/PicoSource/**";
 				INFOPLIST_FILE = "PicoPerformance/PicoPerformance-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"/Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos\"",

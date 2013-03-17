@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE565B9416F5A5880097A66B /* libPico.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE565B9316F5A5880097A66B /* libPico.a */; };
 		CEF613E116F4870500A3CB13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF613E016F4870500A3CB13 /* UIKit.framework */; };
 		CEF613E316F4870500A3CB13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF613E216F4870500A3CB13 /* Foundation.framework */; };
 		CEF613E516F4870500A3CB13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF613E416F4870500A3CB13 /* CoreGraphics.framework */; };
@@ -91,11 +92,11 @@
 		CEF614DE16F4877500A3CB13 /* Storefront.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF6149616F4877500A3CB13 /* Storefront.m */; };
 		CEF614DF16F4877500A3CB13 /* UnitPriceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF6149816F4877500A3CB13 /* UnitPriceInfo.m */; };
 		CEF614E216F4878500A3CB13 /* EBayFindingServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF614E116F4878500A3CB13 /* EBayFindingServiceClient.m */; };
-		CEF614E416F487C300A3CB13 /* libpico.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF614E316F487C300A3CB13 /* libpico.a */; };
 		CEF614E616F487CC00A3CB13 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF614E516F487CC00A3CB13 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE565B9316F5A5880097A66B /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPico.a; path = "../Pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
 		CEF613DC16F4870500A3CB13 /* eBayFinding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eBayFinding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF613E016F4870500A3CB13 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEF613E216F4870500A3CB13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -258,7 +259,6 @@
 		CEF6149816F4877500A3CB13 /* UnitPriceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitPriceInfo.m; sourceTree = "<group>"; };
 		CEF614E016F4878500A3CB13 /* EBayFindingServiceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBayFindingServiceClient.h; sourceTree = "<group>"; };
 		CEF614E116F4878500A3CB13 /* EBayFindingServiceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBayFindingServiceClient.m; sourceTree = "<group>"; };
-		CEF614E316F487C300A3CB13 /* libpico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpico.a; path = "../../../../../../Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos/libpico.a"; sourceTree = "<group>"; };
 		CEF614E516F487CC00A3CB13 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -267,8 +267,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE565B9416F5A5880097A66B /* libPico.a in Frameworks */,
 				CEF614E616F487CC00A3CB13 /* libxml2.dylib in Frameworks */,
-				CEF614E416F487C300A3CB13 /* libpico.a in Frameworks */,
 				CEF613E116F4870500A3CB13 /* UIKit.framework in Frameworks */,
 				CEF613E316F4870500A3CB13 /* Foundation.framework in Frameworks */,
 				CEF613E516F4870500A3CB13 /* CoreGraphics.framework in Frameworks */,
@@ -281,8 +281,8 @@
 		CEF613D116F4870400A3CB13 = {
 			isa = PBXGroup;
 			children = (
+				CE565B9316F5A5880097A66B /* libPico.a */,
 				CEF614E516F487CC00A3CB13 /* libxml2.dylib */,
-				CEF614E316F487C300A3CB13 /* libpico.a */,
 				CEF613E616F4870500A3CB13 /* eBayFinding */,
 				CEF613DF16F4870500A3CB13 /* Frameworks */,
 				CEF613DD16F4870500A3CB13 /* Products */,
@@ -742,8 +742,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "eBayFinding/eBayFinding-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../pico/pico/**";
+				HEADER_SEARCH_PATHS = "../Pico/PicoSource/**";
 				INFOPLIST_FILE = "eBayFinding/eBayFinding-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"/Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos\"",
@@ -758,8 +759,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "eBayFinding/eBayFinding-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../pico/pico/**";
+				HEADER_SEARCH_PATHS = "../Pico/PicoSource/**";
 				INFOPLIST_FILE = "eBayFinding/eBayFinding-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"/Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos\"",
@@ -788,6 +790,7 @@
 				CEF6140516F4870500A3CB13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

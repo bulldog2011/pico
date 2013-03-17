@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "container:"
+      name = "Test">
+      <FileRef
+         location = "group:PicoPerformance/PicoPerformance.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:PicoTest/PicoTest.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Examples">
+      <FileRef
+         location = "group:Examples/eBayFinding.xcodeproj">
+      </FileRef>
+   </Group>
    <FileRef
-      location = "group:eBayFinding/eBayFinding.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:PicoPerformance/PicoPerformance.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:pico/Pico.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:picoTest/picoTest.xcodeproj">
+      location = "group:Pico/Pico.xcodeproj">
    </FileRef>
 </Workspace>

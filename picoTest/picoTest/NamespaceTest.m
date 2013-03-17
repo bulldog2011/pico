@@ -98,7 +98,7 @@
 	parent.bbb = child;
 	Aaa *grandchild = [Aaa new];
 	child.aaa = grandchild;
-	grandchild.bbb = [Bbb new];
+	grandchild.bbb = [[Bbb new] autorelease];
 	
 	NSData *xmlData = [xmlWriter toData:parent];
 	

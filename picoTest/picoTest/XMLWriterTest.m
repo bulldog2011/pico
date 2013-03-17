@@ -120,7 +120,7 @@
 	[dog release];
 	[xmlString release];
 	
-	dog = [xmlReader fromData:data withClass: [ChineseBulldog class]];
+	dog = [[xmlReader fromData:data withClass: [ChineseBulldog class]] retain];
 
 	GHAssertEqualStrings(dog.name, @"tomy", nil);
 	GHAssertTrue([dog.age intValue] == 3, nil);

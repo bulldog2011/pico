@@ -7,85 +7,86 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE52FAB116E5A02700EE0771 /* AnyElementTestCaseA.m in Sources */ = {isa = PBXBuildFile; fileRef = CE52FAB016E5A02700EE0771 /* AnyElementTestCaseA.m */; };
-		CE52FAB416E5AED900EE0771 /* AnyElementTestCaseB.m in Sources */ = {isa = PBXBuildFile; fileRef = CE52FAB316E5AED900EE0771 /* AnyElementTestCaseB.m */; };
-		CE67C46116DE3546008CE51A /* ArrayEntryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67C46016DE3546008CE51A /* ArrayEntryTest.m */; };
-		CE67C46D16DE3AE1008CE51A /* PerformanceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67C46C16DE3AE1008CE51A /* PerformanceTest.m */; };
-		CE9B246F16F1F6B2000AC982 /* SOAPTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B246E16F1F6B2000AC982 /* SOAPTest.m */; };
-		CEA0186B16E99C280052DC2B /* libpico.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA0186A16E99C280052DC2B /* libpico.a */; };
+		CE56579716F59AD70097A66B /* AnyElementTestCaseA.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56577216F59AD70097A66B /* AnyElementTestCaseA.m */; };
+		CE56579816F59AD70097A66B /* AnyElementTestCaseB.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56577316F59AD70097A66B /* AnyElementTestCaseB.m */; };
+		CE56579916F59AD70097A66B /* ArrayEntryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56577416F59AD70097A66B /* ArrayEntryTest.m */; };
+		CE56579A16F59AD70097A66B /* BindingSchemaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56577516F59AD70097A66B /* BindingSchemaTest.m */; };
+		CE56579B16F59AD70097A66B /* Bulldog.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56577716F59AD70097A66B /* Bulldog.m */; };
+		CE56579C16F59AD70097A66B /* CacheTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56577816F59AD70097A66B /* CacheTest.m */; };
+		CE56579D16F59AD70097A66B /* CaseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56577916F59AD70097A66B /* CaseTest.m */; };
+		CE56579E16F59AD70097A66B /* ChineseBulldog.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56577B16F59AD70097A66B /* ChineseBulldog.m */; };
+		CE56579F16F59AD70097A66B /* ConverterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56577C16F59AD70097A66B /* ConverterTest.m */; };
+		CE5657A016F59AD70097A66B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE56577D16F59AD70097A66B /* Default-568h@2x.png */; };
+		CE5657A116F59AD70097A66B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CE56577E16F59AD70097A66B /* Default.png */; };
+		CE5657A216F59AD70097A66B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE56577F16F59AD70097A66B /* Default@2x.png */; };
+		CE5657A316F59AD70097A66B /* DefaultTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56578016F59AD70097A66B /* DefaultTest.m */; };
+		CE5657A416F59AD70097A66B /* EmptyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56578116F59AD70097A66B /* EmptyTest.m */; };
+		CE5657A516F59AD70097A66B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE56578216F59AD70097A66B /* InfoPlist.strings */; };
+		CE5657A616F59AD70097A66B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56578416F59AD70097A66B /* main.m */; };
+		CE5657A716F59AD70097A66B /* NamespaceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56578516F59AD70097A66B /* NamespaceTest.m */; };
+		CE5657A816F59AD70097A66B /* PerformanceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56578616F59AD70097A66B /* PerformanceTest.m */; };
+		CE5657AA16F59AD70097A66B /* PicoTestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56578A16F59AD70097A66B /* PicoTestBase.m */; };
+		CE5657AB16F59AD70097A66B /* caseTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = CE56578C16F59AD70097A66B /* caseTest.xml */; };
+		CE5657AC16F59AD70097A66B /* RootTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56578D16F59AD70097A66B /* RootTest.m */; };
+		CE5657AD16F59AD70097A66B /* ScatterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56578E16F59AD70097A66B /* ScatterTest.m */; };
+		CE5657AE16F59AD70097A66B /* SOAPTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56579016F59AD70097A66B /* SOAPTest.m */; };
+		CE5657AF16F59AD70097A66B /* StackOverflowTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56579116F59AD70097A66B /* StackOverflowTest.m */; };
+		CE5657B016F59AD70097A66B /* PicoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56579316F59AD70097A66B /* PicoTest.m */; };
+		CE5657B116F59AD70097A66B /* TyteTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56579416F59AD70097A66B /* TyteTest.m */; };
+		CE5657B216F59AD70097A66B /* UnicodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56579516F59AD70097A66B /* UnicodeTest.m */; };
+		CE5657B316F59AD70097A66B /* XMLWriterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56579616F59AD70097A66B /* XMLWriterTest.m */; };
+		CE565B8716F5A4CE0097A66B /* libPico.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE565B8616F5A4CE0097A66B /* libPico.a */; };
 		CEA418E716ED939A0088C17C /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA418E616ED939A0088C17C /* libxml2.dylib */; };
 		CEAA8EAF16D9BBF70024B5D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8EAE16D9BBF70024B5D7 /* UIKit.framework */; };
 		CEAA8EB116D9BBF70024B5D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8EB016D9BBF70024B5D7 /* Foundation.framework */; };
 		CEAA8EB316D9BBF70024B5D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8EB216D9BBF70024B5D7 /* CoreGraphics.framework */; };
-		CEAA8EB916D9BBF70024B5D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEAA8EB716D9BBF70024B5D7 /* InfoPlist.strings */; };
-		CEAA8EBB16D9BBF70024B5D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAA8EBA16D9BBF70024B5D7 /* main.m */; };
-		CEAA8EC116D9BBF70024B5D7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAA8EC016D9BBF70024B5D7 /* Default.png */; };
-		CEAA8EC316D9BBF70024B5D7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAA8EC216D9BBF70024B5D7 /* Default@2x.png */; };
-		CEAA8EC516D9BBF70024B5D7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAA8EC416D9BBF70024B5D7 /* Default-568h@2x.png */; };
 		CEAA8ECE16D9BE5E0024B5D7 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8ECD16D9BE5E0024B5D7 /* GHUnitIOS.framework */; };
 		CEAA8ED016D9C1040024B5D7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8ECF16D9C1040024B5D7 /* QuartzCore.framework */; };
-		CEAA8F3916D9C9700024B5D7 /* PicoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAA8F3816D9C9700024B5D7 /* PicoTest.m */; };
-		CEC8893116DB8D0600B27F73 /* CacheTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC8893016DB8D0600B27F73 /* CacheTest.m */; };
-		CECC6D7716DDB1BD00E5CE91 /* CaseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC6D7616DDB1BD00E5CE91 /* CaseTest.m */; };
-		CECC6D7A16DDB9BB00E5CE91 /* PicoTestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC6D7916DDB9BB00E5CE91 /* PicoTestBase.m */; };
-		CECC6D8D16DDC76600E5CE91 /* caseTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = CECC6D8C16DDC76600E5CE91 /* caseTest.xml */; };
-		CEDE399016DB11F80066467B /* Bulldog.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE398F16DB11F80066467B /* Bulldog.m */; };
-		CEDE399316DB144B0066467B /* BindingSchemaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE399216DB144B0066467B /* BindingSchemaTest.m */; };
-		CEDE399F16DB18940066467B /* ChineseBulldog.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE399E16DB18930066467B /* ChineseBulldog.m */; };
-		CEF3AC8216DA4D4E00D36235 /* ConverterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3AC8116DA4D4E00D36235 /* ConverterTest.m */; };
-		CEF771FA16DEEF190046B168 /* DefaultTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF771F916DEEF190046B168 /* DefaultTest.m */; };
-		CEF771FD16DEF1240046B168 /* EmptyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF771FC16DEF1240046B168 /* EmptyTest.m */; };
-		CEF7720016DEF2220046B168 /* XMLWriterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF771FF16DEF2210046B168 /* XMLWriterTest.m */; };
-		CEF7720316DEF99B0046B168 /* NamespaceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7720216DEF99B0046B168 /* NamespaceTest.m */; };
-		CEF7720616DF01A30046B168 /* RootTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7720516DF01A30046B168 /* RootTest.m */; };
-		CEF7720916DF050D0046B168 /* ScatterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7720816DF050C0046B168 /* ScatterTest.m */; };
-		CEF7720C16DF079A0046B168 /* StackOverflowTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7720B16DF07990046B168 /* StackOverflowTest.m */; };
-		CEF7720F16DF0A510046B168 /* TyteTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7720E16DF0A510046B168 /* TyteTest.m */; };
-		CEF7721216DF0D6D0046B168 /* UnicodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7721116DF0D6D0046B168 /* UnicodeTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE52FAB016E5A02700EE0771 /* AnyElementTestCaseA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnyElementTestCaseA.m; sourceTree = "<group>"; };
-		CE52FAB316E5AED900EE0771 /* AnyElementTestCaseB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnyElementTestCaseB.m; sourceTree = "<group>"; };
-		CE67C46016DE3546008CE51A /* ArrayEntryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayEntryTest.m; sourceTree = "<group>"; };
-		CE67C46C16DE3AE1008CE51A /* PerformanceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformanceTest.m; sourceTree = "<group>"; };
-		CE9B246E16F1F6B2000AC982 /* SOAPTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAPTest.m; sourceTree = "<group>"; };
-		CEA0186A16E99C280052DC2B /* libpico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpico.a; path = "../../../../../../Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos/libpico.a"; sourceTree = "<group>"; };
+		CE56577216F59AD70097A66B /* AnyElementTestCaseA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnyElementTestCaseA.m; sourceTree = "<group>"; };
+		CE56577316F59AD70097A66B /* AnyElementTestCaseB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnyElementTestCaseB.m; sourceTree = "<group>"; };
+		CE56577416F59AD70097A66B /* ArrayEntryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayEntryTest.m; sourceTree = "<group>"; };
+		CE56577516F59AD70097A66B /* BindingSchemaTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindingSchemaTest.m; sourceTree = "<group>"; };
+		CE56577616F59AD70097A66B /* Bulldog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bulldog.h; sourceTree = "<group>"; };
+		CE56577716F59AD70097A66B /* Bulldog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bulldog.m; sourceTree = "<group>"; };
+		CE56577816F59AD70097A66B /* CacheTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheTest.m; sourceTree = "<group>"; };
+		CE56577916F59AD70097A66B /* CaseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaseTest.m; sourceTree = "<group>"; };
+		CE56577A16F59AD70097A66B /* ChineseBulldog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseBulldog.h; sourceTree = "<group>"; };
+		CE56577B16F59AD70097A66B /* ChineseBulldog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseBulldog.m; sourceTree = "<group>"; };
+		CE56577C16F59AD70097A66B /* ConverterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConverterTest.m; sourceTree = "<group>"; };
+		CE56577D16F59AD70097A66B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CE56577E16F59AD70097A66B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CE56577F16F59AD70097A66B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CE56578016F59AD70097A66B /* DefaultTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultTest.m; sourceTree = "<group>"; };
+		CE56578116F59AD70097A66B /* EmptyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyTest.m; sourceTree = "<group>"; };
+		CE56578316F59AD70097A66B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE56578416F59AD70097A66B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE56578516F59AD70097A66B /* NamespaceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NamespaceTest.m; sourceTree = "<group>"; };
+		CE56578616F59AD70097A66B /* PerformanceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformanceTest.m; sourceTree = "<group>"; };
+		CE56578716F59AD70097A66B /* PicoTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PicoTest-Info.plist"; sourceTree = "<group>"; };
+		CE56578816F59AD70097A66B /* PicoTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PicoTest-Prefix.pch"; sourceTree = "<group>"; };
+		CE56578916F59AD70097A66B /* PicoTestBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoTestBase.h; sourceTree = "<group>"; };
+		CE56578A16F59AD70097A66B /* PicoTestBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoTestBase.m; sourceTree = "<group>"; };
+		CE56578C16F59AD70097A66B /* caseTest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = caseTest.xml; sourceTree = "<group>"; };
+		CE56578D16F59AD70097A66B /* RootTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTest.m; sourceTree = "<group>"; };
+		CE56578E16F59AD70097A66B /* ScatterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScatterTest.m; sourceTree = "<group>"; };
+		CE56578F16F59AD70097A66B /* SOAPTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAPTest.h; sourceTree = "<group>"; };
+		CE56579016F59AD70097A66B /* SOAPTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAPTest.m; sourceTree = "<group>"; };
+		CE56579116F59AD70097A66B /* StackOverflowTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackOverflowTest.m; sourceTree = "<group>"; };
+		CE56579316F59AD70097A66B /* PicoTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicoTest.m; path = tests/PicoTest.m; sourceTree = "<group>"; };
+		CE56579416F59AD70097A66B /* TyteTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TyteTest.m; sourceTree = "<group>"; };
+		CE56579516F59AD70097A66B /* UnicodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnicodeTest.m; sourceTree = "<group>"; };
+		CE56579616F59AD70097A66B /* XMLWriterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLWriterTest.m; sourceTree = "<group>"; };
+		CE565B8616F5A4CE0097A66B /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPico.a; path = "../Pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
 		CEA418E616ED939A0088C17C /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
-		CEAA8EAA16D9BBF70024B5D7 /* picoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = picoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEAA8EAA16D9BBF70024B5D7 /* PicoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAA8EAE16D9BBF70024B5D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEAA8EB016D9BBF70024B5D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEAA8EB216D9BBF70024B5D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CEAA8EB616D9BBF70024B5D7 /* picoTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "picoTest-Info.plist"; sourceTree = "<group>"; };
-		CEAA8EB816D9BBF70024B5D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CEAA8EBA16D9BBF70024B5D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CEAA8EBC16D9BBF70024B5D7 /* picoTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "picoTest-Prefix.pch"; sourceTree = "<group>"; };
-		CEAA8EC016D9BBF70024B5D7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		CEAA8EC216D9BBF70024B5D7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		CEAA8EC416D9BBF70024B5D7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CEAA8ECD16D9BE5E0024B5D7 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
 		CEAA8ECF16D9C1040024B5D7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		CEAA8F3816D9C9700024B5D7 /* PicoTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicoTest.m; path = tests/PicoTest.m; sourceTree = "<group>"; };
-		CEC8893016DB8D0600B27F73 /* CacheTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheTest.m; sourceTree = "<group>"; };
-		CECC6D7616DDB1BD00E5CE91 /* CaseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaseTest.m; sourceTree = "<group>"; };
-		CECC6D7816DDB9BB00E5CE91 /* PicoTestBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoTestBase.h; sourceTree = "<group>"; };
-		CECC6D7916DDB9BB00E5CE91 /* PicoTestBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoTestBase.m; sourceTree = "<group>"; };
-		CECC6D8C16DDC76600E5CE91 /* caseTest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = caseTest.xml; path = resource/caseTest.xml; sourceTree = "<group>"; };
-		CEDE398E16DB11F80066467B /* Bulldog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bulldog.h; sourceTree = "<group>"; };
-		CEDE398F16DB11F80066467B /* Bulldog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bulldog.m; sourceTree = "<group>"; };
-		CEDE399216DB144B0066467B /* BindingSchemaTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindingSchemaTest.m; sourceTree = "<group>"; };
-		CEDE399D16DB18930066467B /* ChineseBulldog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseBulldog.h; sourceTree = "<group>"; };
-		CEDE399E16DB18930066467B /* ChineseBulldog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseBulldog.m; sourceTree = "<group>"; };
-		CEF3AC8116DA4D4E00D36235 /* ConverterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConverterTest.m; sourceTree = "<group>"; };
-		CEF771F916DEEF190046B168 /* DefaultTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultTest.m; sourceTree = "<group>"; };
-		CEF771FC16DEF1240046B168 /* EmptyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyTest.m; sourceTree = "<group>"; };
-		CEF771FF16DEF2210046B168 /* XMLWriterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLWriterTest.m; sourceTree = "<group>"; };
-		CEF7720216DEF99B0046B168 /* NamespaceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NamespaceTest.m; sourceTree = "<group>"; };
-		CEF7720516DF01A30046B168 /* RootTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTest.m; sourceTree = "<group>"; };
-		CEF7720816DF050C0046B168 /* ScatterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScatterTest.m; sourceTree = "<group>"; };
-		CEF7720B16DF07990046B168 /* StackOverflowTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackOverflowTest.m; sourceTree = "<group>"; };
-		CEF7720E16DF0A510046B168 /* TyteTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TyteTest.m; sourceTree = "<group>"; };
-		CEF7721116DF0D6D0046B168 /* UnicodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnicodeTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE565B8716F5A4CE0097A66B /* libPico.a in Frameworks */,
 				CEA418E716ED939A0088C17C /* libxml2.dylib in Frameworks */,
-				CEA0186B16E99C280052DC2B /* libpico.a in Frameworks */,
 				CEAA8ED016D9C1040024B5D7 /* QuartzCore.framework in Frameworks */,
 				CEAA8EAF16D9BBF70024B5D7 /* UIKit.framework in Frameworks */,
 				CEAA8EB116D9BBF70024B5D7 /* Foundation.framework in Frameworks */,
@@ -106,12 +107,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE56577116F59AD70097A66B /* PicoTest */ = {
+			isa = PBXGroup;
+			children = (
+				CE56579316F59AD70097A66B /* PicoTest.m */,
+				CE56577216F59AD70097A66B /* AnyElementTestCaseA.m */,
+				CE56577316F59AD70097A66B /* AnyElementTestCaseB.m */,
+				CE56577416F59AD70097A66B /* ArrayEntryTest.m */,
+				CE56577516F59AD70097A66B /* BindingSchemaTest.m */,
+				CE56577616F59AD70097A66B /* Bulldog.h */,
+				CE56577716F59AD70097A66B /* Bulldog.m */,
+				CE56577816F59AD70097A66B /* CacheTest.m */,
+				CE56577916F59AD70097A66B /* CaseTest.m */,
+				CE56577A16F59AD70097A66B /* ChineseBulldog.h */,
+				CE56577B16F59AD70097A66B /* ChineseBulldog.m */,
+				CE56577C16F59AD70097A66B /* ConverterTest.m */,
+				CE56577D16F59AD70097A66B /* Default-568h@2x.png */,
+				CE56577E16F59AD70097A66B /* Default.png */,
+				CE56577F16F59AD70097A66B /* Default@2x.png */,
+				CE56578016F59AD70097A66B /* DefaultTest.m */,
+				CE56578116F59AD70097A66B /* EmptyTest.m */,
+				CE56578216F59AD70097A66B /* InfoPlist.strings */,
+				CE56578416F59AD70097A66B /* main.m */,
+				CE56578516F59AD70097A66B /* NamespaceTest.m */,
+				CE56578616F59AD70097A66B /* PerformanceTest.m */,
+				CE56578716F59AD70097A66B /* PicoTest-Info.plist */,
+				CE56578816F59AD70097A66B /* PicoTest-Prefix.pch */,
+				CE56578916F59AD70097A66B /* PicoTestBase.h */,
+				CE56578A16F59AD70097A66B /* PicoTestBase.m */,
+				CE56578B16F59AD70097A66B /* resource */,
+				CE56578D16F59AD70097A66B /* RootTest.m */,
+				CE56578E16F59AD70097A66B /* ScatterTest.m */,
+				CE56578F16F59AD70097A66B /* SOAPTest.h */,
+				CE56579016F59AD70097A66B /* SOAPTest.m */,
+				CE56579116F59AD70097A66B /* StackOverflowTest.m */,
+				CE56579416F59AD70097A66B /* TyteTest.m */,
+				CE56579516F59AD70097A66B /* UnicodeTest.m */,
+				CE56579616F59AD70097A66B /* XMLWriterTest.m */,
+			);
+			path = PicoTest;
+			sourceTree = "<group>";
+		};
+		CE56578B16F59AD70097A66B /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				CE56578C16F59AD70097A66B /* caseTest.xml */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 		CEAA8E9F16D9BBF70024B5D7 = {
 			isa = PBXGroup;
 			children = (
+				CE565B8616F5A4CE0097A66B /* libPico.a */,
+				CE56577116F59AD70097A66B /* PicoTest */,
 				CEA418E616ED939A0088C17C /* libxml2.dylib */,
-				CEA0186A16E99C280052DC2B /* libpico.a */,
-				CEAA8EB416D9BBF70024B5D7 /* picoTest */,
 				CEAA8EAD16D9BBF70024B5D7 /* Frameworks */,
 				CEAA8EAB16D9BBF70024B5D7 /* Products */,
 			);
@@ -120,7 +170,7 @@
 		CEAA8EAB16D9BBF70024B5D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEAA8EAA16D9BBF70024B5D7 /* picoTest.app */,
+				CEAA8EAA16D9BBF70024B5D7 /* PicoTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,68 +187,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CEAA8EB416D9BBF70024B5D7 /* picoTest */ = {
-			isa = PBXGroup;
-			children = (
-				CECC6D8916DDC57400E5CE91 /* resource */,
-				CEAA8EB516D9BBF70024B5D7 /* Supporting Files */,
-				CEAA8F3816D9C9700024B5D7 /* PicoTest.m */,
-				CEF3AC8116DA4D4E00D36235 /* ConverterTest.m */,
-				CEDE398E16DB11F80066467B /* Bulldog.h */,
-				CEDE398F16DB11F80066467B /* Bulldog.m */,
-				CEDE399216DB144B0066467B /* BindingSchemaTest.m */,
-				CEDE399D16DB18930066467B /* ChineseBulldog.h */,
-				CEDE399E16DB18930066467B /* ChineseBulldog.m */,
-				CEC8893016DB8D0600B27F73 /* CacheTest.m */,
-				CECC6D7616DDB1BD00E5CE91 /* CaseTest.m */,
-				CECC6D7816DDB9BB00E5CE91 /* PicoTestBase.h */,
-				CECC6D7916DDB9BB00E5CE91 /* PicoTestBase.m */,
-				CE67C46016DE3546008CE51A /* ArrayEntryTest.m */,
-				CE67C46C16DE3AE1008CE51A /* PerformanceTest.m */,
-				CEF771F916DEEF190046B168 /* DefaultTest.m */,
-				CEF771FC16DEF1240046B168 /* EmptyTest.m */,
-				CEF771FF16DEF2210046B168 /* XMLWriterTest.m */,
-				CEF7720216DEF99B0046B168 /* NamespaceTest.m */,
-				CEF7720516DF01A30046B168 /* RootTest.m */,
-				CEF7720816DF050C0046B168 /* ScatterTest.m */,
-				CEF7720B16DF07990046B168 /* StackOverflowTest.m */,
-				CEF7720E16DF0A510046B168 /* TyteTest.m */,
-				CEF7721116DF0D6D0046B168 /* UnicodeTest.m */,
-				CE52FAB016E5A02700EE0771 /* AnyElementTestCaseA.m */,
-				CE52FAB316E5AED900EE0771 /* AnyElementTestCaseB.m */,
-				CE9B246E16F1F6B2000AC982 /* SOAPTest.m */,
-			);
-			path = picoTest;
-			sourceTree = "<group>";
-		};
-		CEAA8EB516D9BBF70024B5D7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CEAA8EB616D9BBF70024B5D7 /* picoTest-Info.plist */,
-				CEAA8EB716D9BBF70024B5D7 /* InfoPlist.strings */,
-				CEAA8EBA16D9BBF70024B5D7 /* main.m */,
-				CEAA8EBC16D9BBF70024B5D7 /* picoTest-Prefix.pch */,
-				CEAA8EC016D9BBF70024B5D7 /* Default.png */,
-				CEAA8EC216D9BBF70024B5D7 /* Default@2x.png */,
-				CEAA8EC416D9BBF70024B5D7 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CECC6D8916DDC57400E5CE91 /* resource */ = {
-			isa = PBXGroup;
-			children = (
-				CECC6D8C16DDC76600E5CE91 /* caseTest.xml */,
-			);
-			name = resource;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CEAA8EA916D9BBF70024B5D7 /* picoTest */ = {
+		CEAA8EA916D9BBF70024B5D7 /* PicoTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEAA8EC816D9BBF70024B5D7 /* Build configuration list for PBXNativeTarget "picoTest" */;
+			buildConfigurationList = CEAA8EC816D9BBF70024B5D7 /* Build configuration list for PBXNativeTarget "PicoTest" */;
 			buildPhases = (
 				CEAA8EA616D9BBF70024B5D7 /* Sources */,
 				CEAA8EA716D9BBF70024B5D7 /* Frameworks */,
@@ -208,9 +202,9 @@
 			);
 			dependencies = (
 			);
-			name = picoTest;
+			name = PicoTest;
 			productName = picoTest;
-			productReference = CEAA8EAA16D9BBF70024B5D7 /* picoTest.app */;
+			productReference = CEAA8EAA16D9BBF70024B5D7 /* PicoTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -222,7 +216,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "LeanSoft Technology";
 			};
-			buildConfigurationList = CEAA8EA416D9BBF70024B5D7 /* Build configuration list for PBXProject "picoTest" */;
+			buildConfigurationList = CEAA8EA416D9BBF70024B5D7 /* Build configuration list for PBXProject "PicoTest" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -234,7 +228,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CEAA8EA916D9BBF70024B5D7 /* picoTest */,
+				CEAA8EA916D9BBF70024B5D7 /* PicoTest */,
 			);
 		};
 /* End PBXProject section */
@@ -244,11 +238,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEAA8EB916D9BBF70024B5D7 /* InfoPlist.strings in Resources */,
-				CEAA8EC116D9BBF70024B5D7 /* Default.png in Resources */,
-				CEAA8EC316D9BBF70024B5D7 /* Default@2x.png in Resources */,
-				CEAA8EC516D9BBF70024B5D7 /* Default-568h@2x.png in Resources */,
-				CECC6D8D16DDC76600E5CE91 /* caseTest.xml in Resources */,
+				CE5657A016F59AD70097A66B /* Default-568h@2x.png in Resources */,
+				CE5657A116F59AD70097A66B /* Default.png in Resources */,
+				CE5657A216F59AD70097A66B /* Default@2x.png in Resources */,
+				CE5657A516F59AD70097A66B /* InfoPlist.strings in Resources */,
+				CE5657AB16F59AD70097A66B /* caseTest.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,39 +253,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEAA8EBB16D9BBF70024B5D7 /* main.m in Sources */,
-				CEAA8F3916D9C9700024B5D7 /* PicoTest.m in Sources */,
-				CEF3AC8216DA4D4E00D36235 /* ConverterTest.m in Sources */,
-				CEDE399016DB11F80066467B /* Bulldog.m in Sources */,
-				CEDE399316DB144B0066467B /* BindingSchemaTest.m in Sources */,
-				CEDE399F16DB18940066467B /* ChineseBulldog.m in Sources */,
-				CEC8893116DB8D0600B27F73 /* CacheTest.m in Sources */,
-				CECC6D7716DDB1BD00E5CE91 /* CaseTest.m in Sources */,
-				CECC6D7A16DDB9BB00E5CE91 /* PicoTestBase.m in Sources */,
-				CE67C46116DE3546008CE51A /* ArrayEntryTest.m in Sources */,
-				CE67C46D16DE3AE1008CE51A /* PerformanceTest.m in Sources */,
-				CEF771FA16DEEF190046B168 /* DefaultTest.m in Sources */,
-				CEF771FD16DEF1240046B168 /* EmptyTest.m in Sources */,
-				CEF7720016DEF2220046B168 /* XMLWriterTest.m in Sources */,
-				CEF7720316DEF99B0046B168 /* NamespaceTest.m in Sources */,
-				CEF7720616DF01A30046B168 /* RootTest.m in Sources */,
-				CEF7720916DF050D0046B168 /* ScatterTest.m in Sources */,
-				CEF7720C16DF079A0046B168 /* StackOverflowTest.m in Sources */,
-				CEF7720F16DF0A510046B168 /* TyteTest.m in Sources */,
-				CEF7721216DF0D6D0046B168 /* UnicodeTest.m in Sources */,
-				CE52FAB116E5A02700EE0771 /* AnyElementTestCaseA.m in Sources */,
-				CE52FAB416E5AED900EE0771 /* AnyElementTestCaseB.m in Sources */,
-				CE9B246F16F1F6B2000AC982 /* SOAPTest.m in Sources */,
+				CE56579716F59AD70097A66B /* AnyElementTestCaseA.m in Sources */,
+				CE56579816F59AD70097A66B /* AnyElementTestCaseB.m in Sources */,
+				CE56579916F59AD70097A66B /* ArrayEntryTest.m in Sources */,
+				CE56579A16F59AD70097A66B /* BindingSchemaTest.m in Sources */,
+				CE56579B16F59AD70097A66B /* Bulldog.m in Sources */,
+				CE56579C16F59AD70097A66B /* CacheTest.m in Sources */,
+				CE56579D16F59AD70097A66B /* CaseTest.m in Sources */,
+				CE56579E16F59AD70097A66B /* ChineseBulldog.m in Sources */,
+				CE56579F16F59AD70097A66B /* ConverterTest.m in Sources */,
+				CE5657A316F59AD70097A66B /* DefaultTest.m in Sources */,
+				CE5657A416F59AD70097A66B /* EmptyTest.m in Sources */,
+				CE5657A616F59AD70097A66B /* main.m in Sources */,
+				CE5657A716F59AD70097A66B /* NamespaceTest.m in Sources */,
+				CE5657A816F59AD70097A66B /* PerformanceTest.m in Sources */,
+				CE5657AA16F59AD70097A66B /* PicoTestBase.m in Sources */,
+				CE5657AC16F59AD70097A66B /* RootTest.m in Sources */,
+				CE5657AD16F59AD70097A66B /* ScatterTest.m in Sources */,
+				CE5657AE16F59AD70097A66B /* SOAPTest.m in Sources */,
+				CE5657AF16F59AD70097A66B /* StackOverflowTest.m in Sources */,
+				CE5657B016F59AD70097A66B /* PicoTest.m in Sources */,
+				CE5657B116F59AD70097A66B /* TyteTest.m in Sources */,
+				CE5657B216F59AD70097A66B /* UnicodeTest.m in Sources */,
+				CE5657B316F59AD70097A66B /* XMLWriterTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CEAA8EB716D9BBF70024B5D7 /* InfoPlist.strings */ = {
+		CE56578216F59AD70097A66B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CEAA8EB816D9BBF70024B5D7 /* en */,
+				CE56578316F59AD70097A66B /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -360,19 +354,16 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "picoTest/picoTest-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../pico/pico/**";
-				INFOPLIST_FILE = "picoTest/picoTest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"/Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos\"",
-				);
+				GCC_PREFIX_HEADER = "PicoTest/PicoTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../Pico/PicoSource/**";
+				INFOPLIST_FILE = "PicoTest/PicoTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PicoTest;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -387,19 +378,16 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "picoTest/picoTest-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../pico/pico/**";
-				INFOPLIST_FILE = "picoTest/picoTest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"/Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos\"",
-				);
+				GCC_PREFIX_HEADER = "PicoTest/PicoTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../Pico/PicoSource/**";
+				INFOPLIST_FILE = "PicoTest/PicoTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PicoTest;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -408,7 +396,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CEAA8EA416D9BBF70024B5D7 /* Build configuration list for PBXProject "picoTest" */ = {
+		CEAA8EA416D9BBF70024B5D7 /* Build configuration list for PBXProject "PicoTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEAA8EC616D9BBF70024B5D7 /* Debug */,
@@ -417,7 +405,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEAA8EC816D9BBF70024B5D7 /* Build configuration list for PBXNativeTarget "picoTest" */ = {
+		CEAA8EC816D9BBF70024B5D7 /* Build configuration list for PBXNativeTarget "PicoTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEAA8EC916D9BBF70024B5D7 /* Debug */,
