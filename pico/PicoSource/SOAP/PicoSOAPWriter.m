@@ -24,7 +24,7 @@
 
 @implementation PicoSOAPWriter
 
-static NSString *SOAP_PREFIX = @"soap";
+static NSString *SOAP_PREFIX = @"soapenv";
 
 -(NSString *)toString:(id)obj {
     

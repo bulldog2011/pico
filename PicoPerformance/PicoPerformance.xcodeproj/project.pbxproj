@@ -33,7 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE565B8416F5A4C80097A66B /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPico.a; path = "../Pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
+		CE565B8416F5A4C80097A66B /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPico.a; path = "../Pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
 		CEAC41FA16EC3A500032CDFC /* PicoPerformance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicoPerformance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAC41FE16EC3A500032CDFC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEAC420016EC3A500032CDFC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,8 +87,6 @@
 		CEAC41EF16EC3A500032CDFC = {
 			isa = PBXGroup;
 			children = (
-				CE565B8416F5A4C80097A66B /* libPico.a */,
-				CEFDBF5B16EE044F00ACEDD7 /* libxml2.dylib */,
 				CEAC420416EC3A500032CDFC /* PicoPerformance */,
 				CEAC41FD16EC3A500032CDFC /* Frameworks */,
 				CEAC41FB16EC3A500032CDFC /* Products */,
@@ -106,6 +104,8 @@
 		CEAC41FD16EC3A500032CDFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE565B8416F5A4C80097A66B /* libPico.a */,
+				CEFDBF5B16EE044F00ACEDD7 /* libxml2.dylib */,
 				CEAC41FE16EC3A500032CDFC /* UIKit.framework */,
 				CEAC420016EC3A500032CDFC /* Foundation.framework */,
 				CEAC420216EC3A500032CDFC /* CoreGraphics.framework */,

@@ -15,7 +15,10 @@
       location = "container:"
       name = "Examples">
       <FileRef
-         location = "group:Examples/eBayFinding.xcodeproj">
+         location = "group:Examples/eBayFinding/eBayFinding.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Examples/eBayShopping/eBayShopping.xcodeproj">
       </FileRef>
    </Group>
    <FileRef

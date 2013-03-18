@@ -8,7 +8,7 @@
 
 #import "AFHTTPClient.h"
 #import "PicoBindable.h"
-#import "PicoRequestOperation.h"
+#import "PicoSOAPRequestOperation.h"
 #import "PicoConfig.h"
 
 @interface PicoSOAPClient : AFHTTPClient
@@ -29,7 +29,8 @@
 @property (readwrite, nonatomic, assign) BOOL debug;
 
 /**
- Configurations like encoding, date/number formatter, etc
+ Configurations like encoding, date/number formatter, etc.
+ Defaults will be used if not set explicitly.
  */
 @property (readwrite, nonatomic, retain) PicoConfig *config;
 
@@ -43,7 +44,7 @@
  
  */
 - (void)invoke:(id<PicoBindable>)requestObject responseClass:(Class)responseClazz
-             success:(void (^)(PicoRequestOperation *operation, id<PicoBindable> responseObject))success
-             failure:(void (^)(PicoRequestOperation *operation, NSError *error, id<PicoBindable> soapFault))failure;
+             success:(void (^)(PicoSOAPRequestOperation *operation, id<PicoBindable> responseObject))success
+             failure:(void (^)(PicoSOAPRequestOperation *operation, NSError *error, id<PicoBindable> soapFault))failure;
 
 @end

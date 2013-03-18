@@ -45,7 +45,7 @@ enum {
     
     self.parameterEncoding = PicoSOAPParameterEncoding;
     
-    [self registerHTTPOperationClass:[PicoRequestOperation class]];
+    [self registerHTTPOperationClass:[PicoSOAPRequestOperation class]];
     [self setDefaultHeader:@"Accept" value:@"text/xml"];
     [self setDefaultHeader:@"Content-Type" value:@"text/xml"];
     
@@ -55,8 +55,8 @@ enum {
 }
 
 - (void)invoke:(id<PicoBindable>)requestObject responseClass:(Class)responseClazz
-       success:(void (^)(PicoRequestOperation *operation, id<PicoBindable> responseObject))success
-       failure:(void (^)(PicoRequestOperation *operation, NSError *error, id<PicoBindable> soapFault))failure {
+       success:(void (^)(PicoSOAPRequestOperation *operation, id<PicoBindable> responseObject))success
+       failure:(void (^)(PicoSOAPRequestOperation *operation, NSError *error, id<PicoBindable> soapFault))failure {
     
     NSParameterAssert(self.config);
 
@@ -64,12 +64,8 @@ enum {
         NSMutableURLRequest *request = [self requestWithMethod:@"POST" requestObject:requestObject];
 
         AFHTTPRequestOperation *httpOperation = [self HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
-            PicoRequestOperation *picoOperation = (PicoRequestOperation *)operation;
-            if (picoOperation.error) {
-                if (failure) {
-                    failure(picoOperation, picoOperation.error, nil); // parsing error
-                }
-            } else if (picoOperation.responseObj) {
+            PicoSOAPRequestOperation *picoOperation = (PicoSOAPRequestOperation *)operation;
+            if (picoOperation.responseObj) {
                 if ([picoOperation.responseObj isMemberOfClass:[SOAP11Fault class]] || [picoOperation.responseObj isMemberOfClass:[SOAP12Fault class]]) {
                     if (failure) {
                         failure(picoOperation, nil, picoOperation.responseObj); // soap fault
@@ -79,11 +75,17 @@ enum {
                         success(picoOperation, picoOperation.responseObj);
                     }
                 }
+            } else {
+                if (failure) {
+                    NSMutableDictionary *userInfo = [NSMutableDictionary dictionaryWithObject:@"Empty response" forKey:NSLocalizedDescriptionKey];
+                    NSError *error = [NSError errorWithDomain:PicoErrorDomain code:ReaderError userInfo:userInfo];
+                    failure(picoOperation, error, nil);
+                }
             }
 
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) { // http error
             if (failure) {
-                PicoRequestOperation *picoOperation = (PicoRequestOperation *)operation;
+                PicoSOAPRequestOperation *picoOperation = (PicoSOAPRequestOperation *)operation;
                 if (picoOperation.responseObj) {
                     if ([picoOperation.responseObj isMemberOfClass:[SOAP11Fault class]] || [picoOperation.responseObj isMemberOfClass:[SOAP12Fault class]]) {
                         failure(picoOperation, nil, picoOperation.responseObj); // soap fault
@@ -94,7 +96,7 @@ enum {
             }
         }];
 
-        PicoRequestOperation *picoOperation = (PicoRequestOperation *)httpOperation;
+        PicoSOAPRequestOperation *picoOperation = (PicoSOAPRequestOperation *)httpOperation;
         picoOperation.soapVersion = self.soapVersion;
         picoOperation.responseClazz = responseClazz;
         picoOperation.debug = self.debug;
@@ -156,7 +158,9 @@ enum {
     
     if (self.debug) {
         NSLog(@"Request message:");
-        NSLog(@"%@", [NSString stringWithUTF8String:[soapData bytes]]);
+        NSString *message = [[NSString alloc] initWithData:soapData encoding:CFStringConvertEncodingToNSStringEncoding(CFStringConvertIANACharSetNameToEncoding((CFStringRef)self.config.encoding))];
+        NSLog(@"%@", message);
+        [message release];
     }
     
     request.HTTPBody = soapData;

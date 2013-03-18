@@ -79,7 +79,7 @@
 		CE56579416F59AD70097A66B /* TyteTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TyteTest.m; sourceTree = "<group>"; };
 		CE56579516F59AD70097A66B /* UnicodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnicodeTest.m; sourceTree = "<group>"; };
 		CE56579616F59AD70097A66B /* XMLWriterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLWriterTest.m; sourceTree = "<group>"; };
-		CE565B8616F5A4CE0097A66B /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPico.a; path = "../Pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
+		CE565B8616F5A4CE0097A66B /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPico.a; path = "../Pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
 		CEA418E616ED939A0088C17C /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		CEAA8EAA16D9BBF70024B5D7 /* PicoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAA8EAE16D9BBF70024B5D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -159,9 +159,7 @@
 		CEAA8E9F16D9BBF70024B5D7 = {
 			isa = PBXGroup;
 			children = (
-				CE565B8616F5A4CE0097A66B /* libPico.a */,
 				CE56577116F59AD70097A66B /* PicoTest */,
-				CEA418E616ED939A0088C17C /* libxml2.dylib */,
 				CEAA8EAD16D9BBF70024B5D7 /* Frameworks */,
 				CEAA8EAB16D9BBF70024B5D7 /* Products */,
 			);
@@ -178,6 +176,8 @@
 		CEAA8EAD16D9BBF70024B5D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE565B8616F5A4CE0097A66B /* libPico.a */,
+				CEA418E616ED939A0088C17C /* libxml2.dylib */,
 				CEAA8ECF16D9C1040024B5D7 /* QuartzCore.framework */,
 				CEAA8ECD16D9BE5E0024B5D7 /* GHUnitIOS.framework */,
 				CEAA8EAE16D9BBF70024B5D7 /* UIKit.framework */,

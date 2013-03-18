@@ -8,7 +8,7 @@
 
 #import "PicoConfig.h"
 
-NSString *const DEFAULT_XML_ENCODING = @"utf-8";
+NSString *const DEFAULT_XML_ENCODING = @"UTF-8";
 
 @implementation PicoConfig
 
