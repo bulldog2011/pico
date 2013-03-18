@@ -24,6 +24,7 @@ enum {
 @synthesize endpointURL = _endpointURL;
 @synthesize debug = _debug;
 @synthesize config = _config;
+@synthesize additionalParameters = _additionalParameters;
 
 - (id)initWithEndpointURL:(NSURL *)URL {
     NSParameterAssert(URL);
@@ -107,7 +108,11 @@ enum {
     NSAssert(requestObject != nil, @"Expect non-nil request object");
     NSAssert([[requestObject class] conformsToProtocol:@protocol(PicoBindable)], @"Expect request object conforms to PicoBindable protocol");
     
-    NSMutableURLRequest *request = [super requestWithMethod:method path:[self.endpointURL absoluteString] parameters:nil];
+    NSString *url = [self.endpointURL absoluteString];
+    if (self.additionalParameters.count > 0) {
+        url = [url stringByAppendingFormat:[url rangeOfString:@"?"].location == NSNotFound ? @"?%@" : @"&%@", AFQueryStringFromParametersWithEncoding(self.additionalParameters, self.stringEncoding)];
+    }
+    NSMutableURLRequest *request = [super requestWithMethod:method path:url parameters:nil];
     
     PicoXMLWriter *xmlWriter = [[[PicoXMLWriter alloc] initWithConfig:self.config] autorelease];
     // marshall to xml message

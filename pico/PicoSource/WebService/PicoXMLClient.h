@@ -30,6 +30,11 @@
 @property (readwrite, nonatomic, retain) PicoConfig *config;
 
 /**
+ Additional parameters that will be appended as query string at the end of the request url
+ */
+@property (readwrite, nonatomic, retain) NSMutableDictionary *additionalParameters;
+
+/**
  
  */
 - (id)initWithEndpointURL:(NSURL *)URL;

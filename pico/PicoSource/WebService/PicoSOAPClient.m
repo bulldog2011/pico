@@ -14,6 +14,8 @@
 #import "SOAP11Body.h"
 #import "SOAP12Envelope.h"
 #import "SOAP12Body.h"
+#import "SOAP11Header.h"
+#import "SOAP12Header.h"
 
 enum {
     PicoSOAPParameterEncoding = 10
@@ -30,6 +32,8 @@ enum {
 @synthesize soapVersion = _soapVersion;
 @synthesize debug = _debug;
 @synthesize config = _config;
+@synthesize customSoapHeader = _customSoapHeader;
+@synthesize additionalParameters = _additionalParameters;
 
 - (id)initWithEndpointURL:(NSURL *)URL {
     NSParameterAssert(URL);
@@ -103,7 +107,6 @@ enum {
         picoOperation.config = self.config;
 
         if (self.debug) {
-            NSLog(@"Sending reqeust to : %@", [self.endpointURL absoluteString]);
             NSLog(@"Request HTTP Headers : ");
             for(NSString *key in [request allHTTPHeaderFields]) {
                 NSLog(@"%@ = %@", key, [[request allHTTPHeaderFields] valueForKey:key]);
@@ -128,7 +131,14 @@ enum {
     NSAssert(requestObject != nil, @"Expect non-nil request object");
     NSAssert([[requestObject class] conformsToProtocol:@protocol(PicoBindable)], @"Expect request object conforms to PicoBindable protocol");
     
-    NSMutableURLRequest *request = [super requestWithMethod:method path:[self.endpointURL absoluteString] parameters:nil];
+    NSString *url = [self.endpointURL absoluteString];
+    if (self.additionalParameters.count > 0) {
+        url = [url stringByAppendingFormat:[url rangeOfString:@"?"].location == NSNotFound ? @"?%@" : @"&%@", AFQueryStringFromParametersWithEncoding(self.additionalParameters, self.stringEncoding)];
+    }
+    if (self.debug) {
+        NSLog(@"Sending reqeust to : %@", url);
+    }
+    NSMutableURLRequest *request = [super requestWithMethod:method path:url parameters:nil];
     
     PicoSOAPWriter *soapWriter = [[PicoSOAPWriter alloc] initWithConfig:self.config];
     
@@ -139,6 +149,12 @@ enum {
         SOAP11Body *soap11Body = [[SOAP11Body alloc] init];
         soap11Envelope.body = soap11Body;
         soap11Envelope.body.any = [NSMutableArray arrayWithObject:requestObject];
+        if (self.customSoapHeader) {
+            SOAP11Header *soap11Header = [[SOAP11Header alloc] init];
+            soap11Header.any = [NSMutableArray arrayWithObject:self.customSoapHeader];
+            soap11Envelope.header = soap11Header;
+            [soap11Header release];
+        }
         soapData = [soapWriter toData:soap11Envelope];
         [soap11Body release];
         [soap11Envelope release];
@@ -147,6 +163,12 @@ enum {
         SOAP12Body *soap12Body = [[SOAP12Body alloc] init];
         soap12Envelope.body = soap12Body;
         soap12Envelope.body.any = [NSMutableArray arrayWithObject:requestObject];
+        if (self.customSoapHeader) {
+            SOAP12Header *soap12Header = [[SOAP12Header alloc] init];
+            soap12Header.any = [NSMutableArray arrayWithObject:self.customSoapHeader];
+            soap12Envelope.header = soap12Header;
+            [soap12Header release];
+        }
         soapData = [soapWriter toData:soap12Envelope];
         [soap12Body release];
         [soap12Envelope release];

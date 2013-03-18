@@ -20,6 +20,9 @@
       <FileRef
          location = "group:Examples/eBayShopping/eBayShopping.xcodeproj">
       </FileRef>
+      <FileRef
+         location = "group:Examples/eBayTrading/eBayTrading.xcodeproj">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Pico/Pico.xcodeproj">
