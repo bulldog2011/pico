@@ -21,7 +21,7 @@
          location = "group:Examples/eBayShopping/eBayShopping.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:Examples/eBayTrading/eBayTrading.xcodeproj">
+         location = "group:Examples/StockQuote/StockQuote.xcodeproj">
       </FileRef>
    </Group>
    <FileRef
