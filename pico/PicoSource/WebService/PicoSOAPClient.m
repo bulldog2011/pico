@@ -28,13 +28,14 @@ enum {
 @end
 
 @implementation PicoSOAPClient
+/*
 @synthesize endpointURL = _endpointURL;
 @synthesize soapVersion = _soapVersion;
 @synthesize debug = _debug;
 @synthesize config = _config;
 @synthesize customSoapHeader = _customSoapHeader;
 @synthesize additionalParameters = _additionalParameters;
-
+*/
 - (id)initWithEndpointURL:(NSURL *)URL {
     NSParameterAssert(URL);
     
@@ -55,6 +56,8 @@ enum {
     
     self.endpointURL = URL;
     
+    self.timeoutInverval = 60;
+    
     return self;
 }
 
@@ -66,6 +69,7 @@ enum {
 
     @try {
         NSMutableURLRequest *request = [self requestWithMethod:@"POST" requestObject:requestObject];
+        request.timeoutInterval = self.timeoutInverval;
 
         AFHTTPRequestOperation *httpOperation = [self HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
             PicoSOAPRequestOperation *picoOperation = (PicoSOAPRequestOperation *)operation;
@@ -107,10 +111,7 @@ enum {
         picoOperation.config = self.config;
 
         if (self.debug) {
-            NSLog(@"Request HTTP Headers : ");
-            for(NSString *key in [request allHTTPHeaderFields]) {
-                NSLog(@"%@ = %@", key, [[request allHTTPHeaderFields] valueForKey:key]);
-            }
+            NSLog(@"Request HTTP Headers : \n%@", [request allHTTPHeaderFields]);
         }
 
         [self enqueueHTTPRequestOperation:httpOperation];
@@ -120,6 +121,9 @@ enum {
         [userInfo setValue:ex.reason forKey:NSLocalizedFailureReasonErrorKey];
         [userInfo setValue:ex forKey:NSUnderlyingErrorKey];
         NSError *error = [NSError errorWithDomain:PicoErrorDomain code:WriterError userInfo:userInfo];
+        if (self.debug) {
+            NSLog(@"Error to build request : \n%@", error);
+        }
         if (failure) {
             failure(nil, error, nil);
         }
@@ -136,7 +140,7 @@ enum {
         url = [url stringByAppendingFormat:[url rangeOfString:@"?"].location == NSNotFound ? @"?%@" : @"&%@", AFQueryStringFromParametersWithEncoding(self.additionalParameters, self.stringEncoding)];
     }
     if (self.debug) {
-        NSLog(@"Sending reqeust to : %@", url);
+        NSLog(@"Sending request to : %@", url);
     }
     NSMutableURLRequest *request = [super requestWithMethod:method path:url parameters:nil];
     

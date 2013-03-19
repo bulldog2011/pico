@@ -42,16 +42,10 @@ static dispatch_queue_t xml_request_operation_processing_queue() {
     if (!_responseObj && [self isFinished] && [self.responseData length] > 0 && !self.PicoError) {
         
         if (self.debug) {
-            NSLog(@"Response message:");
+            NSLog(@"Response message : ");
             NSString *message = [[NSString alloc] initWithData:self.responseData encoding:CFStringConvertEncodingToNSStringEncoding(CFStringConvertIANACharSetNameToEncoding((CFStringRef)self.config.encoding))];
             NSLog(@"%@", message);
             [message release];
-            if (self.response) {
-                NSLog(@"Response HTTP headers : ");
-                for(NSString *key in [self.response allHeaderFields]) {
-                    NSLog(@"%@ = %@", key, [[self.response allHeaderFields] valueForKey:key]);
-                }
-            }
         }
         
         PicoXMLReader *xmlReader = nil;
@@ -64,6 +58,10 @@ static dispatch_queue_t xml_request_operation_processing_queue() {
             [userInfo setValue:ex.reason forKey:NSLocalizedFailureReasonErrorKey];
             [userInfo setValue:ex forKey:NSUnderlyingErrorKey];
             self.PicoError = [NSError errorWithDomain:PicoErrorDomain code:ReaderError userInfo:userInfo];
+            
+            if (self.debug) {
+                NSLog(@"Error to read response message : \n%@", self.PicoError);
+            }
             
         } @finally {
             [xmlReader release];
@@ -96,12 +94,24 @@ static dispatch_queue_t xml_request_operation_processing_queue() {
         }
         
         if (self.error) {
+            
+            if (self.debug) {
+                NSLog(@"Response HTTP Error:\n%@", self.error);
+            }
+            
             if (failure) {
                 dispatch_async(self.failureCallbackQueue ? self.failureCallbackQueue : dispatch_get_main_queue(), ^{
                     failure(self, self.error);
                 });
             }
         } else {
+            
+            if (self.debug) {
+                if (self.response) {
+                    NSLog(@"Response HTTP headers : \n%@", [self.response allHeaderFields]);
+                }
+            }
+            
             dispatch_async(xml_request_operation_processing_queue(), ^{
                 id obj = self.responseObj;
                 

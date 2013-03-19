@@ -35,6 +35,11 @@
 @property (readwrite, nonatomic, retain) NSMutableDictionary *additionalParameters;
 
 /**
+ HTTP request timeout settting
+ */
+@property (readwrite, nonatomic, assign) NSTimeInterval timeoutInverval;
+
+/**
  
  */
 - (id)initWithEndpointURL:(NSURL *)URL;

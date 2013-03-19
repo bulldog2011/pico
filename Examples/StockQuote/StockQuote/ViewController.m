@@ -47,9 +47,9 @@
 
 - (void)viewDidUnload
 {
-    [_symbolText dealloc];
-    [_getQuoteButton dealloc];
-    [_resultText delegate];
+    [_symbolText release];
+    [_getQuoteButton release];
+    [_resultText release];
 }
 
 - (void)didReceiveMemoryWarning

@@ -41,8 +41,8 @@
 
 - (void)viewDidUnload
 {
-    [_searchText dealloc];
-    [_searchButton dealloc];
+    [_searchText release];
+    [_searchButton release];
 }
 
 - (void)didReceiveMemoryWarning

@@ -23,6 +23,9 @@
       <FileRef
          location = "group:Examples/StockQuote/StockQuote.xcodeproj">
       </FileRef>
+      <FileRef
+         location = "group:Examples/CurrencyConverter/CurrencyConverter.xcodeproj">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Pico/Pico.xcodeproj">
