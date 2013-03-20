@@ -47,6 +47,8 @@
 {
     [_searchText release];
     [_searchButton release];
+
+    [super viewDidUnload];
 }
 
 - (void)didReceiveMemoryWarning

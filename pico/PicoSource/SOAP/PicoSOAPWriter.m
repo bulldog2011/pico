@@ -25,6 +25,10 @@
 @implementation PicoSOAPWriter
 
 static NSString *SOAP_PREFIX = @"soapenv";
+static NSString *XSI_PREFIX = @"xsi";
+static NSString *XSI_NAMESPACE = @"http://www.w3.org/2001/XMLSchema-instance";
+static NSString *XSD_PREFIX = @"xsd";
+static NSString *XSD_NAMESPACE = @"http://www.w3.org/2001/XMLSchema";
 
 -(NSString *)toString:(id)obj {
     
@@ -48,7 +52,9 @@ static NSString *SOAP_PREFIX = @"soapenv";
     NSString *namespace = classSchema.nsURI;
     
     // set soap prefix
-    [xmlWriter setPrefix:SOAP_PREFIX namespaceURI:namespace];
+    [xmlWriter setPrefix:SOAP_PREFIX namespaceURI:namespace];    
+    [xmlWriter setPrefix:XSI_PREFIX namespaceURI:XSI_NAMESPACE];
+    [xmlWriter setPrefix:XSD_PREFIX namespaceURI:XSD_NAMESPACE];
     
     NSString *innerNamespace = [self findInnerClassNamespace:obj];
     // set default namespace without prefix

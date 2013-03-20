@@ -13,6 +13,7 @@
 #import "PicoStringConverter.h"
 #import "PicoConvertable.h"
 #import "PicoDateConverter.h"
+#import "PicoDataConverter.h"
 
 @implementation PicoConverter
 
@@ -76,6 +77,9 @@ static NSMutableDictionary *cache = nil;
 	[cache setObject: converter forKey: PICO_TYPE_BYTE];
 	[converter release];
     
+    converter = [[PicoDataConverter alloc] init];
+    [cache setObject: converter forKey:PICO_TYPE_DATA];
+    [converter release];
 }
 
 +(id)read: (NSString *)value withType: (NSString *)type config:(PicoConfig *)config {

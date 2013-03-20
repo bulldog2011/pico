@@ -13,6 +13,7 @@
 #import "PicoDateConverter.h"
 #import "PicoConverter.h"
 #import "PicoConstants.h"
+#import "PicoDataConverter.h"
 
 @interface ConverterTest : GHTestCase
 
@@ -133,6 +134,45 @@
 	GHAssertEqualStrings(@"2012-11-30T09:10:30.000Z", dateString, nil);
 	
 	[dateConverter release];
+    [config release];
+}
+
+-(void)testDataConverter {
+    PicoDataConverter *dataConverter = [[PicoDataConverter alloc] init];
+    PicoConfig *config = [[PicoConfig alloc] init];
+    
+    NSString *str = @"hello world!";
+    GHTestLog(@"original string : %@", str);
+    NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
+    
+    NSString *base64Str = [dataConverter write:data withConfig:config];
+    GHTestLog(@"base64 encoded string : %@", base64Str);
+    
+    NSData *decodedData = [dataConverter read:base64Str withConfig:config];
+    NSString *decodedStr = [[NSString alloc] initWithData:decodedData encoding:NSUTF8StringEncoding];
+    GHTestLog(@"decoded string : %@", decodedStr);
+    
+    GHAssertEqualStrings(str, decodedStr, nil);
+    
+    char test_string[] = "So?<p>"
+    "This 4, 5, 6, 7, 8, 9, z, {, |, } tests Base64 encoder. "
+    "Show me: @, A, B, C, D, E, F, G, H, I, J, K, L, M, "
+    "N, O, P, Q, R, S, T, U, V, W, X, Y, Z, [, \\, ], ^, _, `, "
+    "a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s.";
+    
+    int length = (sizeof test_string) / sizeof(char);
+    NSData *testData = [NSData dataWithBytes:test_string length:length];
+    NSString *testBase64Str = [dataConverter write:testData withConfig:config];
+    GHTestLog(@"base64 encoded test string : %@", testBase64Str);
+    
+    NSData *decodedTestData = [dataConverter read:testBase64Str withConfig:config];
+    unsigned char* decodedTestString  = (unsigned char*)[decodedTestData bytes];
+    
+    for(int i = 0; i < length; i++) {
+        GHAssertTrue(test_string[i] == decodedTestString[i], nil);
+    }
+    
+    [dataConverter release];
     [config release];
 }
 

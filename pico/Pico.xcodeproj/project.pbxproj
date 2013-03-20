@@ -11,6 +11,8 @@
 		CE1D915D16F6CF2300A21D2C /* PicoXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1D915B16F6CF2300A21D2C /* PicoXMLRequestOperation.m */; };
 		CE1D916016F6D29C00A21D2C /* PicoXMLClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CE1D915E16F6D29C00A21D2C /* PicoXMLClient.h */; };
 		CE1D916116F6D29C00A21D2C /* PicoXMLClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1D915F16F6D29C00A21D2C /* PicoXMLClient.m */; };
+		CE508E9916F95D85009DFAF4 /* PicoDataConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = CE508E9716F95D85009DFAF4 /* PicoDataConverter.h */; };
+		CE508E9A16F95D85009DFAF4 /* PicoDataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE508E9816F95D85009DFAF4 /* PicoDataConverter.m */; };
 		CE565ACA16F5A0390097A66B /* PicoCache.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565A5716F5A0390097A66B /* PicoCache.h */; };
 		CE565ACB16F5A0390097A66B /* PicoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CE565A5816F5A0390097A66B /* PicoCache.m */; };
 		CE565ACC16F5A0390097A66B /* PicoCacheEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565A5916F5A0390097A66B /* PicoCacheEntry.h */; };
@@ -136,6 +138,8 @@
 		CE1D915B16F6CF2300A21D2C /* PicoXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoXMLRequestOperation.m; sourceTree = "<group>"; };
 		CE1D915E16F6D29C00A21D2C /* PicoXMLClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoXMLClient.h; sourceTree = "<group>"; };
 		CE1D915F16F6D29C00A21D2C /* PicoXMLClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoXMLClient.m; sourceTree = "<group>"; };
+		CE508E9716F95D85009DFAF4 /* PicoDataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoDataConverter.h; sourceTree = "<group>"; };
+		CE508E9816F95D85009DFAF4 /* PicoDataConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoDataConverter.m; sourceTree = "<group>"; };
 		CE565A5716F5A0390097A66B /* PicoCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoCache.h; sourceTree = "<group>"; };
 		CE565A5816F5A0390097A66B /* PicoCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoCache.m; sourceTree = "<group>"; };
 		CE565A5916F5A0390097A66B /* PicoCacheEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoCacheEntry.h; sourceTree = "<group>"; };
@@ -315,6 +319,8 @@
 				CE565A6416F5A0390097A66B /* PicoNumberConverter.m */,
 				CE565A6516F5A0390097A66B /* PicoStringConverter.h */,
 				CE565A6616F5A0390097A66B /* PicoStringConverter.m */,
+				CE508E9716F95D85009DFAF4 /* PicoDataConverter.h */,
+				CE508E9816F95D85009DFAF4 /* PicoDataConverter.m */,
 			);
 			path = Converter;
 			sourceTree = "<group>";
@@ -564,6 +570,7 @@
 				CE565B3016F5A0390097A66B /* PicoSOAPClient.h in Headers */,
 				CE1D915C16F6CF2300A21D2C /* PicoXMLRequestOperation.h in Headers */,
 				CE1D916016F6D29C00A21D2C /* PicoXMLClient.h in Headers */,
+				CE508E9916F95D85009DFAF4 /* PicoDataConverter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,6 +678,7 @@
 				CE565B3116F5A0390097A66B /* PicoSOAPClient.m in Sources */,
 				CE1D915D16F6CF2300A21D2C /* PicoXMLRequestOperation.m in Sources */,
 				CE1D916116F6D29C00A21D2C /* PicoXMLClient.m in Sources */,
+				CE508E9A16F95D85009DFAF4 /* PicoDataConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

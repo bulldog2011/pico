@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE508E4B16F95C4B009DFAF4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE508E4A16F95C4B009DFAF4 /* UIKit.framework */; };
+		CE508E4D16F95C4B009DFAF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE508E4C16F95C4B009DFAF4 /* Foundation.framework */; };
+		CE508E4F16F95C4B009DFAF4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE508E4E16F95C4B009DFAF4 /* CoreGraphics.framework */; };
+		CE508E5516F95C4B009DFAF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE508E5316F95C4B009DFAF4 /* InfoPlist.strings */; };
+		CE508E5716F95C4B009DFAF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE508E5616F95C4B009DFAF4 /* main.m */; };
+		CE508E5B16F95C4B009DFAF4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE508E5A16F95C4B009DFAF4 /* AppDelegate.m */; };
+		CE508E5D16F95C4B009DFAF4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CE508E5C16F95C4B009DFAF4 /* Default.png */; };
+		CE508E5F16F95C4B009DFAF4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE508E5E16F95C4B009DFAF4 /* Default@2x.png */; };
+		CE508E6116F95C4B009DFAF4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE508E6016F95C4B009DFAF4 /* Default-568h@2x.png */; };
+		CE508E6416F95C4B009DFAF4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE508E6316F95C4B009DFAF4 /* ViewController.m */; };
+		CE508E6716F95C4B009DFAF4 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE508E6516F95C4B009DFAF4 /* ViewController_iPhone.xib */; };
+		CE508E7116F95C71009DFAF4 /* libPico.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE508E7016F95C71009DFAF4 /* libPico.a */; };
+		CE508E7316F95C7A009DFAF4 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE508E7216F95C7A009DFAF4 /* libxml2.dylib */; };
+		CE508E8D16F95CE4009DFAF4 /* BarCodeData.m in Sources */ = {isa = PBXBuildFile; fileRef = CE508E7716F95CE4009DFAF4 /* BarCodeData.m */; };
+		CE508E8E16F95CE4009DFAF4 /* BarcodeOption.m in Sources */ = {isa = PBXBuildFile; fileRef = CE508E7916F95CE4009DFAF4 /* BarcodeOption.m */; };
+		CE508E8F16F95CE4009DFAF4 /* BarcodeType.m in Sources */ = {isa = PBXBuildFile; fileRef = CE508E7B16F95CE4009DFAF4 /* BarcodeType.m */; };
+		CE508E9016F95CE4009DFAF4 /* CheckSumMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = CE508E7D16F95CE4009DFAF4 /* CheckSumMethod.m */; };
+		CE508E9116F95CE4009DFAF4 /* BarCodeSoap_SOAPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE508E8016F95CE4009DFAF4 /* BarCodeSoap_SOAPClient.m */; };
+		CE508E9216F95CE4009DFAF4 /* BarCodeSoap_XMLClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE508E8216F95CE4009DFAF4 /* BarCodeSoap_XMLClient.m */; };
+		CE508E9316F95CE4009DFAF4 /* GenerateBarCode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE508E8616F95CE4009DFAF4 /* GenerateBarCode.m */; };
+		CE508E9416F95CE4009DFAF4 /* GenerateBarCodeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CE508E8816F95CE4009DFAF4 /* GenerateBarCodeResponse.m */; };
+		CE508E9516F95CE4009DFAF4 /* ImageFormats.m in Sources */ = {isa = PBXBuildFile; fileRef = CE508E8A16F95CE4009DFAF4 /* ImageFormats.m */; };
+		CE508E9616F95CE4009DFAF4 /* ShowTextPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE508E8C16F95CE4009DFAF4 /* ShowTextPosition.m */; };
+		CE508E9E16F96587009DFAF4 /* BarCodeServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE508E9D16F96587009DFAF4 /* BarCodeServiceClient.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE508E4616F95C4B009DFAF4 /* BarCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE508E4A16F95C4B009DFAF4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE508E4C16F95C4B009DFAF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE508E4E16F95C4B009DFAF4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE508E5216F95C4B009DFAF4 /* BarCode-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BarCode-Info.plist"; sourceTree = "<group>"; };
+		CE508E5416F95C4B009DFAF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE508E5616F95C4B009DFAF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE508E5816F95C4B009DFAF4 /* BarCode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BarCode-Prefix.pch"; sourceTree = "<group>"; };
+		CE508E5916F95C4B009DFAF4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE508E5A16F95C4B009DFAF4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE508E5C16F95C4B009DFAF4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CE508E5E16F95C4B009DFAF4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CE508E6016F95C4B009DFAF4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CE508E6216F95C4B009DFAF4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE508E6316F95C4B009DFAF4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE508E6616F95C4B009DFAF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		CE508E7016F95C71009DFAF4 /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPico.a; path = "../../Pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
+		CE508E7216F95C7A009DFAF4 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		CE508E7616F95CE4009DFAF4 /* BarCodeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarCodeData.h; sourceTree = "<group>"; };
+		CE508E7716F95CE4009DFAF4 /* BarCodeData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarCodeData.m; sourceTree = "<group>"; };
+		CE508E7816F95CE4009DFAF4 /* BarcodeOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeOption.h; sourceTree = "<group>"; };
+		CE508E7916F95CE4009DFAF4 /* BarcodeOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeOption.m; sourceTree = "<group>"; };
+		CE508E7A16F95CE4009DFAF4 /* BarcodeType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeType.h; sourceTree = "<group>"; };
+		CE508E7B16F95CE4009DFAF4 /* BarcodeType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeType.m; sourceTree = "<group>"; };
+		CE508E7C16F95CE4009DFAF4 /* CheckSumMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckSumMethod.h; sourceTree = "<group>"; };
+		CE508E7D16F95CE4009DFAF4 /* CheckSumMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckSumMethod.m; sourceTree = "<group>"; };
+		CE508E7F16F95CE4009DFAF4 /* BarCodeSoap_SOAPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarCodeSoap_SOAPClient.h; sourceTree = "<group>"; };
+		CE508E8016F95CE4009DFAF4 /* BarCodeSoap_SOAPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarCodeSoap_SOAPClient.m; sourceTree = "<group>"; };
+		CE508E8116F95CE4009DFAF4 /* BarCodeSoap_XMLClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarCodeSoap_XMLClient.h; sourceTree = "<group>"; };
+		CE508E8216F95CE4009DFAF4 /* BarCodeSoap_XMLClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarCodeSoap_XMLClient.m; sourceTree = "<group>"; };
+		CE508E8416F95CE4009DFAF4 /* CommonTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTypes.h; sourceTree = "<group>"; };
+		CE508E8516F95CE4009DFAF4 /* GenerateBarCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerateBarCode.h; sourceTree = "<group>"; };
+		CE508E8616F95CE4009DFAF4 /* GenerateBarCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerateBarCode.m; sourceTree = "<group>"; };
+		CE508E8716F95CE4009DFAF4 /* GenerateBarCodeResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerateBarCodeResponse.h; sourceTree = "<group>"; };
+		CE508E8816F95CE4009DFAF4 /* GenerateBarCodeResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerateBarCodeResponse.m; sourceTree = "<group>"; };
+		CE508E8916F95CE4009DFAF4 /* ImageFormats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFormats.h; sourceTree = "<group>"; };
+		CE508E8A16F95CE4009DFAF4 /* ImageFormats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFormats.m; sourceTree = "<group>"; };
+		CE508E8B16F95CE4009DFAF4 /* ShowTextPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowTextPosition.h; sourceTree = "<group>"; };
+		CE508E8C16F95CE4009DFAF4 /* ShowTextPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowTextPosition.m; sourceTree = "<group>"; };
+		CE508E9C16F96586009DFAF4 /* BarCodeServiceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarCodeServiceClient.h; sourceTree = "<group>"; };
+		CE508E9D16F96587009DFAF4 /* BarCodeServiceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarCodeServiceClient.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE508E4316F95C4B009DFAF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE508E7316F95C7A009DFAF4 /* libxml2.dylib in Frameworks */,
+				CE508E7116F95C71009DFAF4 /* libPico.a in Frameworks */,
+				CE508E4B16F95C4B009DFAF4 /* UIKit.framework in Frameworks */,
+				CE508E4D16F95C4B009DFAF4 /* Foundation.framework in Frameworks */,
+				CE508E4F16F95C4B009DFAF4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE508E3B16F95C4B009DFAF4 = {
+			isa = PBXGroup;
+			children = (
+				CE508E5016F95C4B009DFAF4 /* BarCode */,
+				CE508E4916F95C4B009DFAF4 /* Frameworks */,
+				CE508E4716F95C4B009DFAF4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE508E4716F95C4B009DFAF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE508E4616F95C4B009DFAF4 /* BarCode.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE508E4916F95C4B009DFAF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE508E7216F95C7A009DFAF4 /* libxml2.dylib */,
+				CE508E7016F95C71009DFAF4 /* libPico.a */,
+				CE508E4A16F95C4B009DFAF4 /* UIKit.framework */,
+				CE508E4C16F95C4B009DFAF4 /* Foundation.framework */,
+				CE508E4E16F95C4B009DFAF4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE508E5016F95C4B009DFAF4 /* BarCode */ = {
+			isa = PBXGroup;
+			children = (
+				CE508E7416F95CD8009DFAF4 /* BarCodeService */,
+				CE508E5916F95C4B009DFAF4 /* AppDelegate.h */,
+				CE508E5A16F95C4B009DFAF4 /* AppDelegate.m */,
+				CE508E6216F95C4B009DFAF4 /* ViewController.h */,
+				CE508E6316F95C4B009DFAF4 /* ViewController.m */,
+				CE508E6516F95C4B009DFAF4 /* ViewController_iPhone.xib */,
+				CE508E5116F95C4B009DFAF4 /* Supporting Files */,
+			);
+			path = BarCode;
+			sourceTree = "<group>";
+		};
+		CE508E5116F95C4B009DFAF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE508E5216F95C4B009DFAF4 /* BarCode-Info.plist */,
+				CE508E5316F95C4B009DFAF4 /* InfoPlist.strings */,
+				CE508E5616F95C4B009DFAF4 /* main.m */,
+				CE508E5816F95C4B009DFAF4 /* BarCode-Prefix.pch */,
+				CE508E5C16F95C4B009DFAF4 /* Default.png */,
+				CE508E5E16F95C4B009DFAF4 /* Default@2x.png */,
+				CE508E6016F95C4B009DFAF4 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE508E7416F95CD8009DFAF4 /* BarCodeService */ = {
+			isa = PBXGroup;
+			children = (
+				CE508E7516F95CE4009DFAF4 /* Proxy */,
+				CE508E9C16F96586009DFAF4 /* BarCodeServiceClient.h */,
+				CE508E9D16F96587009DFAF4 /* BarCodeServiceClient.m */,
+			);
+			name = BarCodeService;
+			sourceTree = "<group>";
+		};
+		CE508E7516F95CE4009DFAF4 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				CE508E7616F95CE4009DFAF4 /* BarCodeData.h */,
+				CE508E7716F95CE4009DFAF4 /* BarCodeData.m */,
+				CE508E7816F95CE4009DFAF4 /* BarcodeOption.h */,
+				CE508E7916F95CE4009DFAF4 /* BarcodeOption.m */,
+				CE508E7A16F95CE4009DFAF4 /* BarcodeType.h */,
+				CE508E7B16F95CE4009DFAF4 /* BarcodeType.m */,
+				CE508E7C16F95CE4009DFAF4 /* CheckSumMethod.h */,
+				CE508E7D16F95CE4009DFAF4 /* CheckSumMethod.m */,
+				CE508E7E16F95CE4009DFAF4 /* client */,
+				CE508E8316F95CE4009DFAF4 /* common */,
+				CE508E8516F95CE4009DFAF4 /* GenerateBarCode.h */,
+				CE508E8616F95CE4009DFAF4 /* GenerateBarCode.m */,
+				CE508E8716F95CE4009DFAF4 /* GenerateBarCodeResponse.h */,
+				CE508E8816F95CE4009DFAF4 /* GenerateBarCodeResponse.m */,
+				CE508E8916F95CE4009DFAF4 /* ImageFormats.h */,
+				CE508E8A16F95CE4009DFAF4 /* ImageFormats.m */,
+				CE508E8B16F95CE4009DFAF4 /* ShowTextPosition.h */,
+				CE508E8C16F95CE4009DFAF4 /* ShowTextPosition.m */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		CE508E7E16F95CE4009DFAF4 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				CE508E7F16F95CE4009DFAF4 /* BarCodeSoap_SOAPClient.h */,
+				CE508E8016F95CE4009DFAF4 /* BarCodeSoap_SOAPClient.m */,
+				CE508E8116F95CE4009DFAF4 /* BarCodeSoap_XMLClient.h */,
+				CE508E8216F95CE4009DFAF4 /* BarCodeSoap_XMLClient.m */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
+		CE508E8316F95CE4009DFAF4 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				CE508E8416F95CE4009DFAF4 /* CommonTypes.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE508E4516F95C4B009DFAF4 /* BarCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE508E6D16F95C4B009DFAF4 /* Build configuration list for PBXNativeTarget "BarCode" */;
+			buildPhases = (
+				CE508E4216F95C4B009DFAF4 /* Sources */,
+				CE508E4316F95C4B009DFAF4 /* Frameworks */,
+				CE508E4416F95C4B009DFAF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BarCode;
+			productName = BarCode;
+			productReference = CE508E4616F95C4B009DFAF4 /* BarCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE508E3D16F95C4B009DFAF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Leansoft;
+			};
+			buildConfigurationList = CE508E4016F95C4B009DFAF4 /* Build configuration list for PBXProject "BarCode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE508E3B16F95C4B009DFAF4;
+			productRefGroup = CE508E4716F95C4B009DFAF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE508E4516F95C4B009DFAF4 /* BarCode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE508E4416F95C4B009DFAF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE508E5516F95C4B009DFAF4 /* InfoPlist.strings in Resources */,
+				CE508E5D16F95C4B009DFAF4 /* Default.png in Resources */,
+				CE508E5F16F95C4B009DFAF4 /* Default@2x.png in Resources */,
+				CE508E6116F95C4B009DFAF4 /* Default-568h@2x.png in Resources */,
+				CE508E6716F95C4B009DFAF4 /* ViewController_iPhone.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE508E4216F95C4B009DFAF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE508E5716F95C4B009DFAF4 /* main.m in Sources */,
+				CE508E5B16F95C4B009DFAF4 /* AppDelegate.m in Sources */,
+				CE508E6416F95C4B009DFAF4 /* ViewController.m in Sources */,
+				CE508E8D16F95CE4009DFAF4 /* BarCodeData.m in Sources */,
+				CE508E8E16F95CE4009DFAF4 /* BarcodeOption.m in Sources */,
+				CE508E8F16F95CE4009DFAF4 /* BarcodeType.m in Sources */,
+				CE508E9016F95CE4009DFAF4 /* CheckSumMethod.m in Sources */,
+				CE508E9116F95CE4009DFAF4 /* BarCodeSoap_SOAPClient.m in Sources */,
+				CE508E9216F95CE4009DFAF4 /* BarCodeSoap_XMLClient.m in Sources */,
+				CE508E9316F95CE4009DFAF4 /* GenerateBarCode.m in Sources */,
+				CE508E9416F95CE4009DFAF4 /* GenerateBarCodeResponse.m in Sources */,
+				CE508E9516F95CE4009DFAF4 /* ImageFormats.m in Sources */,
+				CE508E9616F95CE4009DFAF4 /* ShowTextPosition.m in Sources */,
+				CE508E9E16F96587009DFAF4 /* BarCodeServiceClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE508E5316F95C4B009DFAF4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE508E5416F95C4B009DFAF4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE508E6516F95C4B009DFAF4 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE508E6616F95C4B009DFAF4 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE508E6B16F95C4B009DFAF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE508E6C16F95C4B009DFAF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE508E6E16F95C4B009DFAF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BarCode/BarCode-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
+				INFOPLIST_FILE = "BarCode/BarCode-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE508E6F16F95C4B009DFAF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BarCode/BarCode-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
+				INFOPLIST_FILE = "BarCode/BarCode-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE508E4016F95C4B009DFAF4 /* Build configuration list for PBXProject "BarCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE508E6B16F95C4B009DFAF4 /* Debug */,
+				CE508E6C16F95C4B009DFAF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE508E6D16F95C4B009DFAF4 /* Build configuration list for PBXNativeTarget "BarCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE508E6E16F95C4B009DFAF4 /* Debug */,
+				CE508E6F16F95C4B009DFAF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE508E3D16F95C4B009DFAF4 /* Project object */;
+}

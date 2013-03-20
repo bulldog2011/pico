@@ -26,6 +26,9 @@
       <FileRef
          location = "group:Examples/CurrencyConverter/CurrencyConverter.xcodeproj">
       </FileRef>
+      <FileRef
+         location = "group:Examples/BarCode/BarCode.xcodeproj">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Pico/Pico.xcodeproj">

@@ -50,6 +50,8 @@
     [_symbolText release];
     [_getQuoteButton release];
     [_resultText release];
+    
+    [super viewDidUnload];
 }
 
 - (void)didReceiveMemoryWarning

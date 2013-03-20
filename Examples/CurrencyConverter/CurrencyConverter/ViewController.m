@@ -35,6 +35,8 @@
     self.toCurrencyTextField = nil;
     self.convertButton = nil;
     self.activityIndicator = nil;
+    
+    [super viewDidUnload];
 }
 
 
