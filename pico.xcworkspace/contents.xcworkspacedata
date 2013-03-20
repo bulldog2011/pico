@@ -29,6 +29,9 @@
       <FileRef
          location = "group:Examples/BarCode/BarCode.xcodeproj">
       </FileRef>
+      <FileRef
+         location = "group:Examples/Weather/Weather.xcodeproj">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Pico/Pico.xcodeproj">
