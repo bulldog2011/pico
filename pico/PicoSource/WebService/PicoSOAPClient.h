@@ -35,11 +35,11 @@
 @property (readwrite, nonatomic, retain) PicoConfig *config;
 
 /**
- Custom soap header, following types are acceptable:
+ Custom soap headers, following types are acceptable in the array:
  1. class conforms to `PicoBindable` protocol
  2. `PicoXMLElement` class
  */
-@property (readwrite, nonatomic, retain) id<PicoBindable> customSoapHeader;
+@property (readwrite, nonatomic, retain) NSMutableArray *customSoapHeaders;
 
 /**
  Additional parameters that will be appended as query string at the end of the request url

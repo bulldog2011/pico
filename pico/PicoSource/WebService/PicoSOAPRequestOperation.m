@@ -40,6 +40,7 @@ static dispatch_queue_t soap_request_operation_processing_queue() {
     [_responseObj release];
     [_PicoError release];
     [_responseClazz release];
+    [_config release];
     [super dealloc];
 }
 

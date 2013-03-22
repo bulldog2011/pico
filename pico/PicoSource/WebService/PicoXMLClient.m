@@ -21,12 +21,11 @@ enum {
 
 @implementation PicoXMLClient
 
-/*
+
 @synthesize endpointURL = _endpointURL;
 @synthesize debug = _debug;
 @synthesize config = _config;
 @synthesize additionalParameters = _additionalParameters;
-*/
 
 - (id)initWithEndpointURL:(NSURL *)URL {
     NSParameterAssert(URL);
@@ -143,6 +142,7 @@ enum {
 - (void)dealloc {
     self.endpointURL = nil;
     self.config = nil;
+    self.additionalParameters = nil;
     [super dealloc];
 }
 @end

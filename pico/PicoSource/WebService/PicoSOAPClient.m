@@ -28,14 +28,14 @@ enum {
 @end
 
 @implementation PicoSOAPClient
-/*
+
 @synthesize endpointURL = _endpointURL;
 @synthesize soapVersion = _soapVersion;
 @synthesize debug = _debug;
 @synthesize config = _config;
-@synthesize customSoapHeader = _customSoapHeader;
+@synthesize customSoapHeaders = _customSoapHeaders;
 @synthesize additionalParameters = _additionalParameters;
-*/
+
 - (id)initWithEndpointURL:(NSURL *)URL {
     NSParameterAssert(URL);
     
@@ -153,9 +153,9 @@ enum {
         SOAP11Body *soap11Body = [[SOAP11Body alloc] init];
         soap11Envelope.body = soap11Body;
         soap11Envelope.body.any = [NSMutableArray arrayWithObject:requestObject];
-        if (self.customSoapHeader) {
+        if (self.customSoapHeaders.count > 0) {
             SOAP11Header *soap11Header = [[SOAP11Header alloc] init];
-            soap11Header.any = [NSMutableArray arrayWithObject:self.customSoapHeader];
+            soap11Header.any = self.customSoapHeaders;
             soap11Envelope.header = soap11Header;
             [soap11Header release];
         }
@@ -167,9 +167,9 @@ enum {
         SOAP12Body *soap12Body = [[SOAP12Body alloc] init];
         soap12Envelope.body = soap12Body;
         soap12Envelope.body.any = [NSMutableArray arrayWithObject:requestObject];
-        if (self.customSoapHeader) {
+        if (self.customSoapHeaders.count > 0) {
             SOAP12Header *soap12Header = [[SOAP12Header alloc] init];
-            soap12Header.any = [NSMutableArray arrayWithObject:self.customSoapHeader];
+            soap12Header.any = self.customSoapHeaders;
             soap12Envelope.header = soap12Header;
             [soap12Header release];
         }
@@ -197,6 +197,8 @@ enum {
 - (void)dealloc {
     self.endpointURL = nil;
     self.config = nil;
+    self.additionalParameters = nil;
+    self.customSoapHeaders = nil;
     [super dealloc];
 }
 @end

@@ -35,6 +35,7 @@ static dispatch_queue_t xml_request_operation_processing_queue() {
     [_responseObj release];
     [_PicoError release];
     [_responseClazz release];
+    [_config release];
     [super dealloc];
 }
 
