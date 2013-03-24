@@ -1393,11 +1393,11 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AWSECDemoApp/AWSECDemoApp-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "AWSECDemoApp/AWSECDemoApp-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1408,11 +1408,11 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AWSECDemoApp/AWSECDemoApp-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "AWSECDemoApp/AWSECDemoApp-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

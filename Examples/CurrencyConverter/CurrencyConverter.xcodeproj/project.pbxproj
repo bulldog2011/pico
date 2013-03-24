@@ -334,9 +334,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CurrencyConverter/CurrencyConverter-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "CurrencyConverter/CurrencyConverter-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -346,9 +347,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CurrencyConverter/CurrencyConverter-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "CurrencyConverter/CurrencyConverter-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

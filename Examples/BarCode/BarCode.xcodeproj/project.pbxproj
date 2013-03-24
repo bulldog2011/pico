@@ -50,7 +50,7 @@
 		CE508E6216F95C4B009DFAF4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CE508E6316F95C4B009DFAF4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CE508E6616F95C4B009DFAF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		CE508E7016F95C71009DFAF4 /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPico.a; path = "../../Pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
+		CE508E7016F95C71009DFAF4 /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPico.a; path = "../../Pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
 		CE508E7216F95C7A009DFAF4 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		CE508E7616F95CE4009DFAF4 /* BarCodeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarCodeData.h; sourceTree = "<group>"; };
 		CE508E7716F95CE4009DFAF4 /* BarCodeData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarCodeData.m; sourceTree = "<group>"; };
@@ -364,9 +364,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BarCode/BarCode-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "BarCode/BarCode-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -376,9 +377,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BarCode/BarCode-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "BarCode/BarCode-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -402,6 +404,7 @@
 				CE508E6F16F95C4B009DFAF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -48,7 +48,7 @@
 		CEFA65DA16F82843009114F7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CEFA65DD16F82843009114F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		CEFA65E016F82843009114F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
-		CEFA65E716F8285C009114F7 /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPico.a; path = "../../Pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
+		CEFA65E716F8285C009114F7 /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPico.a; path = "../../Pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
 		CEFA65E916F82862009114F7 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		CEFA65EB16F8286B009114F7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CEFA65F016F828AD009114F7 /* StockQuoteSoap_SOAPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockQuoteSoap_SOAPClient.h; sourceTree = "<group>"; };
@@ -358,9 +358,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StockQuote/StockQuote-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "StockQuote/StockQuote-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -370,9 +371,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StockQuote/StockQuote-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "StockQuote/StockQuote-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -396,6 +398,7 @@
 				CEFA65E616F82843009114F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

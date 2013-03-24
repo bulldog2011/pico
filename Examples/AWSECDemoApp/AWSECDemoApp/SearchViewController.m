@@ -159,7 +159,6 @@
             // no result
             [self.view makeToast:@"No result" duration:3.0 position:@"center"];
         }
-        // TODO
     } failure:^(NSError *error, id<PicoBindable> soapFault) {
         // stop progress activity
         [self.view hideToastActivity];

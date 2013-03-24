@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE1D915C16F6CF2300A21D2C /* PicoXMLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = CE1D915A16F6CF2300A21D2C /* PicoXMLRequestOperation.h */; };
 		CE1D915D16F6CF2300A21D2C /* PicoXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1D915B16F6CF2300A21D2C /* PicoXMLRequestOperation.m */; };
-		CE1D916016F6D29C00A21D2C /* PicoXMLClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CE1D915E16F6D29C00A21D2C /* PicoXMLClient.h */; };
+		CE1D916016F6D29C00A21D2C /* PicoXMLClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CE1D915E16F6D29C00A21D2C /* PicoXMLClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE1D916116F6D29C00A21D2C /* PicoXMLClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1D915F16F6D29C00A21D2C /* PicoXMLClient.m */; };
 		CE508E9916F95D85009DFAF4 /* PicoDataConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = CE508E9716F95D85009DFAF4 /* PicoDataConverter.h */; };
 		CE508E9A16F95D85009DFAF4 /* PicoDataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE508E9816F95D85009DFAF4 /* PicoDataConverter.m */; };
@@ -28,10 +28,10 @@
 		CE565AD616F5A0390097A66B /* PicoNumberConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE565A6416F5A0390097A66B /* PicoNumberConverter.m */; };
 		CE565AD716F5A0390097A66B /* PicoStringConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565A6516F5A0390097A66B /* PicoStringConverter.h */; };
 		CE565AD816F5A0390097A66B /* PicoStringConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE565A6616F5A0390097A66B /* PicoStringConverter.m */; };
-		CE565AD916F5A0390097A66B /* PicoBindable.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565A6716F5A0390097A66B /* PicoBindable.h */; };
-		CE565ADA16F5A0390097A66B /* PicoConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565A6816F5A0390097A66B /* PicoConfig.h */; };
+		CE565AD916F5A0390097A66B /* PicoBindable.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565A6716F5A0390097A66B /* PicoBindable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE565ADA16F5A0390097A66B /* PicoConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565A6816F5A0390097A66B /* PicoConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE565ADB16F5A0390097A66B /* PicoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CE565A6916F5A0390097A66B /* PicoConfig.m */; };
-		CE565ADC16F5A0390097A66B /* PicoConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565A6A16F5A0390097A66B /* PicoConstants.h */; };
+		CE565ADC16F5A0390097A66B /* PicoConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565A6A16F5A0390097A66B /* PicoConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE565ADD16F5A0390097A66B /* PicoConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CE565A6B16F5A0390097A66B /* PicoConstants.m */; };
 		CE565ADE16F5A0390097A66B /* PicoReadable.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565A6C16F5A0390097A66B /* PicoReadable.h */; };
 		CE565ADF16F5A0390097A66B /* PicoWritable.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565A6D16F5A0390097A66B /* PicoWritable.h */; };
@@ -41,11 +41,11 @@
 		CE565AE316F5A0390097A66B /* PicoXMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE565A7116F5A0390097A66B /* PicoXMLWriter.m */; };
 		CE565AE416F5A0390097A66B /* PicoBindingSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565A7316F5A0390097A66B /* PicoBindingSchema.h */; };
 		CE565AE516F5A0390097A66B /* PicoBindingSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = CE565A7416F5A0390097A66B /* PicoBindingSchema.m */; };
-		CE565AE616F5A0390097A66B /* PicoClassSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565A7516F5A0390097A66B /* PicoClassSchema.h */; };
+		CE565AE616F5A0390097A66B /* PicoClassSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565A7516F5A0390097A66B /* PicoClassSchema.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE565AE716F5A0390097A66B /* PicoClassSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = CE565A7616F5A0390097A66B /* PicoClassSchema.m */; };
-		CE565AE816F5A0390097A66B /* PicoPropertySchema.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565A7716F5A0390097A66B /* PicoPropertySchema.h */; };
+		CE565AE816F5A0390097A66B /* PicoPropertySchema.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565A7716F5A0390097A66B /* PicoPropertySchema.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE565AE916F5A0390097A66B /* PicoPropertySchema.m in Sources */ = {isa = PBXBuildFile; fileRef = CE565A7816F5A0390097A66B /* PicoPropertySchema.m */; };
-		CE565AEA16F5A0390097A66B /* PicoXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565A7A16F5A0390097A66B /* PicoXMLElement.h */; };
+		CE565AEA16F5A0390097A66B /* PicoXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565A7A16F5A0390097A66B /* PicoXMLElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE565AEB16F5A0390097A66B /* PicoXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = CE565A7B16F5A0390097A66B /* PicoXMLElement.m */; };
 		CE565AEC16F5A0390097A66B /* Pico-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = CE565A7C16F5A0390097A66B /* Pico-Prefix.pch */; };
 		CE565AED16F5A0390097A66B /* PicoSOAPReader.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565A7E16F5A0390097A66B /* PicoSOAPReader.h */; };
@@ -115,7 +115,7 @@
 		CE565B2D16F5A0390097A66B /* XMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE565AC416F5A0390097A66B /* XMLWriter.m */; };
 		CE565B2E16F5A0390097A66B /* PicoSOAPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565AC616F5A0390097A66B /* PicoSOAPRequestOperation.h */; };
 		CE565B2F16F5A0390097A66B /* PicoSOAPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE565AC716F5A0390097A66B /* PicoSOAPRequestOperation.m */; };
-		CE565B3016F5A0390097A66B /* PicoSOAPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565AC816F5A0390097A66B /* PicoSOAPClient.h */; };
+		CE565B3016F5A0390097A66B /* PicoSOAPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565AC816F5A0390097A66B /* PicoSOAPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE565B3116F5A0390097A66B /* PicoSOAPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE565AC916F5A0390097A66B /* PicoSOAPClient.m */; };
 		CEAA8F1916D9C70E0024B5D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8F1816D9C70E0024B5D7 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -513,6 +513,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE565AEA16F5A0390097A66B /* PicoXMLElement.h in Headers */,
+				CE565AE616F5A0390097A66B /* PicoClassSchema.h in Headers */,
+				CE565B3016F5A0390097A66B /* PicoSOAPClient.h in Headers */,
+				CE1D916016F6D29C00A21D2C /* PicoXMLClient.h in Headers */,
+				CE565AD916F5A0390097A66B /* PicoBindable.h in Headers */,
+				CE565AE816F5A0390097A66B /* PicoPropertySchema.h in Headers */,
+				CE565ADA16F5A0390097A66B /* PicoConfig.h in Headers */,
+				CE565ADC16F5A0390097A66B /* PicoConstants.h in Headers */,
 				CE565ACA16F5A0390097A66B /* PicoCache.h in Headers */,
 				CE565ACC16F5A0390097A66B /* PicoCacheEntry.h in Headers */,
 				CE565ACE16F5A0390097A66B /* PicoBoolConverter.h in Headers */,
@@ -521,17 +529,11 @@
 				CE565AD316F5A0390097A66B /* PicoDateConverter.h in Headers */,
 				CE565AD516F5A0390097A66B /* PicoNumberConverter.h in Headers */,
 				CE565AD716F5A0390097A66B /* PicoStringConverter.h in Headers */,
-				CE565AD916F5A0390097A66B /* PicoBindable.h in Headers */,
-				CE565ADA16F5A0390097A66B /* PicoConfig.h in Headers */,
-				CE565ADC16F5A0390097A66B /* PicoConstants.h in Headers */,
 				CE565ADE16F5A0390097A66B /* PicoReadable.h in Headers */,
 				CE565ADF16F5A0390097A66B /* PicoWritable.h in Headers */,
 				CE565AE016F5A0390097A66B /* PicoXMLReader.h in Headers */,
 				CE565AE216F5A0390097A66B /* PicoXMLWriter.h in Headers */,
 				CE565AE416F5A0390097A66B /* PicoBindingSchema.h in Headers */,
-				CE565AE616F5A0390097A66B /* PicoClassSchema.h in Headers */,
-				CE565AE816F5A0390097A66B /* PicoPropertySchema.h in Headers */,
-				CE565AEA16F5A0390097A66B /* PicoXMLElement.h in Headers */,
 				CE565AEC16F5A0390097A66B /* Pico-Prefix.pch in Headers */,
 				CE565AED16F5A0390097A66B /* PicoSOAPReader.h in Headers */,
 				CE565AEF16F5A0390097A66B /* PicoSOAPWriter.h in Headers */,
@@ -567,9 +569,7 @@
 				CE565B2A16F5A0390097A66B /* GDataXMLNode.h in Headers */,
 				CE565B2C16F5A0390097A66B /* XMLWriter.h in Headers */,
 				CE565B2E16F5A0390097A66B /* PicoSOAPRequestOperation.h in Headers */,
-				CE565B3016F5A0390097A66B /* PicoSOAPClient.h in Headers */,
 				CE1D915C16F6CF2300A21D2C /* PicoXMLRequestOperation.h in Headers */,
-				CE1D916016F6D29C00A21D2C /* PicoXMLClient.h in Headers */,
 				CE508E9916F95D85009DFAF4 /* PicoDataConverter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -738,6 +738,7 @@
 				GCC_PREFIX_HEADER = "PicoSource/Pico-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -753,6 +754,7 @@
 				GCC_PREFIX_HEADER = "PicoSource/Pico-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

@@ -331,7 +331,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PicoPerformance/PicoPerformance-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../Pico/PicoSource/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "PicoPerformance/PicoPerformance-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
@@ -339,7 +339,7 @@
 					"\"/Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "../Pico/PicoSource/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -350,7 +350,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PicoPerformance/PicoPerformance-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../Pico/PicoSource/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "PicoPerformance/PicoPerformance-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
@@ -358,7 +358,7 @@
 					"\"/Users/user/Library/Developer/Xcode/DerivedData/pico-flaiacivepfbdbamtajfyrqsjxae/Build/Products/Debug-iphoneos\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "../Pico/PicoSource/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

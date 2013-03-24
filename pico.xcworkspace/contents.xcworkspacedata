@@ -38,6 +38,9 @@
       <FileRef
          location = "group:Examples/AWSECDemoApp/AWSECDemoApp.xcodeproj">
       </FileRef>
+      <FileRef
+         location = "group:Examples/eBayDemoApp/eBayDemoApp.xcodeproj">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Pico/Pico.xcodeproj">

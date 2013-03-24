@@ -93,7 +93,7 @@
 		CEB9586016F9DE020051551F /* WeatherDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherDescription.m; sourceTree = "<group>"; };
 		CEB9586116F9DE020051551F /* WeatherReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherReturn.h; sourceTree = "<group>"; };
 		CEB9586216F9DE020051551F /* WeatherReturn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherReturn.m; sourceTree = "<group>"; };
-		CEB9587316F9DE120051551F /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPico.a; path = "../../Pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
+		CEB9587316F9DE120051551F /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPico.a; path = "../../Pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
 		CEB9587516F9DE280051551F /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		CEB9587716F9DE3B0051551F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CEB9587A16F9DE5B0051551F /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
@@ -430,9 +430,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Weather/Weather-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Weather/Weather-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -442,9 +443,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Weather/Weather-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Weather/Weather-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -468,6 +470,7 @@
 				CEB9583D16F9DDE30051551F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

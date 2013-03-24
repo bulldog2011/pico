@@ -355,7 +355,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PicoTest/PicoTest-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../Pico/PicoSource/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "PicoTest/PicoTest-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
@@ -364,6 +364,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = PicoTest;
+				USER_HEADER_SEARCH_PATHS = "../Pico/PicoSource/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -379,7 +380,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PicoTest/PicoTest-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../Pico/PicoSource/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "PicoTest/PicoTest-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
@@ -389,6 +390,7 @@
 				);
 				PRODUCT_NAME = PicoTest;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				USER_HEADER_SEARCH_PATHS = "../Pico/PicoSource/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
