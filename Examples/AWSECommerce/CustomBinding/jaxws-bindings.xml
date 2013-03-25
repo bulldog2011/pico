@@ -1,0 +1,29 @@
+<jaxws:bindings xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+                                xmlns:jaxws="http://java.sun.com/xml/ns/jaxws"
+                                xmlns:jaxb="http://java.sun.com/xml/ns/jaxb">
+		<jaxws:bindings
+			    node="wsdl:definitions/wsdl:types/xs:schema[@targetNamespace='http://webservices.amazon.com/AWSECommerceService/2011-08-01']">
+			<jaxb:bindings node="//xs:complexType[@name='CartAddRequest']/xs:sequence/xs:element[@name='Items']/xs:complexType">
+			    <jaxb:class name="CartAddItems"/>
+			</jaxb:bindings>
+			<jaxb:bindings node="//xs:complexType[@name='CartAddRequest']/xs:sequence/xs:element[@name='Items']/xs:complexType/xs:sequence/xs:element[@name='Item']/xs:complexType">
+			    <jaxb:class name="CartAddItem"/>
+			</jaxb:bindings>
+			<jaxb:bindings node="//xs:complexType[@name='CartCreateRequest']/xs:sequence/xs:element[@name='Items']/xs:complexType">
+			    <jaxb:class name="CartCreateItems"/>
+			</jaxb:bindings>
+			<jaxb:bindings node="//xs:complexType[@name='CartCreateRequest']/xs:sequence/xs:element[@name='Items']/xs:complexType/xs:sequence/xs:element[@name='Item']/xs:complexType">
+			    <jaxb:class name="CartCreateItem"/>
+			</jaxb:bindings>
+			<jaxb:bindings node="//xs:complexType[@name='CartCreateRequest']/xs:sequence/xs:element[@name='Items']/xs:complexType/xs:sequence/xs:element[@name='Item']/xs:complexType/xs:sequence/xs:element[@name='MetaData']/xs:complexType">
+			    <jaxb:class name="ItemMetaData"/>
+			</jaxb:bindings>
+			<jaxb:bindings node="//xs:complexType[@name='CartModifyRequest']/xs:sequence/xs:element[@name='Items']/xs:complexType">
+			    <jaxb:class name="CartModifyItems"/>
+			</jaxb:bindings>
+			<jaxb:bindings node="//xs:complexType[@name='CartModifyRequest']/xs:sequence/xs:element[@name='Items']/xs:complexType/xs:sequence/xs:element[@name='Item']/xs:complexType">
+			    <jaxb:class name="CartModifyItem"/>
+			</jaxb:bindings>
+		</jaxws:bindings>
+</jaxws:bindings>

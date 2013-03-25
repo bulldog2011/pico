@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Example Version='1.0' Name='example' URL='http://domain.com/'>
+<ListEntry id='1'>
+<Text>one</Text>
+</ListEntry>
+<ListEntry id='2'>
+<Text>two</Text>
+</ListEntry>
+<ListEntry id='3'>
+<Text>three</Text>
+</ListEntry>
+<TextEntry id='4'>
+<Text>example 4</Text>
+</TextEntry>
+<URLEntry>http://a.com/</URLEntry>
+<URLEntry>http://b.com/</URLEntry>
+<URLEntry>http://c.com/</URLEntry>
+<TextEntry id='5'>
+<Text>example 5</Text>
+</TextEntry>
+<TextEntry id='6'>
+<Text>example 6</Text>
+</TextEntry>
+</Example>

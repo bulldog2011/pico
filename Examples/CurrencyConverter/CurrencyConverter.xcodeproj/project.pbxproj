@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE6EE05A16F88D26009FA917 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6EE05916F88D26009FA917 /* UIKit.framework */; };
+		CE6EE05C16F88D26009FA917 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6EE05B16F88D26009FA917 /* Foundation.framework */; };
+		CE6EE05E16F88D26009FA917 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6EE05D16F88D26009FA917 /* CoreGraphics.framework */; };
+		CE6EE06416F88D26009FA917 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE6EE06216F88D26009FA917 /* InfoPlist.strings */; };
+		CE6EE06616F88D26009FA917 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE06516F88D26009FA917 /* main.m */; };
+		CE6EE06A16F88D26009FA917 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE06916F88D26009FA917 /* AppDelegate.m */; };
+		CE6EE06C16F88D26009FA917 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CE6EE06B16F88D26009FA917 /* Default.png */; };
+		CE6EE06E16F88D26009FA917 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE6EE06D16F88D26009FA917 /* Default@2x.png */; };
+		CE6EE07016F88D26009FA917 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE6EE06F16F88D26009FA917 /* Default-568h@2x.png */; };
+		CE6EE07316F88D26009FA917 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE07216F88D26009FA917 /* ViewController.m */; };
+		CE6EE07616F88D26009FA917 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6EE07416F88D26009FA917 /* ViewController_iPhone.xib */; };
+		CE6EE08016F88D32009FA917 /* libPico.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6EE07F16F88D32009FA917 /* libPico.a */; };
+		CE6EE08216F88D46009FA917 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6EE08116F88D46009FA917 /* libxml2.dylib */; };
+		CEDF1E2916F8903400400FF5 /* CurrencyConvertorSoap_SOAPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDF1E1E16F8903400400FF5 /* CurrencyConvertorSoap_SOAPClient.m */; };
+		CEDF1E2A16F8903400400FF5 /* CurrencyConvertorSoap_XMLClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDF1E2016F8903400400FF5 /* CurrencyConvertorSoap_XMLClient.m */; };
+		CEDF1E2B16F8903400400FF5 /* ConversionRate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDF1E2416F8903400400FF5 /* ConversionRate.m */; };
+		CEDF1E2C16F8903400400FF5 /* ConversionRateResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDF1E2616F8903400400FF5 /* ConversionRateResponse.m */; };
+		CEDF1E2D16F8903400400FF5 /* Currency.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDF1E2816F8903400400FF5 /* Currency.m */; };
+		CEDF1E3016F8972D00400FF5 /* CurrencyConverterSerivceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDF1E2F16F8972D00400FF5 /* CurrencyConverterSerivceClient.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE6EE05516F88D26009FA917 /* CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE6EE05916F88D26009FA917 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE6EE05B16F88D26009FA917 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE6EE05D16F88D26009FA917 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE6EE06116F88D26009FA917 /* CurrencyConverter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CurrencyConverter-Info.plist"; sourceTree = "<group>"; };
+		CE6EE06316F88D26009FA917 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE6EE06516F88D26009FA917 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE6EE06716F88D26009FA917 /* CurrencyConverter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CurrencyConverter-Prefix.pch"; sourceTree = "<group>"; };
+		CE6EE06816F88D26009FA917 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE6EE06916F88D26009FA917 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE6EE06B16F88D26009FA917 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CE6EE06D16F88D26009FA917 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CE6EE06F16F88D26009FA917 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CE6EE07116F88D26009FA917 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE6EE07216F88D26009FA917 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE6EE07516F88D26009FA917 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		CE6EE07F16F88D32009FA917 /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPico.a; path = "../../Pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
+		CE6EE08116F88D46009FA917 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		CEDF1E1D16F8903400400FF5 /* CurrencyConvertorSoap_SOAPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyConvertorSoap_SOAPClient.h; sourceTree = "<group>"; };
+		CEDF1E1E16F8903400400FF5 /* CurrencyConvertorSoap_SOAPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyConvertorSoap_SOAPClient.m; sourceTree = "<group>"; };
+		CEDF1E1F16F8903400400FF5 /* CurrencyConvertorSoap_XMLClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyConvertorSoap_XMLClient.h; sourceTree = "<group>"; };
+		CEDF1E2016F8903400400FF5 /* CurrencyConvertorSoap_XMLClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyConvertorSoap_XMLClient.m; sourceTree = "<group>"; };
+		CEDF1E2216F8903400400FF5 /* CommonTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTypes.h; sourceTree = "<group>"; };
+		CEDF1E2316F8903400400FF5 /* ConversionRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversionRate.h; sourceTree = "<group>"; };
+		CEDF1E2416F8903400400FF5 /* ConversionRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversionRate.m; sourceTree = "<group>"; };
+		CEDF1E2516F8903400400FF5 /* ConversionRateResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversionRateResponse.h; sourceTree = "<group>"; };
+		CEDF1E2616F8903400400FF5 /* ConversionRateResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversionRateResponse.m; sourceTree = "<group>"; };
+		CEDF1E2716F8903400400FF5 /* Currency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Currency.h; sourceTree = "<group>"; };
+		CEDF1E2816F8903400400FF5 /* Currency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Currency.m; sourceTree = "<group>"; };
+		CEDF1E2E16F8972D00400FF5 /* CurrencyConverterSerivceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyConverterSerivceClient.h; sourceTree = "<group>"; };
+		CEDF1E2F16F8972D00400FF5 /* CurrencyConverterSerivceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyConverterSerivceClient.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE6EE05216F88D26009FA917 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6EE08216F88D46009FA917 /* libxml2.dylib in Frameworks */,
+				CE6EE08016F88D32009FA917 /* libPico.a in Frameworks */,
+				CE6EE05A16F88D26009FA917 /* UIKit.framework in Frameworks */,
+				CE6EE05C16F88D26009FA917 /* Foundation.framework in Frameworks */,
+				CE6EE05E16F88D26009FA917 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE6EE04A16F88D26009FA917 = {
+			isa = PBXGroup;
+			children = (
+				CE6EE05F16F88D26009FA917 /* CurrencyConverter */,
+				CE6EE05816F88D26009FA917 /* Frameworks */,
+				CE6EE05616F88D26009FA917 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE6EE05616F88D26009FA917 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE6EE05516F88D26009FA917 /* CurrencyConverter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE6EE05816F88D26009FA917 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE6EE08116F88D46009FA917 /* libxml2.dylib */,
+				CE6EE07F16F88D32009FA917 /* libPico.a */,
+				CE6EE05916F88D26009FA917 /* UIKit.framework */,
+				CE6EE05B16F88D26009FA917 /* Foundation.framework */,
+				CE6EE05D16F88D26009FA917 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE6EE05F16F88D26009FA917 /* CurrencyConverter */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF1E1916F8901700400FF5 /* CurrencyConverterService */,
+				CE6EE06816F88D26009FA917 /* AppDelegate.h */,
+				CE6EE06916F88D26009FA917 /* AppDelegate.m */,
+				CE6EE07116F88D26009FA917 /* ViewController.h */,
+				CE6EE07216F88D26009FA917 /* ViewController.m */,
+				CE6EE07416F88D26009FA917 /* ViewController_iPhone.xib */,
+				CE6EE06016F88D26009FA917 /* Supporting Files */,
+			);
+			path = CurrencyConverter;
+			sourceTree = "<group>";
+		};
+		CE6EE06016F88D26009FA917 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE6EE06116F88D26009FA917 /* CurrencyConverter-Info.plist */,
+				CE6EE06216F88D26009FA917 /* InfoPlist.strings */,
+				CE6EE06516F88D26009FA917 /* main.m */,
+				CE6EE06716F88D26009FA917 /* CurrencyConverter-Prefix.pch */,
+				CE6EE06B16F88D26009FA917 /* Default.png */,
+				CE6EE06D16F88D26009FA917 /* Default@2x.png */,
+				CE6EE06F16F88D26009FA917 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEDF1E1916F8901700400FF5 /* CurrencyConverterService */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF1E1B16F8903400400FF5 /* Proxy */,
+				CEDF1E2E16F8972D00400FF5 /* CurrencyConverterSerivceClient.h */,
+				CEDF1E2F16F8972D00400FF5 /* CurrencyConverterSerivceClient.m */,
+			);
+			name = CurrencyConverterService;
+			sourceTree = "<group>";
+		};
+		CEDF1E1B16F8903400400FF5 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF1E1C16F8903400400FF5 /* client */,
+				CEDF1E2116F8903400400FF5 /* common */,
+				CEDF1E2316F8903400400FF5 /* ConversionRate.h */,
+				CEDF1E2416F8903400400FF5 /* ConversionRate.m */,
+				CEDF1E2516F8903400400FF5 /* ConversionRateResponse.h */,
+				CEDF1E2616F8903400400FF5 /* ConversionRateResponse.m */,
+				CEDF1E2716F8903400400FF5 /* Currency.h */,
+				CEDF1E2816F8903400400FF5 /* Currency.m */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		CEDF1E1C16F8903400400FF5 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF1E1D16F8903400400FF5 /* CurrencyConvertorSoap_SOAPClient.h */,
+				CEDF1E1E16F8903400400FF5 /* CurrencyConvertorSoap_SOAPClient.m */,
+				CEDF1E1F16F8903400400FF5 /* CurrencyConvertorSoap_XMLClient.h */,
+				CEDF1E2016F8903400400FF5 /* CurrencyConvertorSoap_XMLClient.m */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
+		CEDF1E2116F8903400400FF5 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF1E2216F8903400400FF5 /* CommonTypes.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE6EE05416F88D26009FA917 /* CurrencyConverter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE6EE07C16F88D26009FA917 /* Build configuration list for PBXNativeTarget "CurrencyConverter" */;
+			buildPhases = (
+				CE6EE05116F88D26009FA917 /* Sources */,
+				CE6EE05216F88D26009FA917 /* Frameworks */,
+				CE6EE05316F88D26009FA917 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CurrencyConverter;
+			productName = CurrencyConverter;
+			productReference = CE6EE05516F88D26009FA917 /* CurrencyConverter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE6EE04C16F88D26009FA917 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Leansoft;
+			};
+			buildConfigurationList = CE6EE04F16F88D26009FA917 /* Build configuration list for PBXProject "CurrencyConverter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE6EE04A16F88D26009FA917;
+			productRefGroup = CE6EE05616F88D26009FA917 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE6EE05416F88D26009FA917 /* CurrencyConverter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE6EE05316F88D26009FA917 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6EE06416F88D26009FA917 /* InfoPlist.strings in Resources */,
+				CE6EE06C16F88D26009FA917 /* Default.png in Resources */,
+				CE6EE06E16F88D26009FA917 /* Default@2x.png in Resources */,
+				CE6EE07016F88D26009FA917 /* Default-568h@2x.png in Resources */,
+				CE6EE07616F88D26009FA917 /* ViewController_iPhone.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE6EE05116F88D26009FA917 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6EE06616F88D26009FA917 /* main.m in Sources */,
+				CE6EE06A16F88D26009FA917 /* AppDelegate.m in Sources */,
+				CE6EE07316F88D26009FA917 /* ViewController.m in Sources */,
+				CEDF1E2916F8903400400FF5 /* CurrencyConvertorSoap_SOAPClient.m in Sources */,
+				CEDF1E2A16F8903400400FF5 /* CurrencyConvertorSoap_XMLClient.m in Sources */,
+				CEDF1E2B16F8903400400FF5 /* ConversionRate.m in Sources */,
+				CEDF1E2C16F8903400400FF5 /* ConversionRateResponse.m in Sources */,
+				CEDF1E2D16F8903400400FF5 /* Currency.m in Sources */,
+				CEDF1E3016F8972D00400FF5 /* CurrencyConverterSerivceClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE6EE06216F88D26009FA917 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE6EE06316F88D26009FA917 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE6EE07416F88D26009FA917 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE6EE07516F88D26009FA917 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE6EE07A16F88D26009FA917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE6EE07B16F88D26009FA917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE6EE07D16F88D26009FA917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CurrencyConverter/CurrencyConverter-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "CurrencyConverter/CurrencyConverter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE6EE07E16F88D26009FA917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CurrencyConverter/CurrencyConverter-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "CurrencyConverter/CurrencyConverter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE6EE04F16F88D26009FA917 /* Build configuration list for PBXProject "CurrencyConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE6EE07A16F88D26009FA917 /* Debug */,
+				CE6EE07B16F88D26009FA917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE6EE07C16F88D26009FA917 /* Build configuration list for PBXNativeTarget "CurrencyConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE6EE07D16F88D26009FA917 /* Debug */,
+				CE6EE07E16F88D26009FA917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE6EE04C16F88D26009FA917 /* Project object */;
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Test">
+      <FileRef
+         location = "group:PicoPerformance/PicoPerformance.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:PicoTest/PicoTest.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Examples">
+      <FileRef
+         location = "group:Examples/eBayFinding/eBayFinding.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Examples/eBayShopping/eBayShopping.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Examples/StockQuote/StockQuote.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Examples/CurrencyConverter/CurrencyConverter.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Examples/BarCode/BarCode.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Examples/Weather/Weather.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Examples/AWSECommerce/AWSECommerce.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Examples/AWSECDemoApp/AWSECDemoApp.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Examples/eBayDemoApp/eBayDemoApp.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:Pico/Pico.xcodeproj">
+   </FileRef>
+</Workspace>
