@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0C044A1701DABE008597EC /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE0C04491701DABE008597EC /* Entitlements.plist */; };
 		CE1D933716F6E2E500A21D2C /* FindingServicePortType_SOAPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1D92A616F6E2E500A21D2C /* FindingServicePortType_SOAPClient.m */; };
 		CE1D933816F6E2E500A21D2C /* FindingServicePortType_XMLClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1D92A816F6E2E500A21D2C /* FindingServicePortType_XMLClient.m */; };
 		CE1D933916F6E2E500A21D2C /* Finding_AckValue.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1D92AC16F6E2E500A21D2C /* Finding_AckValue.m */; };
@@ -99,6 +100,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE0C04491701DABE008597EC /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		CE1D92A516F6E2E500A21D2C /* FindingServicePortType_SOAPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindingServicePortType_SOAPClient.h; sourceTree = "<group>"; };
 		CE1D92A616F6E2E500A21D2C /* FindingServicePortType_SOAPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindingServicePortType_SOAPClient.m; sourceTree = "<group>"; };
 		CE1D92A716F6E2E500A21D2C /* FindingServicePortType_XMLClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindingServicePortType_XMLClient.h; sourceTree = "<group>"; };
@@ -520,6 +522,7 @@
 				CEF613F216F4870500A3CB13 /* Default.png */,
 				CEF613F416F4870500A3CB13 /* Default@2x.png */,
 				CEF613F616F4870500A3CB13 /* Default-568h@2x.png */,
+				CE0C04491701DABE008597EC /* Entitlements.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -591,6 +594,7 @@
 				CEF613F716F4870500A3CB13 /* Default-568h@2x.png in Resources */,
 				CEF613FD16F4870500A3CB13 /* ViewController_iPhone.xib in Resources */,
 				CEF6140016F4870500A3CB13 /* ViewController_iPad.xib in Resources */,
+				CE0C044A1701DABE008597EC /* Entitlements.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -764,6 +768,9 @@
 		CEF6140416F4870500A3CB13 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_ENTITLEMENTS = eBayFinding/Entitlements.plist;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "eBayFinding/eBayFinding-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
@@ -782,6 +789,9 @@
 		CEF6140516F4870500A3CB13 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_ENTITLEMENTS = eBayFinding/Entitlements.plist;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "eBayFinding/eBayFinding-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
