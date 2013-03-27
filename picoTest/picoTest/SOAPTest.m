@@ -206,7 +206,7 @@
 
 -(void) checkDog:(Bulldog *)dog1 equalWith:(Bulldog *)dog2 {
     GHAssertEqualStrings(dog1.name, dog2.name, nil);
-    GHAssertEquals(dog1.age, dog2.age, nil);
+    GHAssertEquals([dog1.age intValue], [dog2.age intValue], nil);
     GHAssertEqualStrings(dog1.color, dog2.color, nil);
     GHAssertEqualStrings(dog1.desc, dog2.desc, nil);
     if (dog1.children.count > 0) {

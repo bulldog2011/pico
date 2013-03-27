@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0C04511701E473008597EC /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE0C04501701E473008597EC /* Entitlements.plist */; };
 		CEC66EA416FF0788009696EC /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC66EA216FF0788009696EC /* DetailsViewController.m */; };
 		CEC66EA516FF0788009696EC /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC66EA316FF0788009696EC /* DetailsViewController.xib */; };
 		CEC66EA816FF10A1009696EC /* PriceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC66EA716FF10A1009696EC /* PriceUtil.m */; };
@@ -211,6 +212,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE0C04501701E473008597EC /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		CEC66EA116FF0788009696EC /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		CEC66EA216FF0788009696EC /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		CEC66EA316FF0788009696EC /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
@@ -698,6 +700,7 @@
 				CECFFB3016FEAFD700F15670 /* Default-568h@2x.png */,
 				CECFFD6616FEB1BF00F15670 /* MainWindow.xib */,
 				CECFFD7A16FEBC5F00F15670 /* ItemTableViewCell.xib */,
+				CE0C04501701E473008597EC /* Entitlements.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1183,6 +1186,7 @@
 				CECFFD7016FEB66000F15670 /* SearchViewController.xib in Resources */,
 				CECFFD7B16FEBC5F00F15670 /* ItemTableViewCell.xib in Resources */,
 				CEC66EA516FF0788009696EC /* DetailsViewController.xib in Resources */,
+				CE0C04511701E473008597EC /* Entitlements.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1451,13 +1455,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_ENTITLEMENTS = eBayDemoApp/Entitlements.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "eBayDemoApp/eBayDemoApp-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "eBayDemoApp/eBayDemoApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				USER_HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1467,13 +1475,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_ENTITLEMENTS = eBayDemoApp/Entitlements.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "eBayDemoApp/eBayDemoApp-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "eBayDemoApp/eBayDemoApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				USER_HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
 				WRAPPER_EXTENSION = app;
 			};

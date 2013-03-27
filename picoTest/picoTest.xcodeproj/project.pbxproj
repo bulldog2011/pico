@@ -42,6 +42,7 @@
 		CEAA8EB316D9BBF70024B5D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8EB216D9BBF70024B5D7 /* CoreGraphics.framework */; };
 		CEAA8ECE16D9BE5E0024B5D7 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8ECD16D9BE5E0024B5D7 /* GHUnitIOS.framework */; };
 		CEAA8ED016D9C1040024B5D7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8ECF16D9C1040024B5D7 /* QuartzCore.framework */; };
+		CEEE95471701D761001C411E /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEEE95461701D761001C411E /* Entitlements.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		CEAA8EB216D9BBF70024B5D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CEAA8ECD16D9BE5E0024B5D7 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
 		CEAA8ECF16D9C1040024B5D7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CEEE95461701D761001C411E /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				CE56579416F59AD70097A66B /* TyteTest.m */,
 				CE56579516F59AD70097A66B /* UnicodeTest.m */,
 				CE56579616F59AD70097A66B /* XMLWriterTest.m */,
+				CEEE95461701D761001C411E /* Entitlements.plist */,
 			);
 			path = PicoTest;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				CE5657A216F59AD70097A66B /* Default@2x.png in Resources */,
 				CE5657A516F59AD70097A66B /* InfoPlist.strings in Resources */,
 				CE5657AB16F59AD70097A66B /* caseTest.xml in Resources */,
+				CEEE95471701D761001C411E /* Entitlements.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_ENTITLEMENTS = PicoTest/Entitlements.plist;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -373,6 +378,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_ENTITLEMENTS = PicoTest/Entitlements.plist;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
