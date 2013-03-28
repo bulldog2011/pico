@@ -94,6 +94,7 @@ All samples are in the [Examples](https://github.com/bulldog2011/pico/tree/maste
 
 ##Docs
 1. [Wsdl Driven Development on iOS - the Big Picture](http://bulldog2011.github.com/blog/2013/03/25/wsdl-driven-development-on-ios-the-big-picture/)
+2. [Pico Tutorial - A StockQuote Sample](http://bulldog2011.github.com/blog/2013/03/27/pico-tutorial-a-stockquote-sample/)
 
 ##Compatibility
 
