@@ -100,6 +100,102 @@ All samples are in the [Examples](https://github.com/bulldog2011/pico/tree/maste
 5. [Pico Tutorial 4 - Hello eBay Shopping Service](http://bulldog2011.github.com/blog/2013/03/30/pico-tutorial-4-hello-ebay-shopping/)
 6. [Pico Tutoiral 5 - Hello Amazon Product Advertising API](http://bulldog2011.github.com/blog/2013/03/31/pico-tutoiral-5-hello-amazon-product-advertising-api/)
 
+##Mapping between XML Schema Types and Objective-C Types 
+
+<table>
+<tr><th>XML Schema Data Types</th><th>Objective-C Data Types</th></tr>
+<tr>
+    <td>xsd:base64Binary</td>
+    <td>NSData</td>
+</tr>
+<tr>
+    <td>xsd:boolean</td>
+    <td>NSNumber with bool value</td>
+</tr>
+<tr>
+    <td>xsd:byte</td>
+    <td>NSNumber</td>
+</tr>
+<tr>
+    <td>xsd:date</td>
+    <td>NSDate</td>
+</tr>
+<tr>
+    <td>xsd:dateTime</td>
+    <td>NSDate</td>
+</tr>
+<tr>
+    <td>xsd:decimal</td>
+    <td>NSNumber with double value</td>
+</tr>
+<tr>
+    <td>xsd:double</td>
+    <td>NSNumber with double value</td>
+</tr>
+<tr>
+    <td>xsd:duration</td>
+    <td>NSString</td>
+</tr>
+<tr>
+    <td>xsd:float</td>
+    <td>NSNumber with float value</td>
+</tr>
+<tr>
+    <td>xsd:g</td>
+    <td>NSDate</td>
+</tr>
+<tr>
+    <td>xsd:hexBinary</td>
+    <td>NSData</td>
+</tr>
+<tr>
+    <td>xsd:int</td>
+    <td>NSNumber with int value</td>
+</tr>
+<tr>
+    <td>xsd:integer</td>
+    <td>NSNumber with long value</td>
+</tr>
+<tr>
+    <td>xsd:long</td>
+    <td>NSNumber with long value</td>
+</tr>
+<tr>
+    <td>xsd:NOTATION</td>
+    <td>NSString</td>
+</tr>
+<tr>
+    <td>xsd:Qname</td>
+    <td>NSString</td>
+</tr>
+<tr>
+    <td>xsd:short</td>
+    <td>NSNumber with short value</td>
+</tr>
+<tr>
+    <td>xsd:string</td>
+    <td>NSString</td>
+</tr>
+<tr>
+    <td>xsd:time</td>
+    <td>NSDate</td>
+</tr>
+<tr>
+    <td>xsd:unsignedByte</td>
+    <td>NSNumber with short value</td>
+</tr>
+<tr>
+    <td>xsd:unsignedInt</td>
+    <td>NSNumber with long value</td>
+</tr>
+<tr>
+    <td>xsd:unsignedShort</td>
+    <td>NSNumber with int value</td>
+</tr>
+</table>
+
+
+
 ##Compatibility
 
 1. Pico 0.5 and higher requires [iOS 4.0](http://developer.apple.com/library/ios/#releasenotes/General/WhatsNewIniOS/Articles/iPhoneOS4.html) and above.  
