@@ -98,6 +98,7 @@ All samples are in the [Examples](https://github.com/bulldog2011/pico/tree/maste
 3. [Pico Tutorial 2 - A CurrencyConverter Sample](http://bulldog2011.github.com/blog/2013/03/28/pico-tutorial-2-a-currency-converter-sample/)
 4. [Pico Tutorial 3 - Hello eBay Finding Service](http://bulldog2011.github.com/blog/2013/03/29/pico-tutorial-3-hello-ebay-finding/)
 5. [Pico Tutorial 4 - Hello eBay Shopping Service](http://bulldog2011.github.com/blog/2013/03/30/pico-tutorial-4-hello-ebay-shopping/)
+6. [Pico Tutoiral 5 - Hello Amazon Product Advertising API](http://bulldog2011.github.com/blog/2013/03/31/pico-tutoiral-5-hello-amazon-product-advertising-api/)
 
 ##Compatibility
 
