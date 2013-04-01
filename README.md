@@ -99,6 +99,7 @@ All samples are in the [Examples](https://github.com/bulldog2011/pico/tree/maste
 4. [Pico Tutorial 3 - Hello eBay Finding Service](http://bulldog2011.github.com/blog/2013/03/29/pico-tutorial-3-hello-ebay-finding/)
 5. [Pico Tutorial 4 - Hello eBay Shopping Service](http://bulldog2011.github.com/blog/2013/03/30/pico-tutorial-4-hello-ebay-shopping/)
 6. [Pico Tutoiral 5 - Hello Amazon Product Advertising API](http://bulldog2011.github.com/blog/2013/03/31/pico-tutoiral-5-hello-amazon-product-advertising-api/)
+7. [Pico and eBay Trading API integration How To](http://bulldog2011.github.com/blog/2013/04/01/pico-and-ebay-trading-api-integration-how-to/)
 
 ##Mapping between XML Schema Types and Objective-C Types 
 
@@ -216,6 +217,11 @@ All samples are in the [Examples](https://github.com/bulldog2011/pico/tree/maste
 1. ARC([Automatic Reference Counting](http://en.wikipedia.org/wiki/Automatic_Reference_Counting)) is not supported yet.
 2. Only Document/Literal style Web Service is support, RPC style Web Serivice is not supported.
 
+##Related project
+1. [Pico proxy for Amazon Product Advertising API](https://github.com/bulldog2011/PicoAWSECommerceServiceClient)
+2. [Pico proxy for eBay Finding API](https://github.com/bulldog2011/PicoEBayFindingClient)
+3. [Pico proxy for eBay Shopping API](https://github.com/bulldog2011/PicoEBayShoppingClient)
+4. [Pico proxy for eBay Trading API](https://github.com/bulldog2011/PicoEBayTradingClient)
 
 
 ##Copyright and License
