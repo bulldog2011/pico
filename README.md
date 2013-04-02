@@ -100,6 +100,7 @@ All samples are in the [Examples](https://github.com/bulldog2011/pico/tree/maste
 5. [Pico Tutorial 4 - Hello eBay Shopping Service](http://bulldog2011.github.com/blog/2013/03/30/pico-tutorial-4-hello-ebay-shopping/)
 6. [Pico Tutoiral 5 - Hello Amazon Product Advertising API](http://bulldog2011.github.com/blog/2013/03/31/pico-tutoiral-5-hello-amazon-product-advertising-api/)
 7. [Pico and eBay Trading API integration How To](http://bulldog2011.github.com/blog/2013/04/01/pico-and-ebay-trading-api-integration-how-to/)
+8. [Easy Web Service on iOS with Pico[ppt]](http://www.slideshare.net/yang75108/easy-web-serivce-on-ios-with-pico)
 
 ##Mapping between XML Schema Types and Objective-C Types 
 
