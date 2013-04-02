@@ -111,7 +111,7 @@ static dispatch_queue_t soap_request_operation_processing_queue() {
         
         if (self.error) {
             if (self.debug) {
-                NSLog(@"Response HTTP Error:\n%@", self.error);
+                NSLog(@"Response HTTP Error:\n%@", [self.error localizedDescription]);
             }
             if (failure) {
                 dispatch_async(self.failureCallbackQueue ? self.failureCallbackQueue : dispatch_get_main_queue(), ^{

@@ -107,6 +107,9 @@
             }
         } failure:^(NSError *error) {
             
+            // stop progress activity
+            [self.view hideToastActivity];
+            
             [self.view makeToast:[error localizedDescription] duration:3.0 position:@"center" title:@"Error"];
         }];
         

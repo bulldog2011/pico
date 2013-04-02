@@ -61,7 +61,7 @@ static dispatch_queue_t xml_request_operation_processing_queue() {
             self.PicoError = [NSError errorWithDomain:PicoErrorDomain code:ReaderError userInfo:userInfo];
             
             if (self.debug) {
-                NSLog(@"Error to read response message : \n%@", self.PicoError);
+                NSLog(@"Error to read response message : \n%@", [self.PicoError localizedDescription]);
             }
             
         } @finally {
@@ -97,7 +97,7 @@ static dispatch_queue_t xml_request_operation_processing_queue() {
         if (self.error) {
             
             if (self.debug) {
-                NSLog(@"Response HTTP Error:\n%@", self.error);
+                NSLog(@"Response HTTP Error:\n%@", [self.error localizedDescription]);
             }
             
             if (failure) {

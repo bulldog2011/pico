@@ -122,7 +122,7 @@ enum {
         [userInfo setValue:ex forKey:NSUnderlyingErrorKey];
         NSError *error = [NSError errorWithDomain:PicoErrorDomain code:WriterError userInfo:userInfo];
         if (self.debug) {
-            NSLog(@"Error to build request : \n%@", error);
+            NSLog(@"Error to build request : \n%@", [error localizedDescription]);
         }
         if (failure) {
             failure(nil, error, nil);
