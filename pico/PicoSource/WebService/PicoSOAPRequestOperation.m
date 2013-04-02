@@ -76,7 +76,7 @@ static dispatch_queue_t soap_request_operation_processing_queue() {
             self.PicoError = [NSError errorWithDomain:PicoErrorDomain code:ReaderError userInfo:userInfo];
             
             if (self.debug) {
-                NSLog(@"Error to read response message : \n%@", self.PicoError);
+                NSLog(@"Error to read response message : \n%@", [self.PicoError localizedDescription]);
             }
             
         } @finally {
