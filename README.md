@@ -1,3 +1,7 @@
+
+##_DISCLAIMER_
+#### This library is still under construction. Beta testers are more than welcome.
+
 # PICO
 
 A light Web Service client framework targeting iOS platform.
