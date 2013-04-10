@@ -1,12 +1,16 @@
+
+##_DISCLAIMER_
+#### This library is still under construction. Beta testers are more than welcome.
+
 # PICO
 
 A light Web Service client framework targeting iOS platform.
 
 
 ## Feature Highlight
-1. Support WSDL driven development, [code generator](https://github.com/bulldog2011/mwsc) tool is provided to auto-genearte proxy from WSDL. 
+1. Support WSDL driven development, [code generator](https://github.com/bulldog2011/mwsc) tool is provided to auto-genearte strongly typed proxy from WSDL. 
 2. Support SOAP 1.1/1.2 and XML based web service. 
-3. Support automatic SOAP/XML to Objective-C object binding, performance comparable to iOS native XML parser.
+3. Support automatic SOAP/XML to Objective-C object binding, performance is better than iOS native XML parser.
 4. Built on popular and mature [AFNetworking](https://github.com/AFNetworking/AFNetworking) library for iOS.
 5. Has been verified with industrial level Web Service like Amazon ECommerce Web Serivce and eBay Finding/Shopping/Trading Web Service. 
 6. Support asychronous service invocation, flexible HTTP/SOAP header setting, timeout setting, encoding setting, logging, etc.
@@ -100,6 +104,7 @@ All samples are in the [Examples](https://github.com/bulldog2011/pico/tree/maste
 5. [Pico Tutorial 4 - Hello eBay Shopping Service](http://bulldog2011.github.com/blog/2013/03/30/pico-tutorial-4-hello-ebay-shopping/)
 6. [Pico Tutoiral 5 - Hello Amazon Product Advertising API](http://bulldog2011.github.com/blog/2013/03/31/pico-tutoiral-5-hello-amazon-product-advertising-api/)
 7. [Pico and eBay Trading API integration How To](http://bulldog2011.github.com/blog/2013/04/01/pico-and-ebay-trading-api-integration-how-to/)
+8. [Easy Web Service on iOS with Pico[ppt]](http://www.slideshare.net/yang75108/easy-web-serivce-on-ios-with-pico)
 
 ##Mapping between XML Schema Types and Objective-C Types 
 
@@ -216,6 +221,7 @@ All samples are in the [Examples](https://github.com/bulldog2011/pico/tree/maste
 ##Current Limitation
 1. ARC([Automatic Reference Counting](http://en.wikipedia.org/wiki/Automatic_Reference_Counting)) is not supported yet.
 2. Only Document/Literal style Web Service is support, RPC style Web Serivice is not supported.
+3. SOAP attachment is not supported
 
 ##Related project
 1. [Pico proxy for Amazon Product Advertising API](https://github.com/bulldog2011/PicoAWSECommerceServiceClient)
