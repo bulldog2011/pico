@@ -127,40 +127,40 @@
     
     // read xml element
     NSDictionary *elementMap = bs.xml2ElementSchemaMapping;
-    if (elementMap.count > 0) {
-        for(NSString *xmlName in elementMap) {
-            PicoPropertySchema *ps = [elementMap objectForKey:xmlName];
-            NSMutableArray *childElements = [[NSMutableArray alloc] init];
-            NSArray *children = [element children];
-            for(GDataXMLNode *node in children) {
-                if ([node kind] == GDataXMLElementKind && [ps.xmlName isEqualToString:[node localName]]) {
-                    [childElements addObject:node];
-                }
-            }
-            
-            if (childElements.count > 0) {
-                if ([ps.propertyKind isEqualToString:PICO_KIND_ELEMENT]) {
-                    GDataXMLElement *childElement = [childElements objectAtIndex:0];
-                    // primitive
-                    if ([PicoConverter isPrimitive:ps.propertyType]) {
-                        NSString *xmlValue = [childElement stringValue];
-                        if (xmlValue.length > 0) {
-                            id objValue = [PicoConverter read: xmlValue withType: ps.propertyType config:self.config];
-                            if (objValue) {
-                                [value setValue: objValue forKey: ps.propertyName];
+    NSArray *children = [element children];
+    if (children.count > 0) {
+        for(GDataXMLNode *node in children) {
+            if ([node kind] == GDataXMLElementKind) {
+                GDataXMLElement *childElement = (GDataXMLElement *) node;
+                NSString *localName = childElement.localName;
+                
+                PicoPropertySchema *ps = [elementMap objectForKey:localName];
+                
+                if (ps) { // found element match
+                    
+                    if ([ps.propertyKind isEqualToString:PICO_KIND_ELEMENT]) {
+                        // primitive
+                        if ([PicoConverter isPrimitive:ps.propertyType]) {
+                            NSString *xmlValue = [childElement stringValue];
+                            if (xmlValue.length > 0) {
+                                id objValue = [PicoConverter read: xmlValue withType: ps.propertyType config:self.config];
+                                if (objValue) {
+                                    [value setValue: objValue forKey: ps.propertyName];
+                                }
                             }
+                        } else if ([ps.propertyType isEqualToString:PICO_TYPE_OBJECT]) { // object
+                            id obj = [ps.clazz new];
+                            [value setValue:obj forKey: ps.propertyName];
+                            [obj release];
+                            [self read: obj element: childElement];
                         }
-                    } else if ([ps.propertyType isEqualToString:PICO_TYPE_OBJECT]) { // object
-                        id obj = [ps.clazz new];
-                        [value setValue:obj forKey: ps.propertyName];
-                        [obj release];
-                        [self read: obj element: childElement];
-                    }
-                } else if ([ps.propertyKind isEqualToString: PICO_KIND_ELEMENT_ARRAY]) {
-                    NSMutableArray *array = [[NSMutableArray alloc] init];
-                    [value setValue:array forKey: ps.propertyName];
-                    [array release];
-                    for(GDataXMLElement *childElement in childElements) {
+                    } else if ([ps.propertyKind isEqualToString: PICO_KIND_ELEMENT_ARRAY]) {
+                        NSMutableArray *array = [value valueForKey:ps.propertyName];
+                        if (!array) {
+                            array = [[NSMutableArray alloc] init];
+                            [value setValue:array forKey: ps.propertyName];
+                            [array release];
+                        }
                         // primitive
                         if ([PicoConverter isPrimitive: ps.propertyType]) {
                             NSString *xmlValue = [childElement stringValue];
@@ -177,11 +177,10 @@
                     }
                 }
             }
-            
-            [childElements release];
         }
     }
 }
+
 
 -(void)readAnyElement:(id)value element:(GDataXMLElement *)element {
     PicoBindingSchema *bs = [PicoBindingSchema fromObject:value];

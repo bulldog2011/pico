@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0D2E70170C7018002C5CD3 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE0D2E6F170C7018002C5CD3 /* Entitlements.plist */; };
 		CE565B8516F5A4C80097A66B /* libPico.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE565B8416F5A4C80097A66B /* libPico.a */; };
 		CEAC41FF16EC3A500032CDFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAC41FE16EC3A500032CDFC /* UIKit.framework */; };
 		CEAC420116EC3A500032CDFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAC420016EC3A500032CDFC /* Foundation.framework */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE0D2E6F170C7018002C5CD3 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		CE565B8416F5A4C80097A66B /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPico.a; path = "../Pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
 		CEAC41FA16EC3A500032CDFC /* PicoPerformance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicoPerformance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAC41FE16EC3A500032CDFC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -146,6 +148,7 @@
 				CEAC421016EC3A500032CDFC /* Default.png */,
 				CEAC421216EC3A500032CDFC /* Default@2x.png */,
 				CEAC421416EC3A500032CDFC /* Default-568h@2x.png */,
+				CE0D2E6F170C7018002C5CD3 /* Entitlements.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				CEAC425616EC48160032CDFC /* 50records.xml in Resources */,
 				CEAC425716EC48160032CDFC /* 300records.xml in Resources */,
 				CEFB845B16ECBC4200A0D522 /* htdocs in Resources */,
+				CE0D2E70170C7018002C5CD3 /* Entitlements.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_ENTITLEMENTS = PicoPerformance/Entitlements.plist;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PicoPerformance/PicoPerformance-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
@@ -348,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_ENTITLEMENTS = PicoPerformance/Entitlements.plist;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PicoPerformance/PicoPerformance-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";

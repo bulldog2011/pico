@@ -8,9 +8,9 @@ A light Web Service client framework targeting iOS platform.
 
 
 ## Feature Highlight
-1. Support WSDL driven development, [code generator](https://github.com/bulldog2011/mwsc) tool is provided to auto-genearte proxy from WSDL. 
+1. Support WSDL driven development, [code generator](https://github.com/bulldog2011/mwsc) tool is provided to auto-genearte strongly typed proxy from WSDL. 
 2. Support SOAP 1.1/1.2 and XML based web service. 
-3. Support automatic SOAP/XML to Objective-C object binding, performance comparable to iOS native XML parser.
+3. Support automatic SOAP/XML to Objective-C object binding, performance is better than iOS native XML parser.
 4. Built on popular and mature [AFNetworking](https://github.com/AFNetworking/AFNetworking) library for iOS.
 5. Has been verified with industrial level Web Service like Amazon ECommerce Web Serivce and eBay Finding/Shopping/Trading Web Service. 
 6. Support asychronous service invocation, flexible HTTP/SOAP header setting, timeout setting, encoding setting, logging, etc.
@@ -221,6 +221,7 @@ All samples are in the [Examples](https://github.com/bulldog2011/pico/tree/maste
 ##Current Limitation
 1. ARC([Automatic Reference Counting](http://en.wikipedia.org/wiki/Automatic_Reference_Counting)) is not supported yet.
 2. Only Document/Literal style Web Service is support, RPC style Web Serivice is not supported.
+3. SOAP attachment is not supported
 
 ##Related project
 1. [Pico proxy for Amazon Product Advertising API](https://github.com/bulldog2011/PicoAWSECommerceServiceClient)
