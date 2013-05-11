@@ -36,12 +36,18 @@
 
 @implementation PicoSOAPReader
 
+static NSString *SOAP11_NS = @"http://schemas.xmlsoap.org/soap/envelope/";
+static NSString *SOAP12_NS = @"http://www.w3.org/2003/05/soap-envelope";
+
 static NSString *INNER_CLASS_KEY = @"innerClass";
 
 // Convert binary data to object of specific class
 -(id)fromData:(NSData *)data withSOAPClass:(Class)soapClazz innerClass:(Class)innerClazz {
     
-    if ((soapClazz != [SOAP11Envelope class]) && (soapClazz != [SOAP12Envelope class])) {
+    BOOL soap11 = (soapClazz == [SOAP11Envelope class]);
+    BOOL soap12 = (soapClazz == [SOAP12Envelope class]);
+    
+    if (!soap11 && !soap12) {
         @throw [NSException exceptionWithName:@"ReaderException" reason:[NSString stringWithFormat:@"can't read non-soap class : %@", NSStringFromClass(soapClazz)] userInfo:nil];
     }
     
@@ -64,6 +70,14 @@ static NSString *INNER_CLASS_KEY = @"innerClass";
         [doc release];
 		@throw [NSException exceptionWithName:@"ReaderException" reason:[NSString stringWithFormat:@"root name mismatch , xml name : %@, root name : %@", xmlName, rootName] userInfo:nil];
 	}
+    
+    // soap version check
+    NSString *soapNs = [rootElement URI];
+    if (soap11 && [soapNs isEqualToString:SOAP12_NS]) {
+        @throw [NSException exceptionWithName:@"ReaderException" reason:@"Expecting SOAP 1.1 response, but got SOAP 1.2 response" userInfo:nil];
+    } else if (soap12 && [soapNs isEqualToString:SOAP11_NS]) {
+        @throw [NSException exceptionWithName:@"ReaderException" reason:@"Expecting SOAP 1.2 response, but got SOAP 1.1 response" userInfo:nil];
+    }
     
     NSMutableDictionary *threadDictionary = [[NSThread currentThread] threadDictionary];
     [threadDictionary setObject:innerClazz forKey:INNER_CLASS_KEY];
