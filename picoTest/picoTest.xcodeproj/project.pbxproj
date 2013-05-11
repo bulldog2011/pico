@@ -36,6 +36,7 @@
 		CE5657B216F59AD70097A66B /* UnicodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56579516F59AD70097A66B /* UnicodeTest.m */; };
 		CE5657B316F59AD70097A66B /* XMLWriterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56579616F59AD70097A66B /* XMLWriterTest.m */; };
 		CE565B8716F5A4CE0097A66B /* libPico.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE565B8616F5A4CE0097A66B /* libPico.a */; };
+		CE9D631D173DEB1600E53AB4 /* SOAPReaderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D631C173DEB1500E53AB4 /* SOAPReaderTest.m */; };
 		CEA418E716ED939A0088C17C /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA418E616ED939A0088C17C /* libxml2.dylib */; };
 		CEAA8EAF16D9BBF70024B5D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8EAE16D9BBF70024B5D7 /* UIKit.framework */; };
 		CEAA8EB116D9BBF70024B5D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8EB016D9BBF70024B5D7 /* Foundation.framework */; };
@@ -81,6 +82,7 @@
 		CE56579516F59AD70097A66B /* UnicodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnicodeTest.m; sourceTree = "<group>"; };
 		CE56579616F59AD70097A66B /* XMLWriterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLWriterTest.m; sourceTree = "<group>"; };
 		CE565B8616F5A4CE0097A66B /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPico.a; path = "../Pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
+		CE9D631C173DEB1500E53AB4 /* SOAPReaderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAPReaderTest.m; sourceTree = "<group>"; };
 		CEA418E616ED939A0088C17C /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		CEAA8EAA16D9BBF70024B5D7 /* PicoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAA8EAE16D9BBF70024B5D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -147,6 +149,7 @@
 				CE56579516F59AD70097A66B /* UnicodeTest.m */,
 				CE56579616F59AD70097A66B /* XMLWriterTest.m */,
 				CEEE95461701D761001C411E /* Entitlements.plist */,
+				CE9D631C173DEB1500E53AB4 /* SOAPReaderTest.m */,
 			);
 			path = PicoTest;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				CE5657B116F59AD70097A66B /* TyteTest.m in Sources */,
 				CE5657B216F59AD70097A66B /* UnicodeTest.m in Sources */,
 				CE5657B316F59AD70097A66B /* XMLWriterTest.m in Sources */,
+				CE9D631D173DEB1600E53AB4 /* SOAPReaderTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
