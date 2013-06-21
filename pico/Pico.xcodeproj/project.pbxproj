@@ -117,6 +117,8 @@
 		CE565B2F16F5A0390097A66B /* PicoSOAPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE565AC716F5A0390097A66B /* PicoSOAPRequestOperation.m */; };
 		CE565B3016F5A0390097A66B /* PicoSOAPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CE565AC816F5A0390097A66B /* PicoSOAPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE565B3116F5A0390097A66B /* PicoSOAPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE565AC916F5A0390097A66B /* PicoSOAPClient.m */; };
+		CE6883691772F7C00035337B /* OrderedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = CE6883671772F7C00035337B /* OrderedDictionary.h */; };
+		CE68836A1772F7C00035337B /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6883681772F7C00035337B /* OrderedDictionary.m */; };
 		CEAA8F1916D9C70E0024B5D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAA8F1816D9C70E0024B5D7 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -244,6 +246,8 @@
 		CE565AC716F5A0390097A66B /* PicoSOAPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoSOAPRequestOperation.m; sourceTree = "<group>"; };
 		CE565AC816F5A0390097A66B /* PicoSOAPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoSOAPClient.h; sourceTree = "<group>"; };
 		CE565AC916F5A0390097A66B /* PicoSOAPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicoSOAPClient.m; sourceTree = "<group>"; };
+		CE6883671772F7C00035337B /* OrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedDictionary.h; sourceTree = "<group>"; };
+		CE6883681772F7C00035337B /* OrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedDictionary.m; sourceTree = "<group>"; };
 		CEAA8F1516D9C70E0024B5D7 /* libPico.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPico.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAA8F1816D9C70E0024B5D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -413,6 +417,7 @@
 		CE565AA816F5A0390097A66B /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				CE6883661772F7C00035337B /* OrderedDictionary */,
 				CE565AA916F5A0390097A66B /* AFNetworking */,
 				CE565ABF16F5A0390097A66B /* GDataXML */,
 				CE565AC216F5A0390097A66B /* XMLWriter */,
@@ -479,6 +484,15 @@
 				CE1D915F16F6D29C00A21D2C /* PicoXMLClient.m */,
 			);
 			path = WebService;
+			sourceTree = "<group>";
+		};
+		CE6883661772F7C00035337B /* OrderedDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				CE6883671772F7C00035337B /* OrderedDictionary.h */,
+				CE6883681772F7C00035337B /* OrderedDictionary.m */,
+			);
+			path = OrderedDictionary;
 			sourceTree = "<group>";
 		};
 		CEAA8F0A16D9C70E0024B5D7 = {
@@ -571,6 +585,7 @@
 				CE565B2E16F5A0390097A66B /* PicoSOAPRequestOperation.h in Headers */,
 				CE1D915C16F6CF2300A21D2C /* PicoXMLRequestOperation.h in Headers */,
 				CE508E9916F95D85009DFAF4 /* PicoDataConverter.h in Headers */,
+				CE6883691772F7C00035337B /* OrderedDictionary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,6 +694,7 @@
 				CE1D915D16F6CF2300A21D2C /* PicoXMLRequestOperation.m in Sources */,
 				CE1D916116F6D29C00A21D2C /* PicoXMLClient.m in Sources */,
 				CE508E9A16F95D85009DFAF4 /* PicoDataConverter.m in Sources */,
+				CE68836A1772F7C00035337B /* OrderedDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

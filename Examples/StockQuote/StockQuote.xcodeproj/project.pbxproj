@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0664F2177451200097B200 /* StockQuoteSoap_SOAPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0664E9177451200097B200 /* StockQuoteSoap_SOAPClient.m */; };
+		CE0664F3177451200097B200 /* StockQuoteSoap_XMLClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0664EB177451200097B200 /* StockQuoteSoap_XMLClient.m */; };
+		CE0664F4177451200097B200 /* GetQuote.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0664EF177451200097B200 /* GetQuote.m */; };
+		CE0664F5177451200097B200 /* GetQuoteResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0664F1177451200097B200 /* GetQuoteResponse.m */; };
 		CE0C044D1701DF85008597EC /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE0C044C1701DF85008597EC /* Entitlements.plist */; };
 		CEFA65C216F82843009114F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA65C116F82843009114F7 /* UIKit.framework */; };
 		CEFA65C416F82843009114F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA65C316F82843009114F7 /* Foundation.framework */; };
@@ -23,15 +27,20 @@
 		CEFA65E816F8285C009114F7 /* libPico.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA65E716F8285C009114F7 /* libPico.a */; };
 		CEFA65EA16F82863009114F7 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA65E916F82862009114F7 /* libxml2.dylib */; };
 		CEFA65EC16F8286B009114F7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA65EB16F8286B009114F7 /* QuartzCore.framework */; };
-		CEFA65FA16F828AD009114F7 /* StockQuoteSoap_SOAPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA65F116F828AD009114F7 /* StockQuoteSoap_SOAPClient.m */; };
-		CEFA65FB16F828AD009114F7 /* StockQuoteSoap_XMLClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA65F316F828AD009114F7 /* StockQuoteSoap_XMLClient.m */; };
-		CEFA65FC16F828AD009114F7 /* GetQuote.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA65F716F828AD009114F7 /* GetQuote.m */; };
-		CEFA65FD16F828AD009114F7 /* GetQuoteResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA65F916F828AD009114F7 /* GetQuoteResponse.m */; };
 		CEFA660016F828D2009114F7 /* StockQuoteServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA65FF16F828D2009114F7 /* StockQuoteServiceClient.m */; };
 		CEFA660416F82A8F009114F7 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA660316F82A8F009114F7 /* Toast+UIView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE0664E8177451200097B200 /* StockQuoteSoap_SOAPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockQuoteSoap_SOAPClient.h; sourceTree = "<group>"; };
+		CE0664E9177451200097B200 /* StockQuoteSoap_SOAPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockQuoteSoap_SOAPClient.m; sourceTree = "<group>"; };
+		CE0664EA177451200097B200 /* StockQuoteSoap_XMLClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockQuoteSoap_XMLClient.h; sourceTree = "<group>"; };
+		CE0664EB177451200097B200 /* StockQuoteSoap_XMLClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockQuoteSoap_XMLClient.m; sourceTree = "<group>"; };
+		CE0664ED177451200097B200 /* CommonTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTypes.h; sourceTree = "<group>"; };
+		CE0664EE177451200097B200 /* GetQuote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetQuote.h; sourceTree = "<group>"; };
+		CE0664EF177451200097B200 /* GetQuote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetQuote.m; sourceTree = "<group>"; };
+		CE0664F0177451200097B200 /* GetQuoteResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetQuoteResponse.h; sourceTree = "<group>"; };
+		CE0664F1177451200097B200 /* GetQuoteResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetQuoteResponse.m; sourceTree = "<group>"; };
 		CE0C044C1701DF85008597EC /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		CEFA65BD16F82843009114F7 /* StockQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFA65C116F82843009114F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -53,15 +62,6 @@
 		CEFA65E716F8285C009114F7 /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPico.a; path = "../../Pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
 		CEFA65E916F82862009114F7 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		CEFA65EB16F8286B009114F7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		CEFA65F016F828AD009114F7 /* StockQuoteSoap_SOAPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockQuoteSoap_SOAPClient.h; sourceTree = "<group>"; };
-		CEFA65F116F828AD009114F7 /* StockQuoteSoap_SOAPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockQuoteSoap_SOAPClient.m; sourceTree = "<group>"; };
-		CEFA65F216F828AD009114F7 /* StockQuoteSoap_XMLClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockQuoteSoap_XMLClient.h; sourceTree = "<group>"; };
-		CEFA65F316F828AD009114F7 /* StockQuoteSoap_XMLClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockQuoteSoap_XMLClient.m; sourceTree = "<group>"; };
-		CEFA65F516F828AD009114F7 /* CommonTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTypes.h; sourceTree = "<group>"; };
-		CEFA65F616F828AD009114F7 /* GetQuote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetQuote.h; sourceTree = "<group>"; };
-		CEFA65F716F828AD009114F7 /* GetQuote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetQuote.m; sourceTree = "<group>"; };
-		CEFA65F816F828AD009114F7 /* GetQuoteResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetQuoteResponse.h; sourceTree = "<group>"; };
-		CEFA65F916F828AD009114F7 /* GetQuoteResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetQuoteResponse.m; sourceTree = "<group>"; };
 		CEFA65FE16F828D2009114F7 /* StockQuoteServiceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockQuoteServiceClient.h; sourceTree = "<group>"; };
 		CEFA65FF16F828D2009114F7 /* StockQuoteServiceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockQuoteServiceClient.m; sourceTree = "<group>"; };
 		CEFA660216F82A8F009114F7 /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
@@ -85,6 +85,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE0664E6177451200097B200 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				CE0664E7177451200097B200 /* client */,
+				CE0664EC177451200097B200 /* common */,
+				CE0664EE177451200097B200 /* GetQuote.h */,
+				CE0664EF177451200097B200 /* GetQuote.m */,
+				CE0664F0177451200097B200 /* GetQuoteResponse.h */,
+				CE0664F1177451200097B200 /* GetQuoteResponse.m */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		CE0664E7177451200097B200 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				CE0664E8177451200097B200 /* StockQuoteSoap_SOAPClient.h */,
+				CE0664E9177451200097B200 /* StockQuoteSoap_SOAPClient.m */,
+				CE0664EA177451200097B200 /* StockQuoteSoap_XMLClient.h */,
+				CE0664EB177451200097B200 /* StockQuoteSoap_XMLClient.m */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
+		CE0664EC177451200097B200 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				CE0664ED177451200097B200 /* CommonTypes.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
 		CEFA65B216F82843009114F7 = {
 			isa = PBXGroup;
 			children = (
@@ -149,43 +181,11 @@
 		CEFA65ED16F8289F009114F7 /* StockQuoteService */ = {
 			isa = PBXGroup;
 			children = (
-				CEFA65EE16F828AD009114F7 /* Proxy */,
+				CE0664E6177451200097B200 /* Proxy */,
 				CEFA65FE16F828D2009114F7 /* StockQuoteServiceClient.h */,
 				CEFA65FF16F828D2009114F7 /* StockQuoteServiceClient.m */,
 			);
 			name = StockQuoteService;
-			sourceTree = "<group>";
-		};
-		CEFA65EE16F828AD009114F7 /* Proxy */ = {
-			isa = PBXGroup;
-			children = (
-				CEFA65EF16F828AD009114F7 /* client */,
-				CEFA65F416F828AD009114F7 /* common */,
-				CEFA65F616F828AD009114F7 /* GetQuote.h */,
-				CEFA65F716F828AD009114F7 /* GetQuote.m */,
-				CEFA65F816F828AD009114F7 /* GetQuoteResponse.h */,
-				CEFA65F916F828AD009114F7 /* GetQuoteResponse.m */,
-			);
-			path = Proxy;
-			sourceTree = "<group>";
-		};
-		CEFA65EF16F828AD009114F7 /* client */ = {
-			isa = PBXGroup;
-			children = (
-				CEFA65F016F828AD009114F7 /* StockQuoteSoap_SOAPClient.h */,
-				CEFA65F116F828AD009114F7 /* StockQuoteSoap_SOAPClient.m */,
-				CEFA65F216F828AD009114F7 /* StockQuoteSoap_XMLClient.h */,
-				CEFA65F316F828AD009114F7 /* StockQuoteSoap_XMLClient.m */,
-			);
-			path = client;
-			sourceTree = "<group>";
-		};
-		CEFA65F416F828AD009114F7 /* common */ = {
-			isa = PBXGroup;
-			children = (
-				CEFA65F516F828AD009114F7 /* CommonTypes.h */,
-			);
-			path = common;
 			sourceTree = "<group>";
 		};
 		CEFA660116F82A8F009114F7 /* Toast */ = {
@@ -268,12 +268,12 @@
 				CEFA65CE16F82843009114F7 /* main.m in Sources */,
 				CEFA65D216F82843009114F7 /* AppDelegate.m in Sources */,
 				CEFA65DB16F82843009114F7 /* ViewController.m in Sources */,
-				CEFA65FA16F828AD009114F7 /* StockQuoteSoap_SOAPClient.m in Sources */,
-				CEFA65FB16F828AD009114F7 /* StockQuoteSoap_XMLClient.m in Sources */,
-				CEFA65FC16F828AD009114F7 /* GetQuote.m in Sources */,
-				CEFA65FD16F828AD009114F7 /* GetQuoteResponse.m in Sources */,
 				CEFA660016F828D2009114F7 /* StockQuoteServiceClient.m in Sources */,
 				CEFA660416F82A8F009114F7 /* Toast+UIView.m in Sources */,
+				CE0664F2177451200097B200 /* StockQuoteSoap_SOAPClient.m in Sources */,
+				CE0664F3177451200097B200 /* StockQuoteSoap_XMLClient.m in Sources */,
+				CE0664F4177451200097B200 /* GetQuote.m in Sources */,
+				CE0664F5177451200097B200 /* GetQuoteResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

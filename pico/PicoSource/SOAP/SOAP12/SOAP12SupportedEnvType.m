@@ -3,6 +3,7 @@
 
 #import <Foundation/Foundation.h>
 #import "SOAP12SupportedEnvType.h"
+#import "OrderedDictionary.h"
 
 @implementation SOAP12SupportedEnvType
 
@@ -17,7 +18,7 @@
 // property meta-data method
 // note: this method is only for internal use, DO NOT CHANGE!
 +(NSMutableDictionary *)getPropertyMetaData {
-    NSMutableDictionary *map = [NSMutableDictionary dictionary];
+    NSMutableDictionary *map = [OrderedDictionary dictionary];
     
     PicoPropertySchema *ps = nil;
     ps = [[PicoPropertySchema alloc] initWithKind:PICO_KIND_ATTRIBUTE xmlName:@"qname" propertyName:@"qname" type:PICO_TYPE_QNAME clazz:nil];

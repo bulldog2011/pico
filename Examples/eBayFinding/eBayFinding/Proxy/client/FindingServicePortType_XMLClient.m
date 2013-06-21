@@ -10,7 +10,6 @@
       success:(void (^)(Finding_GetSearchKeywordsRecommendationResponse *responseObject))success
       failure:(void (^)(NSError *error))failure {
  
-     [super setDefaultHeader:@"X-EBAY-SOA-OPERATION-NAME" value:@"getSearchKeywordsRecommendation"];       
  
      [super invoke:requestObject responseClass:[Finding_GetSearchKeywordsRecommendationResponse class]
      success:^(PicoXMLRequestOperation *operation, id<PicoBindable> responseObject) {
@@ -28,7 +27,6 @@
       success:(void (^)(Finding_FindItemsByKeywordsResponse *responseObject))success
       failure:(void (^)(NSError *error))failure {
  
-     [super setDefaultHeader:@"X-EBAY-SOA-OPERATION-NAME" value:@"findItemsByKeywords"];       
  
      [super invoke:requestObject responseClass:[Finding_FindItemsByKeywordsResponse class]
      success:^(PicoXMLRequestOperation *operation, id<PicoBindable> responseObject) {
@@ -46,7 +44,6 @@
       success:(void (^)(Finding_FindItemsByCategoryResponse *responseObject))success
       failure:(void (^)(NSError *error))failure {
  
-     [super setDefaultHeader:@"X-EBAY-SOA-OPERATION-NAME" value:@"findItemsByCategory"];       
  
      [super invoke:requestObject responseClass:[Finding_FindItemsByCategoryResponse class]
      success:^(PicoXMLRequestOperation *operation, id<PicoBindable> responseObject) {
@@ -64,7 +61,6 @@
       success:(void (^)(Finding_FindItemsAdvancedResponse *responseObject))success
       failure:(void (^)(NSError *error))failure {
  
-     [super setDefaultHeader:@"X-EBAY-SOA-OPERATION-NAME" value:@"findItemsAdvanced"];       
  
      [super invoke:requestObject responseClass:[Finding_FindItemsAdvancedResponse class]
      success:^(PicoXMLRequestOperation *operation, id<PicoBindable> responseObject) {
@@ -82,7 +78,6 @@
       success:(void (^)(Finding_FindItemsByProductResponse *responseObject))success
       failure:(void (^)(NSError *error))failure {
  
-     [super setDefaultHeader:@"X-EBAY-SOA-OPERATION-NAME" value:@"findItemsByProduct"];       
  
      [super invoke:requestObject responseClass:[Finding_FindItemsByProductResponse class]
      success:^(PicoXMLRequestOperation *operation, id<PicoBindable> responseObject) {
@@ -100,7 +95,6 @@
       success:(void (^)(Finding_FindItemsIneBayStoresResponse *responseObject))success
       failure:(void (^)(NSError *error))failure {
  
-     [super setDefaultHeader:@"X-EBAY-SOA-OPERATION-NAME" value:@"findItemsIneBayStores"];       
  
      [super invoke:requestObject responseClass:[Finding_FindItemsIneBayStoresResponse class]
      success:^(PicoXMLRequestOperation *operation, id<PicoBindable> responseObject) {
@@ -118,7 +112,6 @@
       success:(void (^)(Finding_FindItemsByImageResponse *responseObject))success
       failure:(void (^)(NSError *error))failure {
  
-     [super setDefaultHeader:@"X-EBAY-SOA-OPERATION-NAME" value:@"findItemsByImage"];       
  
      [super invoke:requestObject responseClass:[Finding_FindItemsByImageResponse class]
      success:^(PicoXMLRequestOperation *operation, id<PicoBindable> responseObject) {
@@ -136,7 +129,6 @@
       success:(void (^)(Finding_GetHistogramsResponse *responseObject))success
       failure:(void (^)(NSError *error))failure {
  
-     [super setDefaultHeader:@"X-EBAY-SOA-OPERATION-NAME" value:@"getHistograms"];       
  
      [super invoke:requestObject responseClass:[Finding_GetHistogramsResponse class]
      success:^(PicoXMLRequestOperation *operation, id<PicoBindable> responseObject) {
@@ -154,7 +146,6 @@
       success:(void (^)(Finding_FindCompletedItemsResponse *responseObject))success
       failure:(void (^)(NSError *error))failure {
  
-     [super setDefaultHeader:@"X-EBAY-SOA-OPERATION-NAME" value:@"findCompletedItems"];       
  
      [super invoke:requestObject responseClass:[Finding_FindCompletedItemsResponse class]
      success:^(PicoXMLRequestOperation *operation, id<PicoBindable> responseObject) {
@@ -172,7 +163,6 @@
       success:(void (^)(Finding_GetVersionResponse *responseObject))success
       failure:(void (^)(NSError *error))failure {
  
-     [super setDefaultHeader:@"X-EBAY-SOA-OPERATION-NAME" value:@"getVersion"];       
  
      [super invoke:requestObject responseClass:[Finding_GetVersionResponse class]
      success:^(PicoXMLRequestOperation *operation, id<PicoBindable> responseObject) {
@@ -190,7 +180,6 @@
       success:(void (^)(Finding_FindItemsForFavoriteSearchResponse *responseObject))success
       failure:(void (^)(NSError *error))failure {
  
-     [super setDefaultHeader:@"X-EBAY-SOA-OPERATION-NAME" value:@"findItemsForFavoriteSearch"];       
  
      [super invoke:requestObject responseClass:[Finding_FindItemsForFavoriteSearchResponse class]
      success:^(PicoXMLRequestOperation *operation, id<PicoBindable> responseObject) {

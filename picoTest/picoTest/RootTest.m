@@ -7,6 +7,7 @@
 //
 
 #import "PicoTestBase.h"
+#import "OrderedDictionary.h"
 
 
 @interface RootExample : NSObject <PicoBindable>
@@ -33,7 +34,7 @@
 }
 
 +(NSMutableDictionary *)getPropertyMetaData {
-	NSMutableDictionary *map = [NSMutableDictionary dictionary];
+	NSMutableDictionary *map = [OrderedDictionary dictionary];
 	PicoPropertySchema *ps = nil;
 	
 	ps = [[PicoPropertySchema alloc] initWithKind:PICO_KIND_ATTRIBUTE xmlName:@"version" propertyName:@"version" type:PICO_TYPE_INT clazz:nil];
@@ -69,7 +70,7 @@
 }
 
 +(NSMutableDictionary *)getPropertyMetaData {
-	NSMutableDictionary *map = [NSMutableDictionary dictionary];
+	NSMutableDictionary *map = [OrderedDictionary dictionary];
 	
 	return map;
 }
