@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 LeanSoft Technology. All rights reserved.
 //
 #import "PicoTestBase.h"
+#import "OrderedDictionary.h"
 
 @interface TyteTest : PicoTestBase
 
@@ -53,7 +54,7 @@
 }
 
 +(NSMutableDictionary *)getPropertyMetaData {
-	NSMutableDictionary *map = [NSMutableDictionary dictionary];
+	NSMutableDictionary *map = [OrderedDictionary dictionary];
 	PicoPropertySchema *ps = nil;
 	
 	ps = [[PicoPropertySchema alloc] initWithKind:PICO_KIND_ELEMENT xmlName:@"Boolean" propertyName:@"booleanValue" type:PICO_TYPE_BOOL clazz:nil];
@@ -118,7 +119,7 @@
 }
 
 +(NSMutableDictionary *)getPropertyMetaData {
-	NSMutableDictionary *map = [NSMutableDictionary dictionary];
+	NSMutableDictionary *map = [OrderedDictionary dictionary];
 	PicoPropertySchema *ps = nil;
 	
 	ps = [[PicoPropertySchema alloc] initWithKind:PICO_KIND_ELEMENT xmlName:@"object" propertyName:@"object" type:PICO_TYPE_OBJECT clazz:[ObjectEntry class]];

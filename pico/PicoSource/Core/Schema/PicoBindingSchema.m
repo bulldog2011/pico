@@ -11,6 +11,7 @@
 #import "PicoPropertySchema.h"
 #import "PicoBindable.h"
 #import "PicoCache.h"
+#import "OrderedDictionary.h"
 
 @implementation PicoBindingSchema
 
@@ -37,8 +38,8 @@ static const int CACHE_SIZE = 100;
 		
 		_xml2AttributeSchemaMapping = [[NSMutableDictionary alloc] init];
 		_xml2ElementSchemaMapping = [[NSMutableDictionary alloc] init];
-		_property2ElementSchemaMapping = [[NSMutableDictionary alloc] init];
-		_property2AttributeSchemaMapping = [[NSMutableDictionary alloc] init];
+		_property2ElementSchemaMapping = [[OrderedDictionary alloc] init];
+		_property2AttributeSchemaMapping = [[OrderedDictionary alloc] init];
 		
 		_className = [NSStringFromClass(clazz) retain];
 		

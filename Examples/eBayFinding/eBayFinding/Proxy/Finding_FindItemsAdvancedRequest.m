@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 
 #import <Foundation/Foundation.h>
+#import "OrderedDictionary.h"
 #import "Finding_FindItemsAdvancedRequest.h"
 #import "Finding_ItemFilter.h"
 #import "Finding_AspectFilter.h"
@@ -28,7 +29,7 @@
 // property meta-data method
 // note: this method is only for internal use, DO NOT CHANGE!
 +(NSMutableDictionary *)getPropertyMetaData {
-    NSMutableDictionary *map = [NSMutableDictionary dictionary];
+    NSMutableDictionary *map = [OrderedDictionary dictionary];
     
     PicoPropertySchema *ps = nil;
     ps = [[PicoPropertySchema alloc] initWithKind:PICO_KIND_ELEMENT xmlName:@"keywords" propertyName:@"keywords" type:PICO_TYPE_STRING clazz:nil];

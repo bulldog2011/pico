@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 
 #import <Foundation/Foundation.h>
+#import "OrderedDictionary.h"
 #import "Finding_GetVersionResponse.h"
 
 @implementation Finding_GetVersionResponse
@@ -18,7 +19,7 @@
 // property meta-data method
 // note: this method is only for internal use, DO NOT CHANGE!
 +(NSMutableDictionary *)getPropertyMetaData {
-    NSMutableDictionary *map = [NSMutableDictionary dictionary];
+    NSMutableDictionary *map = [OrderedDictionary dictionary];
     
     
     return map;

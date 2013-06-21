@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 
 #import <Foundation/Foundation.h>
+#import "OrderedDictionary.h"
 #import "Finding_FindItemsByProductRequest.h"
 #import "Finding_ItemFilter.h"
 #import "Finding_ProductId.h"
@@ -23,7 +24,7 @@
 // property meta-data method
 // note: this method is only for internal use, DO NOT CHANGE!
 +(NSMutableDictionary *)getPropertyMetaData {
-    NSMutableDictionary *map = [NSMutableDictionary dictionary];
+    NSMutableDictionary *map = [OrderedDictionary dictionary];
     
     PicoPropertySchema *ps = nil;
     ps = [[PicoPropertySchema alloc] initWithKind:PICO_KIND_ELEMENT xmlName:@"productId" propertyName:@"productId" type:PICO_TYPE_OBJECT clazz:[Finding_ProductId class]];

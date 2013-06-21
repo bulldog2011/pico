@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 LeanSoft Technology. All rights reserved.
 //
 #import "PicoTestBase.h"
+#import "OrderedDictionary.h"
 
 @interface ElementEntry : NSObject <PicoBindable>
 {
@@ -32,7 +33,7 @@
 }
 
 +(NSMutableDictionary *)getPropertyMetaData {
-	NSMutableDictionary *map = [NSMutableDictionary dictionary];
+	NSMutableDictionary *map = [OrderedDictionary dictionary];
 	PicoPropertySchema *ps = nil;
 	
 	ps = [[PicoPropertySchema alloc] initWithKind:PICO_KIND_ATTRIBUTE xmlName:@"key" propertyName:@"name" type:PICO_TYPE_STRING clazz:nil];
@@ -78,7 +79,7 @@
 }
 
 +(NSMutableDictionary *)getPropertyMetaData {
-	NSMutableDictionary *map = [NSMutableDictionary dictionary];
+	NSMutableDictionary *map = [OrderedDictionary dictionary];
 	PicoPropertySchema *ps = nil;
 	
 	ps = [[PicoPropertySchema alloc] initWithKind:PICO_KIND_ELEMENT xmlName:@"entry-one" propertyName:@"entryOne" type:PICO_TYPE_OBJECT clazz:[ElementEntry class]];
@@ -159,7 +160,7 @@
 }
 
 +(NSMutableDictionary *)getPropertyMetaData {
-	NSMutableDictionary *map = [NSMutableDictionary dictionary];
+	NSMutableDictionary *map = [OrderedDictionary dictionary];
 	PicoPropertySchema *ps = nil;
 	
 	ps = [[PicoPropertySchema alloc] initWithKind:PICO_KIND_ATTRIBUTE xmlName:@"name" propertyName:@"name" type:PICO_TYPE_STRING clazz:nil];
@@ -210,7 +211,7 @@
 }
 
 +(NSMutableDictionary *)getPropertyMetaData {
-	NSMutableDictionary *map = [NSMutableDictionary dictionary];
+	NSMutableDictionary *map = [OrderedDictionary dictionary];
 	PicoPropertySchema *ps = nil;
 	
 	ps = [[PicoPropertySchema alloc] initWithKind:PICO_KIND_ATTRIBUTE xmlName:@"number" propertyName:@"number" type:PICO_TYPE_INT clazz:nil];

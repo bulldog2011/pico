@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 
 #import <Foundation/Foundation.h>
+#import "OrderedDictionary.h"
 #import "Finding_BaseServiceRequest.h"
 
 @implementation Finding_BaseServiceRequest
@@ -16,7 +17,7 @@
 // property meta-data method
 // note: this method is only for internal use, DO NOT CHANGE!
 +(NSMutableDictionary *)getPropertyMetaData {
-    NSMutableDictionary *map = [NSMutableDictionary dictionary];
+    NSMutableDictionary *map = [OrderedDictionary dictionary];
     
     
     return map;

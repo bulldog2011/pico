@@ -7,6 +7,7 @@
 //
 
 #import "PicoTestBase.h"
+#import "OrderedDictionary.h"
 
 @interface StackOverflowTest : PicoTestBase
 
@@ -39,7 +40,7 @@
 }
 
 +(NSMutableDictionary *)getPropertyMetaData {
-	NSMutableDictionary *map = [NSMutableDictionary dictionary];
+	NSMutableDictionary *map = [OrderedDictionary dictionary];
 	PicoPropertySchema *ps = nil;
 	
 	ps = [[PicoPropertySchema alloc] initWithKind:PICO_KIND_ELEMENT xmlName:@"office" propertyName:@"office" type:PICO_TYPE_STRING clazz:nil];
@@ -87,7 +88,7 @@
 }
 
 +(NSMutableDictionary *)getPropertyMetaData {
-	NSMutableDictionary *map = [NSMutableDictionary dictionary];
+	NSMutableDictionary *map = [OrderedDictionary dictionary];
 	PicoPropertySchema *ps = nil;
 	
 	ps = [[PicoPropertySchema alloc] initWithKind:PICO_KIND_ELEMENT xmlName:@"comment" propertyName:@"comment" type:PICO_TYPE_STRING clazz:nil];
@@ -128,7 +129,7 @@
 }
 
 +(NSMutableDictionary *)getPropertyMetaData {
-	NSMutableDictionary *map = [NSMutableDictionary dictionary];
+	NSMutableDictionary *map = [OrderedDictionary dictionary];
 	PicoPropertySchema *ps = nil;
 	
 	ps = [[PicoPropertySchema alloc] initWithKind:PICO_KIND_ELEMENT_ARRAY xmlName:@"newBenefit" propertyName:@"listNewBenefit" type:PICO_TYPE_OBJECT clazz:[NewBenefit class]];

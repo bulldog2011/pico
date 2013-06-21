@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 
 #import <Foundation/Foundation.h>
+#import "OrderedDictionary.h"
 #import "Finding_ConditionHistogramContainer.h"
 #import "Finding_ConditionHistogram.h"
 
@@ -20,7 +21,7 @@
 // property meta-data method
 // note: this method is only for internal use, DO NOT CHANGE!
 +(NSMutableDictionary *)getPropertyMetaData {
-    NSMutableDictionary *map = [NSMutableDictionary dictionary];
+    NSMutableDictionary *map = [OrderedDictionary dictionary];
     
     PicoPropertySchema *ps = nil;
     ps = [[PicoPropertySchema alloc] initWithKind:PICO_KIND_ELEMENT_ARRAY xmlName:@"conditionHistogram" propertyName:@"conditionHistogram" type:PICO_TYPE_OBJECT clazz:[Finding_ConditionHistogram class]];
